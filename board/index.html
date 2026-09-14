@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>法途 · 互助留言板</title>
+<meta name="description" content="法学生岗位接力 · 匿名互助留言板。由飞书多维表格定期镜像，最新优先。">
+<style>
+:root{--bg:#F7F8FA;--bg-2:#fff;--ink:#1B2030;--ink-2:#4A5468;--ink-3:#7A8497;--line:#E5E8EE;--r:14px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:32px 22px 80px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;font-size:20px}
+.brand svg{width:36px;height:36px}
+.brand small{display:block;font-size:12px;color:var(--ink-3);font-weight:400}
+.btn-x{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:#185FA5;color:#fff;text-decoration:none;font-size:14px;font-weight:500}
+.btn-x:hover{background:#134a82}
+h1{font-size:24px;margin:8px 0 6px}
+.sub{color:var(--ink-2);margin:0 0 20px;font-size:14.5px}
+.banner{background:linear-gradient(180deg,#FFF7ED,#FEF3C7);border:1px solid #FDE68A;border-radius:10px;padding:13px 17px;font-size:14px;color:#92400E;margin-bottom:18px}
+.banner b{color:#78350F}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;align-items:center}
+.filters input,.filters select{padding:9px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--bg-2);color:var(--ink)}
+.filters input{min-width:230px;flex:1}
+.filters select{min-width:130px}
+.count{font-size:13px;color:var(--ink-3);margin-bottom:14px}
+.count b{color:var(--ink);font-weight:600}
+.grid{display:grid;gap:14px}
+.card{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 15px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.card-unit{font-size:18px;font-weight:600;line-height:1.4}
+.card-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 13px}
+.tag{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;font-size:12.5px;background:#F0F2F5;color:var(--ink-2)}
+.tag.t{border:1px solid;font-weight:500}
+.tag.new{background:#FEF2F2;color:#B91C1C;border:1px solid #FECACA}
+.ts{font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.note{background:#FAFAFA;border-left:3px solid #E5E8EE;padding:11px 14px;border-radius:0 8px 8px 0;font-size:14.5px;color:var(--ink-2);line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.contact{display:flex;align-items:center;gap:10px;margin-top:13px;padding:10px 12px;background:#FAFAFA;border-radius:8px;font-size:14px}
+.contact label{color:var(--ink-3);font-size:12.5px;flex-shrink:0}
+.contact code{flex:1;font:13px ui-monospace,Menlo,Consolas,monospace;background:#fff;border:1px solid var(--line);padding:4px 8px;border-radius:5px;color:#185FA5;overflow:auto}
+.contact button{padding:6px 12px;border:0;border-radius:6px;background:#185FA5;color:#fff;font-size:13px;cursor:pointer;flex-shrink:0}
+.contact button:hover{background:#134a82}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:15px;font-size:12.5px;color:var(--ink-3);gap:12px;flex-wrap:wrap}
+.empty{text-align:center;color:var(--ink-3);padding:60px 20px;background:var(--bg-2);border:1px dashed var(--line);border-radius:var(--r)}
+.toast{position:fixed;left:50%;top:24px;transform:translateX(-50%);background:rgba(15,23,42,.92);color:#fff;padding:9px 16px;border-radius:8px;font-size:13.5px;pointer-events:none;opacity:0;transition:opacity .25s}
+.toast.show{opacity:1}
+@media(max-width:600px){.wrap{padding:20px 14px 60px}h1{font-size:20px}.filters input{min-width:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="topbar">
+  <a class="brand" href="https://fangmercury.github.io/fatu/">
+    <svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" fill="none" stroke="#1B3A63" stroke-width="7"/><path d="M48 24 V64" stroke="#1B3A63" stroke-width="7" stroke-linecap="round"/><path d="M36 64 H60" stroke="#1B3A63" stroke-width="7" stroke-linecap="round"/><path d="M24 56 L67 35" stroke="#1B3A63" stroke-width="7" stroke-linecap="round"/><polygon points="77,30 70,41 64,29" fill="#1B3A63"/></svg>
+    <span>法途<small>互助留言板</small></span>
+  </a>
+  <a class="btn-x" href="https://bcn6q0jyn9vb.feishu.cn/share/base/form/shrcnT9wqE74zoCq8PwJBmzOQ8e" target="_blank" rel="noopener">+ 我要留一个岗位</a>
+</div>
+
+<h1>岗位接力 · 互助留言</h1>
+<p class="sub">法学院学长学姐留下的岗位接力，最新优先。匿名可填，微信号 / 邮箱公开可见，建议留能即时聊到的联系方式。</p>
+
+<div class="banner"><b>说明：</b>本页由飞书多维表格每天自动镜像，<b>不需要登录即可浏览</b>。更新于 2026-09-14 23:34。</div>
+
+<div class="filters">
+  <input type="search" id="fQ" placeholder="搜 单位 / 城市 / 类型 / 说明 / 联系方式">
+  <select id="fCity"><option value="全部">全部地区</option></select>
+  <select id="fType">
+    <option value="全部">全部类型</option>
+    <option>实习结束 · 岗位空缺</option><option>内推 / 转正</option>
+    <option>学长学姐可咨询</option><option>其他</option>
+  </select>
+</div>
+
+<div class="count" id="count">加载中…</div>
+<div class="grid" id="grid"></div>
+<div id="empty" class="empty" style="display:none">暂无符合条件的留言 —— 你是第一个？<a href="https://bcn6q0jyn9vb.feishu.cn/share/base/form/shrcnT9wqE74zoCq8PwJBmzOQ8e" target="_blank" rel="noopener">点这儿留一条</a></div>
+
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const ITEMS = [
+ {
+  "rec_id": "recvv7lhS4SJAx",
+  "unit": "示例 · 某某律师事务所争议解决团队",
+  "city": "武汉",
+  "type_raw": "实习结束 · 岗位空缺",
+  "type_label": "岗位空缺",
+  "type_color": "#1B7F4E",
+  "type_soft": "#E6F4EC",
+  "contact": "微信号：example_wx（示例）",
+  "note": "我实习三个月，民商事诉讼为主，带教愿意放手让我写文书。下月离职岗位空缺，想再招一名 2027 届实习生，表现好可留用。",
+  "sign": "示例学长",
+  "iso": "2026-09-14 00:12"
+ },
+ {
+  "rec_id": "recvv7lhS4TrEr",
+  "unit": "示例 · 某省属国企法务部",
+  "city": "杭州",
+  "type_raw": "学长学姐可咨询",
+  "type_label": "可咨询",
+  "type_color": "#534AB7",
+  "type_soft": "#ECEAF6",
+  "contact": "邮箱：example@foxmail.com（示例）",
+  "note": "去年秋招进的这家国企法务，主做合同与合规，可咨询面试流程与行测准备。",
+  "sign": "示例学姐",
+  "iso": "2026-09-14 00:12"
+ }
+];
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function toast(s){const t=$('#toast');t.textContent=s;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1300);}
+function copy(v){if(!v)return;if(navigator.clipboard){navigator.clipboard.writeText(v).then(()=>toast('已复制'));}else{const ta=document.createElement('textarea');ta.value=v;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);toast('已复制');}}
+function isNew(iso){if(!iso)return false;const d=new Date(iso.replace(' ','T'));return (Date.now()-d.getTime())/3600000 < 24;}
+function card(it){
+  return `<article class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+      <div class="card-unit">${esc(it.unit)}</div>
+      ${isNew(it.iso) ? '<span class="tag new">新</span>' : ''}
+    </div>
+    <div class="card-meta">
+      <span class="tag t" style="background:${it.type_soft};color:${it.type_color};border-color:${it.type_color}33">${esc(it.type_label)}</span>
+      ${it.city ? `<span class="tag">${esc(it.city)}</span>` : ''}
+      ${it.iso ? `<span class="ts">${esc(it.iso)}</span>` : ''}
+    </div>
+    ${it.note ? `<div class="note">${esc(it.note)}</div>` : ''}
+    ${it.contact ? `<div class="contact"><label>联系方式</label><code>${esc(it.contact)}</code><button data-cp="${esc(it.contact)}">复制</button></div>` : ''}
+    <div class="foot"><span>${it.sign ? '署名：' + esc(it.sign) : ''}</span><span class="ts">来自飞书多维表格 · 每日镜像</span></div>
+  </article>`;
+}
+const STATE = { q:'', city:'全部', type:'全部' };
+(function(){
+  const cities = Array.from(new Set(ITEMS.map(i=>i.city).filter(Boolean))).sort();
+  const sel = $('#fCity');
+  cities.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+})();
+function render(){
+  const q = STATE.q.toLowerCase().trim();
+  const rows = ITEMS.filter(it => {
+    if (STATE.city !== '全部' && it.city !== STATE.city) return false;
+    if (STATE.type !== '全部' && it.type_raw !== STATE.type) return false;
+    if (q) {
+      const hay = (it.unit+' '+it.city+' '+it.type_raw+' '+it.note+' '+it.contact+' '+it.sign).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  $('#count').innerHTML = `共 <b>${rows.length}</b> / ${ITEMS.length} 条 · 最新优先`;
+  $('#grid').innerHTML = rows.length ? rows.map(card).join('') : '';
+  $('#empty').style.display = rows.length ? 'none' : 'block';
+}
+$('#fQ').addEventListener('input', e => { STATE.q = e.target.value; render(); });
+$('#fCity').addEventListener('change', e => { STATE.city = e.target.value; render(); });
+$('#fType').addEventListener('change', e => { STATE.type = e.target.value; render(); });
+$('#grid').addEventListener('click', e => { const b = e.target.closest('button[data-cp]'); if (b) copy(b.dataset.cp); });
+render();
+</script>
+</body>
+</html>
