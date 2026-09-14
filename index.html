@@ -1,0 +1,3103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>法途 · 法学生秋招实习导航 | 律所 · 法务 · 国企央企 · 简历诊断</title>
+<meta name="description" content="面向大三、大四与应届法学生的秋招实习导航站：聚合律所、企业法务、国企央企、银行券商、体制内、法律新媒体与法律科技岗位，直达官方投递入口，按赛道配色区分，附城市专区与法学生专属简历诊断。">
+<style>
+/* 法途 · 法学生秋招实习导航  —  light theme */
+:root{
+  --ink:#16232E;
+  --ink-2:#4A5A69;
+  --ink-3:#8494A3;
+  --line:#E3E8ED;
+  --line-2:#CFD8E0;
+  --bg:#FFFFFF;
+  --bg-2:#F6F8FA;
+  --bg-3:#EFF3F7;
+  --navy:#1E4E79;
+  --navy-2:#185FA5;
+  --navy-deep:#14385C;
+  --navy-soft:#E6F1FB;
+  --amber:#B45309;
+  --amber-soft:#FDF3E3;
+  --red:#A32D2D;
+  --red-soft:#FCEBEB;
+  --green:#3B6D11;
+  --green-soft:#EAF3DE;
+  --radius:12px;
+  --radius-s:8px;
+  --t:#44546A; --tb:#EEF2F7; --tbd:#D3DCE6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--navy-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;font-weight:600;line-height:1.3}
+p{margin:0}
+button{font-family:inherit;font-size:14px;cursor:pointer}
+input,select,textarea{font-family:inherit;font-size:14px;color:var(--ink)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- 赛道配色（公司/岗位） ---------- */
+[data-t="lawfirm"]  {--t:#3B6D11;--tb:#EAF3DE;--tbd:#C9E0A8}
+[data-t="inhouse"]  {--t:#534AB7;--tb:#EEEDFE;--tbd:#D6D3F7}
+[data-t="soe"]      {--t:#185FA5;--tb:#E6F1FB;--tbd:#B9D8F2}
+[data-t="bank"]     {--t:#854F0B;--tb:#FAEEDA;--tbd:#F0DDBB}
+[data-t="gov"]      {--t:#A32D2D;--tb:#FCEBEB;--tbd:#F3CFCF}
+[data-t="media"]    {--t:#993556;--tb:#FBEAF0;--tbd:#F4C0D1}
+[data-t="legaltech"]{--t:#0B6E8F;--tb:#E4F4F9;--tbd:#B6DFEB}
+[data-t="moot"]     {--t:#993C1D;--tb:#FAECE7;--tbd:#F0CDBF}
+[data-t="all"]      {--t:#44546A;--tb:#EEF2F7;--tbd:#D3DCE6}
+[data-t="path"]     {--t:#0F6E52;--tb:#E7F5F0;--tbd:#B5DECE}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;align-items:center;gap:30px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand-word{font-size:22px;font-weight:700;color:var(--navy-deep);letter-spacing:1.5px;line-height:1}
+.brand small{font-weight:400;font-size:12.5px;color:var(--ink-3);margin-left:4px;letter-spacing:0}
+.nav{display:flex;gap:26px;margin-left:14px}
+.nav a{color:var(--navy);font-size:15.5px;font-weight:600;padding:6px 0;border-bottom:2.5px solid transparent;letter-spacing:.2px}
+.nav a:hover{color:var(--navy-2);text-decoration:none}
+.nav a.on{color:var(--navy-2);border-bottom-color:var(--navy-2)}
+.topbar-stat{margin-left:auto;font-size:12.5px;color:var(--ink-3);white-space:nowrap}
+.topbar-stat b{color:var(--ink-2);font-weight:600}
+@media(max-width:1150px){.nav{display:none}.topbar-stat{font-size:11.5px}}
+
+/* ---------- hero ---------- */
+.hero{padding:48px 0 34px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#FAFCFE 0%,#FFFFFF 100%)}
+.hero h1{font-size:38px;letter-spacing:-.6px;line-height:1.25}
+.hero .sub{margin-top:14px;color:var(--ink-2);max-width:760px;font-size:15.5px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;padding:5px 12px;border-radius:999px;background:var(--tb);color:var(--t);border:1px solid var(--tbd);font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.stat{background:var(--bg-2);border-radius:var(--radius-s);padding:15px 18px;border-left:3px solid var(--navy-2)}
+.stat b{display:block;font-size:26px;font-weight:700;color:var(--navy-deep);line-height:1.2;letter-spacing:-.5px}
+.stat span{font-size:12.5px;color:var(--ink-3)}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:27px}}
+
+/* ---------- 两栏：左侧导航 + 正文 ---------- */
+.layout{display:grid;grid-template-columns:196px minmax(0,1fr);gap:34px;align-items:start}
+.sidenav{position:sticky;top:88px;padding:4px 0 20px}
+.sidenav-t{font-size:11.5px;color:var(--ink-3);letter-spacing:.14em;margin-bottom:12px;padding-left:11px}
+.sidenav a{display:flex;align-items:center;gap:9px;padding:8px 11px;border-radius:var(--radius-s);color:var(--ink-2);font-size:14px;font-weight:500;border-left:3px solid transparent;margin-bottom:2px;transition:background .14s}
+.sidenav a:hover{background:var(--bg-2);text-decoration:none;color:var(--ink)}
+.sidenav a i{width:8px;height:8px;border-radius:50%;background:var(--t);flex:none}
+.sidenav a.on{background:var(--tb);color:var(--t);border-left-color:var(--t);font-weight:600}
+.sidenav .side-note{margin-top:16px;padding:12px;border:1px solid var(--line);border-radius:var(--radius-s);font-size:12px;color:var(--ink-3);line-height:1.75;background:var(--bg-2)}
+@media(max-width:1150px){.layout{grid-template-columns:1fr}.sidenav{display:none}}
+
+/* ---------- sections ---------- */
+section.block{padding:44px 0 52px;border-bottom:1px solid var(--line)}
+section.block:last-child{border-bottom:0}
+.sec-head{margin-bottom:24px}
+.sec-no{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;color:var(--t,var(--ink-3));letter-spacing:.1em;font-weight:600;margin-bottom:8px}
+.sec-head h2{font-size:29px;letter-spacing:-.4px;color:var(--ink);padding-left:14px;border-left:5px solid var(--t,var(--navy-2));line-height:1.25}
+.sec-head p{color:var(--ink-2);font-size:14px;margin-top:12px;max-width:820px;padding-left:19px}
+@media(max-width:760px){.sec-head h2{font-size:23px}}
+
+/* ---------- filters ---------- */
+.filters{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:15px;margin-bottom:18px}
+.f-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.f-row+.f-row{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line-2)}
+input[type=text],input[type=search],select,textarea{border:1px solid var(--line-2);border-radius:var(--radius-s);padding:8px 12px;background:#fff;outline:none}
+input[type=text]:focus,input[type=search]:focus,select:focus,textarea:focus{border-color:var(--navy-2);box-shadow:0 0 0 3px rgba(24,95,165,.10)}
+.f-label{font-size:12.5px;color:var(--ink-3);margin-right:2px;white-space:nowrap}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line-2);border-radius:var(--radius-s);overflow:hidden;background:#fff}
+.seg button{border:0;background:transparent;padding:7px 13px;font-size:13px;color:var(--ink-2);border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button.on{background:var(--navy);color:#fff}
+.btn{border:1px solid var(--line-2);background:#fff;border-radius:var(--radius-s);padding:8px 15px;color:var(--ink-2)}
+.btn:hover{border-color:var(--navy-2);color:var(--navy)}
+.btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.primary:hover{background:var(--navy-deep);color:#fff}
+.btn.small{padding:6px 12px;font-size:13px}
+.grow{flex:1;min-width:190px}
+
+/* ---------- job cards ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(348px,1fr));gap:15px}
+.card{border:1px solid var(--line);border-left:4px solid var(--t);border-radius:var(--radius);padding:16px 16px 14px;background:#fff;display:flex;flex-direction:column;gap:10px;transition:box-shadow .15s,transform .15s}
+.card:hover{box-shadow:0 4px 18px rgba(22,35,46,.08);transform:translateY(-1px)}
+.card-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.card-unit{font-size:15.5px;font-weight:700;color:var(--ink);line-height:1.4}
+.card-title{font-size:13.5px;color:var(--ink-2);margin-top:4px}
+.bookmark{border:0;background:transparent;font-size:17px;line-height:1;color:var(--ink-3);padding:2px 4px;border-radius:6px;flex:none}
+.bookmark.on{color:var(--amber)}
+.bookmark:hover{background:var(--bg-3)}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11.5px;padding:3px 9px;border-radius:6px;background:var(--bg-3);color:var(--ink-2);border:1px solid var(--line);font-weight:500}
+.tag.track{background:var(--tb);color:var(--t);border-color:var(--tbd);font-weight:600}
+.tag.type{background:var(--green-soft);color:var(--green);border-color:#D6E7C2}
+.tag.grade{background:var(--amber-soft);color:var(--amber);border-color:#F0DDBB}
+.tag.fresh-today{background:#FCEBEB;color:#A32D2D;border-color:#F3CFCF;font-weight:700}
+.tag.fresh-new{background:#FDF3E3;color:#B45309;border-color:#F0DDBB;font-weight:700}
+.tag.fresh-week{background:#EAF3DE;color:#3B6D11;border-color:#C9E0A8;font-weight:600}
+.tag.fresh-month{background:#E4F4F9;color:#0B6E8F;border-color:#B6DFEB;font-weight:600}
+.tag.fresh-old{background:#EEF2F7;color:#44546A;border-color:#D3DCE6;font-weight:500}
+.datechip{font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap;flex:none}
+.req{font-size:12.5px;color:var(--ink-2);background:var(--bg-2);border-radius:var(--radius-s);padding:10px 12px;border:1px solid var(--line)}
+.card-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:2px}
+.card-foot .src{font-size:11.5px;color:var(--ink-3)}
+.card-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.empty{text-align:center;padding:48px 20px;color:var(--ink-3)}
+.more-wrap{text-align:center;margin-top:22px}
+
+/* ---------- platform nav ---------- */
+.cat-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.cat-tabs button{border:1px solid var(--line-2);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;color:var(--ink-2)}
+.cat-tabs button.on{background:var(--t);border-color:var(--t);color:#fff;font-weight:600}
+.plat-group{margin-bottom:28px}
+.plat-group h3{font-size:16px;display:flex;align-items:center;gap:10px;margin-bottom:13px;color:var(--t)}
+.plat-group h3 .bar{width:4px;height:17px;border-radius:2px;background:var(--t)}
+.plat-group h3 .cnt{font-size:12px;font-weight:400;color:var(--ink-3)}
+.plat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(276px,1fr));gap:11px}
+.plat{border:1px solid var(--line);border-top:3px solid var(--t);border-radius:var(--radius-s);padding:13px 15px;background:#fff;display:block;transition:border-color .15s,transform .15s,box-shadow .15s}
+.plat:hover{border-color:var(--t);text-decoration:none;transform:translateY(-2px);box-shadow:0 4px 14px rgba(22,35,46,.07)}
+.plat b{display:block;font-size:13.5px;font-weight:700;color:var(--ink)}
+.plat:hover b{color:var(--t)}
+.plat span{display:block;font-size:12px;color:var(--ink-3);margin-top:4px;line-height:1.55}
+.plat em{display:block;font-size:11px;color:var(--ink-3);font-style:normal;margin-top:7px;font-family:ui-monospace,Menlo,monospace;word-break:break-all}
+.plat .badge{display:inline-block;font-size:11px;padding:1.5px 7px;border-radius:5px;background:var(--tb);color:var(--t);margin-top:7px;font-weight:600}
+.plat.wx{cursor:pointer}
+.plat.wx b{color:var(--ink)}
+
+/* ---------- 城市专区 ---------- */
+.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
+.city{border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px;background:#fff}
+.city-h{display:flex;align-items:baseline;gap:9px;margin-bottom:9px}
+.city-h b{font-size:16px;font-weight:700}
+.city-h span{font-size:11.5px;color:var(--ink-3);background:var(--bg-3);padding:1.5px 8px;border-radius:5px}
+.city p{font-size:12.5px;color:var(--ink-2);line-height:1.75}
+.city b.f{color:var(--ink);font-weight:600}
+.city-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;padding-left:24px}
+.tl::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:var(--line-2)}
+.tl-item{position:relative;padding:0 0 24px 14px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-23px;top:7px;width:11px;height:11px;border-radius:50%;background:#fff;border:3px solid var(--navy-2)}
+.tl-item.now::before{background:var(--red);border-color:var(--red)}
+.tl-when{font-size:14px;font-weight:700;color:var(--navy)}
+.tl-item.now .tl-when{color:var(--red)}
+.tl-body{font-size:13.5px;color:var(--ink-2);margin-top:5px;max-width:900px}
+.tl-body b{color:var(--ink)}
+.tl-flag{display:inline-block;font-size:11px;padding:1.5px 8px;border-radius:5px;background:var(--red-soft);color:var(--red);margin-left:8px;vertical-align:1px;font-weight:600}
+
+/* ---------- 联系 ---------- */
+.contact-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.contact-card{border:1px solid var(--line);border-top:3px solid var(--t);border-radius:var(--radius);padding:17px;background:#fff}
+.contact-card .lab{font-size:12px;color:var(--ink-3);margin-bottom:7px;letter-spacing:.05em}
+.contact-card .val{font-size:16px;font-weight:700;color:var(--ink);word-break:break-all;line-height:1.5}
+.contact-card .val.pending{color:var(--amber);font-size:14px}
+.contact-card .note{font-size:12px;color:var(--ink-3);margin-top:8px;line-height:1.7}
+.contact-card .btn{margin-top:11px}
+.feedback{border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:var(--bg-2);margin-top:16px}
+.feedback h3{font-size:15px;margin-bottom:8px}
+.feedback ul{margin:0;padding-left:19px;font-size:13px;color:var(--ink-2);line-height:2}
+
+/* ---------- resume ---------- */
+.rs-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+@media(max-width:1000px){.rs-grid{grid-template-columns:1fr}}
+.panel{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:19px}
+.panel h3{font-size:15px;margin-bottom:4px}
+.panel .hint{font-size:12.5px;color:var(--ink-3);margin-bottom:14px}
+.panel textarea{width:100%;min-height:96px;resize:vertical;line-height:1.7;background:#fff}
+textarea#rsText{min-height:310px}
+.rs-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+.file-btn{position:relative;overflow:hidden;display:inline-block}
+.file-btn input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.pick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.pick button{border:1px solid var(--line-2);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;color:var(--ink-2)}
+.pick button.on{background:var(--navy-soft);border-color:#C9DEF5;color:var(--navy);font-weight:700}
+.score-box{display:flex;align-items:center;gap:20px;padding-bottom:17px;border-bottom:1px solid var(--line);margin-bottom:17px}
+.score-num{font-size:46px;font-weight:700;line-height:1;color:var(--navy);letter-spacing:-2px}
+.score-num.bad{color:var(--red)}
+.score-num.mid{color:var(--amber)}
+.score-num.good{color:var(--green)}
+.score-meta{font-size:13px;color:var(--ink-2)}
+.score-meta b{display:block;font-size:15px;color:var(--ink);margin-bottom:3px}
+.dim{margin-bottom:12px}
+.dim-top{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px}
+.dim-top span:last-child{color:var(--ink-3);font-variant-numeric:tabular-nums}
+.bar-bg{height:7px;background:var(--bg-3);border-radius:99px;overflow:hidden}
+.bar-fill{height:100%;border-radius:99px;background:var(--navy-2);transition:width .5s ease}
+.bar-fill.warn{background:var(--amber)}
+.bar-fill.bad{background:var(--red)}
+.bar-fill.ok{background:var(--green)}
+.issue{border-left:3px solid var(--line-2);padding:10px 0 10px 13px;margin-bottom:11px}
+.issue.high{border-color:var(--red)}
+.issue.mid{border-color:var(--amber)}
+.issue.low{border-color:var(--navy-2)}
+.issue b{display:block;font-size:13.5px;margin-bottom:3px}
+.issue p{font-size:12.5px;color:var(--ink-2)}
+.kw{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.kw span{font-size:12px;padding:3px 9px;border-radius:6px;background:var(--red-soft);color:var(--red);border:1px solid #F3CFCF}
+.kw span.hit{background:var(--green-soft);color:var(--green);border-color:#D6E7C2}
+.placeholder{color:var(--ink-3);font-size:13.5px;text-align:center;padding:44px 10px;line-height:1.9}
+
+/* ---------- 互助留言板 ---------- */
+.board-banner{display:flex;align-items:flex-start;gap:12px;background:var(--tb);border:1px solid var(--tbd);border-radius:var(--radius);padding:14px 16px;font-size:13px;color:var(--ink-2);line-height:1.8;margin-bottom:16px}
+.board-banner b{color:var(--t)}
+.board-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.board-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:13px}
+.bcard{border:1px solid var(--line);border-top:3px solid var(--t);border-radius:var(--radius);padding:15px 16px;background:#fff;display:flex;flex-direction:column;gap:10px}
+.bcard.seed{opacity:.82;border-style:dashed}
+.bcard-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.bcard-title{font-size:15.5px;font-weight:700;color:var(--ink);line-height:1.45}
+.bcard-time{font-size:11.5px;color:var(--ink-3);white-space:nowrap}
+.bcard-meta{display:flex;flex-wrap:wrap;gap:6px}
+.bcard-text{font-size:13px;color:var(--ink-2);background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius-s);padding:10px 12px;line-height:1.7}
+.bcard-contact{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px}
+.bcard-contact .clab{font-size:12px;color:var(--ink-3)}
+.bcard-contact b{font-weight:600}
+.bcard-foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;gap:10px}
+.bcard-foot .src{font-size:11.5px;color:var(--ink-3)}
+.nice-btn{border:1px solid var(--line-2);background:#fff;border-radius:999px;padding:5px 13px;font-size:13px;color:var(--ink-2);display:inline-flex;align-items:center;gap:5px}
+.nice-btn.on{background:var(--green-soft);border-color:#C9E0A8;color:var(--green);font-weight:600}
+.board-form{border:1px solid var(--line);border-radius:var(--radius);background:var(--bg-2);padding:18px;margin-bottom:18px}
+.board-form h4{font-size:15px;margin-bottom:12px}
+.board-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+@media(max-width:640px){.board-form .row{grid-template-columns:1fr}}
+.board-form input,.board-form select,.board-form textarea{width:100%}
+.board-form label{display:block;font-size:12.5px;color:var(--ink-2);margin-bottom:5px}
+.board-form textarea{min-height:80px;resize:vertical}
+.board-hidden{display:none}
+.gate{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.gate-card{border:1px solid var(--line);border-top:4px solid var(--t);border-radius:var(--radius);padding:20px 20px 18px;background:#fff;display:flex;flex-direction:column;gap:10px;transition:box-shadow .15s,transform .15s}
+.gate-card:hover{border-color:var(--t);box-shadow:0 6px 20px rgba(22,35,46,.08);transform:translateY(-2px);text-decoration:none}
+.gate-ico{font-size:26px;line-height:1;color:var(--t)}
+.gate-t{font-size:18px;font-weight:700;color:var(--ink)}
+.gate-d{font-size:13px;color:var(--ink-2);line-height:1.7}
+.gate-go{font-size:13px;font-weight:600;color:var(--t);margin-top:2px}
+
+/* ---------- footer ---------- */
+footer{padding:36px 0 50px;color:var(--ink-3);font-size:12.5px;background:var(--bg-2);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer b{color:var(--ink-2)}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,16px);background:var(--ink);color:#fff;font-size:13px;padding:10px 20px;border-radius:99px;opacity:0;pointer-events:none;transition:all .25s;z-index:99}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media print{.topbar,.sidenav,.filters,.rs-tools,.cat-tabs,.toast,footer{display:none!important}.layout{grid-template-columns:1fr}}
+
+/* ================= 双非友好度（v9 新增） ================= */
+.f-row-hero{background:linear-gradient(180deg,#F2F8F4,#FAFCFA);border:1px solid #CFE5D6;border-radius:12px;padding:11px 14px!important;margin-bottom:4px}
+.f-label.strong{font-weight:700;color:#1B7F4E;font-size:13.5px}
+.f-note{font-size:12.5px;color:var(--ink-3);margin-left:auto}
+.good-btn{background:#1B7F4E!important;color:#fff!important;border-color:#1B7F4E!important}
+.good-btn:hover{background:#166B41!important}
+.good-btn.on{background:#0F4F30!important;box-shadow:0 0 0 3px rgba(27,127,78,.16)}
+
+.fr-bar{display:flex;align-items:flex-start;gap:8px;margin:8px 0 2px;padding:7px 10px;border-radius:8px;
+  background:var(--frbg);border:1px solid var(--frbd)}
+.fr-badge{flex-shrink:0;font-size:12px;font-weight:700;color:var(--frc);letter-spacing:.2px;
+  padding:1px 7px;border-radius:5px;background:#fff;border:1px solid var(--frbd)}
+.fr-why{font-size:12.5px;line-height:1.6;color:var(--frc);opacity:.92}
+.card.fr-good{border-left:4px solid #1B7F4E}
+.card.fr-mid{border-left:4px solid #C9973A}
+.card.fr-hard{border-left:4px solid #C0C0C8}
+.card.fr-hard .card-unit{color:var(--ink-2)}
+
+.req.pay{background:#F2F8F4;border-color:#CFE5D6;color:#1B7F4E;font-weight:700}
+.req.pay-none{background:#FAFAFB;border-color:#E8E8EC;color:var(--ink-3);font-size:12.5px;font-style:normal}
+
+.cnt-good{color:#1B7F4E}
+.cnt-hard{color:#8A8A94}
+
+/* 卡片上「非应届可报」的特殊提示 */
+.tag.solid-nbj{background:#FFF1F0;color:#B23B2E;border:1px solid #F3CFCF;font-weight:600}
+@media(max-width:720px){
+  .f-row-hero{flex-wrap:wrap}
+  .f-note{margin-left:0;width:100%}
+  .fr-bar{flex-direction:column;gap:4px}
+}
+
+/* ================= 02 双非怎么打（v9 新增板块） ================= */
+.pb-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media(max-width:900px){.pb-grid{grid-template-columns:1fr}}
+.pb-card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--t);border-radius:12px;padding:18px 20px 16px}
+.pb-no{font-size:12px;font-weight:700;color:var(--t);letter-spacing:1.4px;opacity:.75;margin-bottom:4px}
+.pb-card h3{font-size:16.5px;margin:0 0 4px;color:var(--ink)}
+.pb-card .pb-sub{font-size:13px;color:var(--ink-3);margin:0 0 12px}
+.pb-card p{margin:0 0 10px;font-size:14.5px;line-height:1.75;color:var(--ink-2)}
+.pb-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.pb-list li{font-size:14.5px;line-height:1.7;color:var(--ink-2);padding-left:22px;position:relative}
+.pb-list li::before{content:"";position:absolute;left:6px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--t);opacity:.6}
+.pb-list li b{color:var(--ink);font-weight:600}
+.pb-list li em{font-style:normal;color:var(--t);font-weight:600}
+.pb-quote{background:var(--tb);border:1px solid var(--tbd);border-radius:10px;padding:12px 15px;font-size:14px;line-height:1.75;color:var(--ink-2);margin:12px 0 0}
+.pb-quote b{color:var(--ink)}
+.pb-template{margin-top:16px;background:#fff;border:1px dashed var(--tbd);border-radius:12px;padding:18px 20px}
+.pb-template h3{font-size:15.5px;margin:0 0 4px;color:var(--ink)}
+.pb-template .pb-sub{font-size:13px;color:var(--ink-3);margin:0 0 12px}
+.pb-template pre{background:#F8FAF9;border:1px solid var(--line);border-radius:8px;padding:14px 16px;font:13px/1.85 ui-monospace,Menlo,Consolas,"PingFang SC","Microsoft YaHei",monospace;color:var(--ink-2);overflow:auto;white-space:pre-wrap;word-break:break-word;margin:0}
+.pb-template pre b{color:var(--ink);font-weight:600}
+.pb-template .btn{margin-top:12px}
+.pb-3col{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+@media(max-width:820px){.pb-3col{grid-template-columns:1fr}}
+.pb-tier{border:1px solid var(--line);border-radius:10px;padding:13px 15px;background:#fff}
+.pb-tier b{display:block;font-size:14px;margin-bottom:6px}
+.pb-tier.safe b{color:#1B7F4E} .pb-tier.goal b{color:#8A5A0B} .pb-tier.sprint b{color:#A32D2D}
+.pb-tier ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.8;color:var(--ink-2)}
+
+</style>
+</head>
+<body>
+<h2 class="sr">法学生秋招实习导航站：岗位聚合、平台跳转、城市专区与简历诊断</h2>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top" aria-label="法途 · 法学生秋招实习导航">
+      <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="48" cy="48" r="40" fill="none" stroke="#1B3A63" stroke-width="7"/>
+        <path d="M48 24 V64" stroke="#1B3A63" stroke-width="7" stroke-linecap="round"/>
+        <path d="M36 64 H60" stroke="#1B3A63" stroke-width="7" stroke-linecap="round"/>
+        <path d="M24 56 L67 35" stroke="#1B3A63" stroke-width="7" stroke-linecap="round"/>
+        <polygon points="77,30 70,41 64,29" fill="#1B3A63"/>
+        <path d="M28 54 V58" stroke="#1B3A63" stroke-width="4" stroke-linecap="round"/>
+        <polygon points="21,58 35,58 28,66" fill="#1B3A63"/>
+        <path d="M58 39 V43" stroke="#1B3A63" stroke-width="4" stroke-linecap="round"/>
+        <polygon points="51,43 65,43 58,51" fill="#1B3A63"/>
+      </svg>
+      <span class="brand-word">法途</span>
+      <small>法学生秋招实习导航</small>
+    </a>
+    <nav class="nav">
+      <a href="#jobs">岗位库</a>
+      <a href="#playbook">双非怎么打</a>
+      <a href="#platforms">平台导航</a>
+      <a href="#cities">城市专区</a>
+      <a href="#calendar">秋招日历</a>
+      <a href="#resume">简历诊断</a>
+      <a href="#board">互助留言板</a>
+      <a href="#contact">联系与建议</a>
+    </nav>
+    <div class="topbar-stat">数据截至 <b id="updated">2026-09-13</b> · <b id="stVer">2027 届秋招</b></div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <h1>法学生的秋招与实习，一处找齐</h1>
+    <p class="sub">把散落在律所官网、高校就业网、招聘公众号和小红书里的法学岗位收拢到一处：能搜、能筛、能一键跳到官方投递入口。大三找第一份实习、大四冲刺留用、应届生转方向——都从这里开始。</p>
+    <div class="hero-tags">
+      <span class="chip" data-t="lawfirm">律所 · 红圈 / 精品 / 外资</span>
+      <span class="chip" data-t="inhouse">企业法务</span>
+      <span class="chip" data-t="soe">国企央企</span>
+      <span class="chip" data-t="bank">银行券商</span>
+      <span class="chip" data-t="gov">体制内</span>
+      <span class="chip" data-t="media">法律新媒体</span>
+      <span class="chip" data-t="legaltech">法律科技</span>
+      <span class="chip" data-t="moot">竞赛学术</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="stJobs">0</b><span>在招岗位与项目</span></div>
+      <div class="stat"><b id="stPlat">0</b><span>官方平台与渠道</span></div>
+      <div class="stat"><b id="stCity">0</b><span>覆盖城市 / 地区</span></div>
+      <div class="stat"><b>10</b><span>简历诊断维度</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<div class="layout">
+
+  <aside class="sidenav">
+    <div class="sidenav-t">目录</div>
+    <a href="#jobs" data-t="all"><i></i>岗位库</a>
+    <a href="#playbook" data-t="path"><i></i>双非怎么打</a>
+    <a href="#platforms" data-t="soe"><i></i>平台导航</a>
+    <a href="#cities" data-t="lawfirm"><i></i>城市专区</a>
+    <a href="#calendar" data-t="bank"><i></i>秋招日历</a>
+    <a href="#resume" data-t="inhouse"><i></i>简历诊断</a>
+    <a href="#board" data-t="legaltech"><i></i>互助留言板</a>
+    <a href="#contact" data-t="moot"><i></i>联系与建议</a>
+    <div class="side-note">
+      岗位每天更新。<br>发现链接失效或想补充岗位，去底部「联系与建议」告诉我。
+    </div>
+  </aside>
+
+  <div class="main">
+
+    <!-- ================= 01 岗位库 ================= -->
+    <section class="block" id="jobs" data-t="all">
+      <div class="sec-head">
+        <div class="sec-no">01 / 岗位库</div>
+        <h2>在招岗位与实习项目</h2>
+        <p><b>先说最重要的一句：每一条岗位都标了「双非友好度」。</b>因为法学生的院校背景差异很大，同样的岗位列表，五院四系和双非看到的应该是完全不同的东西。所以我把 89 条岗位逐条读了招聘公告，分成三档 —— <b style="color:#1B7F4E">双非友好</b>（本科可投、不限院校，正常投递有戏）、<b style="color:#8A5A0B">有门槛</b>（需法考 / 硕士，或竞争激烈，努力够得着）、<b style="color:#7A7A7A">高门槛</b>（明确卡院校层次，双非大概率被卡）。<br><br>列表<b>默认按友好度排序</b>，能投的排在最前面；如果你想，用下面第一行的「按我的条件筛」一键收敛。按赛道另有配色区分（绿=律所、蓝=国企央企、紫=企业法务、琥珀=银行券商、红=体制内），卡片右下角标了<b>发布时间</b>，左上角的彩色标签告诉你这条有多新。<b>薪酬没拿到的，我如实写「公告未标注」，没有编数字。</b></p>
+      </div>
+
+      <div class="filters">
+        <div class="f-row f-row-hero">
+          <span class="f-label strong">按我的条件筛</span>
+          <select id="fFriendly">
+            <option value="全部">全部岗位（按友好度排序）</option>
+            <option value="good">双非友好 —— 本科可投、不限院校</option>
+            <option value="mid">有门槛 —— 需法考 / 硕士</option>
+            <option value="hard">高门槛 —— 卡院校层次</option>
+          </select>
+          <button class="btn small good-btn" data-onlygood>只看「双非友好」</button>
+          <span class="f-note">我是双非，先看我够得着的 ↓</span>
+        </div>
+        <div class="f-row">
+          <input type="search" id="fQ" class="grow" placeholder="搜岗位关键词，如：争议解决 / 合规 / 实习生 / 武汉 / 敬卓 / 金杜">
+          <span class="f-label">发布时间</span>
+          <select id="fFresh">
+            <option value="全部">全部时间</option>
+            <option value="今日更新">今日更新</option>
+            <option value="3 天内">3 天内</option>
+            <option value="本周内">本周内</option>
+            <option value="本月内">本月内</option>
+          </select>
+          <span class="f-label">排序</span>
+          <select id="fSort">
+            <option value="friendly">友好度优先（默认）</option>
+            <option value="updated">最新发布</option>
+            <option value="hot">重点优先</option>
+            <option value="deadline">有截止日期的优先</option>
+          </select>
+        </div>
+        <div class="f-row">
+          <span class="f-label">届别身份</span>
+          <span class="seg" id="fCohort">
+            <button class="on" data-v="全部">全部</button>
+            <button data-v="大三 / 大四在校">大三 / 大四在校</button>
+            <button data-v="2027 届">2027 届</button>
+            <button data-v="2028 届">2028 届</button>
+            <button data-v="应届 / 刚毕业">应届 / 刚毕业</button>
+            <button data-v="非应届可报">非应届可报</button>
+          </span>
+        </div>
+        <div class="f-row">
+          <span class="f-label">赛道</span><select id="fTrack"></select>
+          <span class="f-label">类型</span><select id="fType"></select>
+          <span class="f-label">地区</span><select id="fCity"></select>
+          <label style="display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--ink-2)">
+            <input type="checkbox" id="fBm"> 只看收藏
+          </label>
+          <span style="flex:1"></span>
+          <button class="btn small" id="fExport">导出当前结果 CSV</button>
+          <button class="btn small" id="fReset">重置筛选</button>
+        </div>
+      </div>
+
+      <div style="font-size:13px;color:var(--ink-3);margin-bottom:12px" id="jobCount">—</div>
+      <div class="grid" id="jobGrid"></div>
+      <div class="more-wrap" id="jobMore"></div>
+    </section>
+
+    <!-- ================= 02 双非怎么打 ================= -->
+    <section class="block" id="playbook" data-t="path">
+      <div class="sec-head">
+        <div class="sec-no">02 / 双非怎么打</div>
+        <h2>院校背景不占优，不是没路，是路线问题</h2>
+        <p>这一板块是专门写给「本科不是五院四系、也不是 985 / 211」的同学的。同样一份岗位列表，名校生看到的是选择，双非看到的常常是门槛——而真正能改变结果的，其实是<b>顺序</b>：先拿到第一份实务经历，再用法考和作品去换更好的岗位。<b>下面四件事，今天就能开始做。</b></p>
+      </div>
+
+      <div class="pb-grid">
+
+        <div class="pb-card">
+          <div class="pb-no">01</div>
+          <h3>第一份实习怎么破局</h3>
+          <p class="pb-sub">双非最大的死结是「没有实习 → 拿不到实习」。按这个顺序破：</p>
+          <ul class="pb-list">
+            <li><b>法院 / 检察院实习是第一块敲门砖</b>——对院校要求最低，中院与基层法院都招。直接打电话问政治部，或走学校推荐。</li>
+            <li><b>法律援助中心 / 公共法律服务中心</b>——门槛最低，会做接待、会写简单材料就能进，还能接触真实案件。</li>
+            <li><b>本地中小所，主动投递</b>——本地所老板更关心你「能不能干活」。别只等招聘公告，直接把简历发到律所邮箱。</li>
+            <li><b>师兄师姐内推</b>——法学生的实习，一半靠熟人。别怕开口，在班级群、校友群里问一声。</li>
+            <li><b>校内可积累的「准实务」</b>——模拟法庭、法律诊所、法律援助案件、老师课题的法律检索，都算得上简历上的实务经历。</li>
+          </ul>
+        </div>
+
+        <div class="pb-card">
+          <div class="pb-no">02</div>
+          <h3>法考：双非最该下注的一件事</h3>
+          <p class="pb-sub">它是少数「不看你哪个学校」的硬通货。</p>
+          <ul class="pb-list">
+            <li><b>过了法考，能投的岗位会明显变多</b>——公证处、法检聘用制、律所助理岗、企业法务、银行法律岗，很多都把法考写成门槛。</li>
+            <li><b>时间建议：大三考客观题，大四考主观题。</b>别拖到毕业后再准备，那时你已经在找工作了。</li>
+            <li><b>没过也别慌</b>——站里已标出「对通过法考无强制要求」的岗位（比如广东深宝南宁），那些就是给你留的。</li>
+            <li><b>投递时如实写</b>——「客观题已通过 / 主观题 XX 月应考」比只写「已通过客观题」清楚得多，别让 HR 猜。</li>
+          </ul>
+          <div class="pb-quote"><b>换个角度想：</b>院校是你改不了的，法考、实习产出、写作样本是你改得了的。把时间投向能改变的事情。</div>
+        </div>
+
+        <div class="pb-card">
+          <div class="pb-no">03</div>
+          <h3>梯度投递：保底 / 目标 / 冲刺</h3>
+          <p class="pb-sub">别只投一类岗位，也别把精力全押在最难的上面。</p>
+          <div class="pb-3col">
+            <div class="pb-tier safe">
+              <b>保底（务必投满）</b>
+              <ul><li>地方中小所实习</li><li>法援 / 公共法律服务中心</li><li>法检聘用制书记员</li><li>公证员助理</li></ul>
+            </div>
+            <div class="pb-tier goal">
+              <b>目标（重点投）</b>
+              <ul><li>国企央企法务（社招）</li><li>银行分行法律岗</li><li>法律科技 / 新媒体</li><li>地级市律所</li></ul>
+            </div>
+            <div class="pb-tier sprint">
+              <b>冲刺（有机会就投）</b>
+              <ul><li>红圈所非京沪分所</li><li>精品所</li><li>大厂法务</li><li>省属国企总部</li></ul>
+            </div>
+          </div>
+          <div class="pb-quote"><b>每天固定 30 分钟投递。</b>投 10 家拿到的面试，一定比纠结 1 家多。被拒了就换下一家——别复盘情绪，只复盘材料。</div>
+        </div>
+
+        <div class="pb-card">
+          <div class="pb-no">04</div>
+          <h3>两年后，你能去哪</h3>
+          <p class="pb-sub">第一份工作不是终点，是跳板。从两年后倒推现在该做什么。</p>
+          <ul class="pb-list">
+            <li><b>地方所 2 年 → 精品所 / 大所分所</b>：靠「能独立办案 + 有案子可讲」。从现在起，把办过的每件事记下来。</li>
+            <li><b>企业法务 2 年 → 大厂法务</b>：靠「懂业务 + 搭过合规体系」。别只做合同审查，主动接合规、数据、知产项目。</li>
+            <li><b>法检聘用制 2 年 → 公务员 / 律师</b>：靠「熟悉程序 + 人脉积累」。这两年备考公务员的时间成本最低。</li>
+            <li><b>无论走哪条路：留一份「作品集」。</b>写过的文书、办过的案子、做过的项目——它是你三年后跳槽时唯一不看出身的东西。</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pb-template">
+        <h3>附：主动投递本地律所的邮件模板（直接抄）</h3>
+        <p class="pb-sub">本地中小所未必发招聘公告，但常年需要能干活的人。一封写清楚的邮件，比海投效率高得多。</p>
+        <pre>主题：应聘实习生｜XX大学法学院｜张三｜可实习 3 个月（每周 5 天）
+
+尊敬的 XX 律师（或：贵所人事负责人）：
+
+您好。我是 XX 大学法学院法学专业 X 年级学生张三，<b>已通过 2025 年法考
+客观题</b>，预计 2027 年 6 月毕业。
+
+我在 XX 法院民庭实习过 X 个月，协助整理卷宗、撰写庭审笔录与法律检索
+报告；也在 XX 律所实习期间审阅过 X 份合同。<b>我附上了一份自己写的检索
+报告（或代理意见），供您参考我的写作水平。</b>
+
+我人在 XX，可随时到岗，能保证连续实习 X 个月、每周 X 天。如果贵所有
+实习岗位，希望有一次面谈的机会。
+
+顺颂 商祺
+
+张三｜138-XXXX-XXXX｜邮箱</pre>
+        <button class="btn small" id="pbCopy">复制这份模板</button>
+      </div>
+    </section>
+
+    <!-- ================= 03 平台导航 ================= -->
+    <section class="block" id="platforms" data-t="soe">
+      <div class="sec-head">
+        <div class="sec-no">03 / 平台导航</div>
+        <h2>全部官方入口，直接跳转</h2>
+        <p>法学生真正会用到的渠道：综合招聘平台、律所官网、律协、企业法务招聘页、央企与银行平台、公考入口、法律新媒体、法律科技，以及法律圈最活跃的求职公众号和小红书博主。带账号的卡片点一下就能复制，粘贴到微信或小红书直接搜。</p>
+      </div>
+      <div class="cat-tabs" id="platTabs"></div>
+      <div id="platWrap"></div>
+    </section>
+
+    <!-- ================= 03 城市专区 ================= -->
+    <section class="block" id="cities" data-t="lawfirm">
+      <div class="sec-head">
+        <div class="sec-no">04 / 城市专区</div>
+        <h2>别只盯京沪，这些城市机会也不少</h2>
+        <p>武汉、成都、重庆、杭州、南京、苏州、西安、天津、长沙、深圳、广州——每个城市都列出了代表律所/机构和本地最有效的投递渠道。城市选对了，竞争的难度会明显下降。</p>
+      </div>
+      <div class="city-grid" id="cityGrid"></div>
+    </section>
+
+    <!-- ================= 04 秋招日历 ================= -->
+    <section class="block" id="calendar" data-t="bank">
+      <div class="sec-head">
+        <div class="sec-no">05 / 秋招日历</div>
+        <h2>法学生专属时间线</h2>
+        <p>律所、国企、银行、公考四条线的时间节点并不重合，错过一个窗口就要再等一年。下面是按法学生节奏排的 2026–2027 关键节点。</p>
+      </div>
+      <div class="tl" id="tl"></div>
+    </section>
+
+    <!-- ================= 05 简历诊断 ================= -->
+    <section class="block" id="resume" data-t="inhouse">
+      <div class="sec-head">
+        <div class="sec-no">06 / 简历诊断</div>
+        <h2>法学生简历诊断</h2>
+        <p>三步：<b>① 选目标求职意向</b>（红圈所 / 诉讼 / 国企法务 / 银行 / 企业法务 / 体制内）→ <b>② 粘贴或上传简历</b>（支持 .pdf / .docx / .txt，自动修正 PDF 提取产生的空格错位）→ <b>③ 可选粘贴目标岗位 JD</b>。诊断会给出十维度打分，并把你的简历与目标岗位的要求<b>逐项比对</b>，直接告诉你缺哪几项、每一条该怎么补。全部在你的浏览器里计算，简历内容不会上传到任何服务器。</p>
+      </div>
+
+      <div class="rs-grid">
+        <div class="panel">
+          <h3>① 选择目标求职意向</h3>
+          <p class="hint">方向不同，比对的要求不同 —— 律所看检索与文书，国企看合规与制度，体制内看公文与法检经历。<b>院校背景不占优的同学，建议直接选最后一档「地方所 / 中小企业法务 / 法检聘用制」</b>，那是按你能改变的条件来比的，不会拿红圈所的标准压你。</p>
+          <div class="pick" id="rsTarget">
+            <button class="on" data-v="circle">红圈所 · 资本市场/非诉</button>
+            <button data-v="litigation">精品所 · 诉讼/争议解决</button>
+            <button data-v="soe">国企 / 央企法务</button>
+            <button data-v="bank">银行 / 券商 · 法律合规</button>
+            <button data-v="inhouse">企业法务（互联网/科技）</button>
+            <button data-v="gov">体制内 · 公考/法检</button>
+            <button data-v="local">地方所 / 中小企业法务 / 法检聘用制</button>
+          </div>
+          <div id="rsExample" style="font-size:12px;color:var(--ink-3);background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius-s);padding:11px 13px;line-height:1.85"></div>
+
+          <h3 style="margin-top:18px">② 粘贴或上传简历</h3>
+          <p class="hint">支持粘贴文本，或上传 .txt / .md / .pdf。如果你只有 Word 文件，请先全选复制粘贴进来。</p>
+          <textarea id="rsText" placeholder="把简历全文粘贴到这里，例如：
+
+张三
+手机：138-0000-0000　邮箱：xxx@outlook.com　政治面貌：共青团员
+求职意向：律所实习生
+
+教育背景
+2023.09–2027.06　某某大学 法学院 法学专业 本科
+GPA 3.7/4.0（专业排名前 15%）
+
+法律职业资格
+2026 年国家统一法律职业资格考试（客观题已报考）
+
+实习经历
+2026.07–2026.09　某某律师事务所 实习生
+- 协助整理卷宗 12 卷，参与起草法律文书 6 篇
+……"></textarea>
+
+          <h3 style="margin-top:20px">③（可选）粘贴目标岗位的 JD</h3>
+          <p class="hint">从招聘公告里复制岗位要求贴进来，诊断会改成<b>按这份 JD 逐词比对</b>，告诉你这份简历离它差在哪、该怎么补。留空则按①选的方向做通用比对。</p>
+          <textarea id="rsJD" style="min-height:96px" placeholder="例如：&#10;1. 国内外知名法学院 2027 届在读研究生；&#10;2. 有知名律所相关实习经验优先；&#10;3. 通过司法考试，英语可作为工作语言；&#10;4. 可于近期到岗并全职实习。"></textarea>
+
+          <div class="rs-tools">
+            <button class="btn primary" id="btnDiag">开始诊断</button>
+            <span class="btn file-btn">上传文件<input type="file" id="rsFile" accept=".txt,.md,.pdf,.docx"></span>
+            <button class="btn" id="btnDemo">填入示例简历</button>
+          </div>
+          <p class="hint" style="margin-top:10px;margin-bottom:0">支持 .txt / .md / .pdf，也可以直接把文字粘贴进来。Word 文件请先全选复制。<b>诊断全在本地浏览器完成，内容不会上传。</b></p>
+        </div>
+
+        <div id="rsOut">
+          <div class="panel">
+            <div class="placeholder">
+              诊断结果会显示在这里：<br>
+              综合得分 · 十维度得分条 · 关键词匹配度 · 问题清单
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 06 互助留言板 ================= -->
+    <section class="block" id="board" data-t="legaltech">
+      <div class="sec-head">
+        <div class="sec-no">07 / 互助留言板</div>
+        <h2>岗位接力 · 互助留言</h2>
+        <p>实习结束、岗位空缺？把位置接力给下一个人。这里接入了<b>飞书多维表格</b>作为后端：任何人在「飞书表单」里匿名留下岗位与联系方式，所有人在「飞书看板」里按<b>最新优先</b>查看、一键复制联系方式。</p>
+      </div>
+
+      <div class="gate">
+        <a class="gate-card" data-t="legaltech" href="https://bcn6q0jyn9vb.feishu.cn/share/base/form/shrcnT9wqE74zoCq8PwJBmzOQ8e" target="_blank" rel="noopener">
+          <div class="gate-ico">✎</div>
+          <div class="gate-t">我要留一个岗位</div>
+          <div class="gate-d">打开飞书表单，匿名填写、无需登录。写下单位、城市、你的联系方式，让后来者能加上你。</div>
+          <div class="gate-go">去填写 →</div>
+        </a>
+        <a class="gate-card" data-t="soe" href="https://mcp.edgeone.site/share/XhQHPzg3wF3QEa8bmK2OD" target="_blank" rel="noopener">
+          <div class="gate-ico">▤</div>
+          <div class="card-t">查看全部留言</div>
+          <div class="card-d">打开镜像留言板（已按「最新优先」排序）。看到合适的岗位，直接复制对方联系方式。<b>无需登录飞书</b>。</div>
+          <div class="gate-go">去看镜像 →</div>
+        </a>
+      </div>
+
+      <div class="board-banner" data-t="legaltech" style="margin-top:16px">
+        <b>怎么用：</b>① 找工作/实习的人点「查看全部留言」——会打开我们每天镜像的公开页，<b>不需要登录</b>；② 刚结束一段不错实习的人点「我要留一个岗位」，通过飞书表单匿名填写（也无需登录）；③ 留言会在每天 08:30 自动同步到镜像页。<b>提醒：</b>联系方式公开可见，建议留微信号而非手机号。
+      </div>
+    </section>
+
+<!-- ================= 07 联系与建议 ================= -->
+    <section class="block" id="contact" data-t="moot">
+      <div class="sec-head">
+        <div class="sec-no">08 / 联系与建议</div>
+        <h2>发现漏掉的岗位？直接告诉我</h2>
+        <p>这个站是我自己整理的，岗位和渠道难免有遗漏或过期的。你看到的任何一条新信息、任何一个失效链接，发给我都很有用。</p>
+      </div>
+      <div class="contact-wrap" id="contactWrap"></div>
+      <div class="feedback">
+        <h3>欢迎投递这几类信息</h3>
+        <ul id="feedbackList"></ul>
+      </div>
+    </section>
+
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>法途 · 法学生秋招实习导航</b><br>
+      岗位与时间信息整理自公开渠道（律所官网、高校就业信息网、招聘公众号、小红书、国聘网、智联招聘、BOSS直聘等）。投递前请以用人单位最新公告为准。
+    </div>
+    <div style="max-width:430px">
+      本站不收费、不内推、不代投。凡是向你收取「内推费」「保过费」的都是诈骗。简历诊断在本地浏览器完成，不上传任何内容。
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+
+
+
+
+
+<script>
+/* 数据层：岗位库 / 平台导航 / 秋招日历
+   岗位与时间信息整理自公开渠道（律所官网、高校就业信息网、国聘网、企业招聘平台等），
+   投递前请以用人单位最新公告为准。 */
+
+const META = {
+  updated: "2026-09-13",
+  version: "2027 届秋招",
+};
+
+/* ========== 一、岗位库 ========== */
+const JOBS = [
+  /* ---- 律所 · 红圈 / 精品 ---- */
+  {
+    unit: "金杜律师事务所（成都）", track: "律所", subtype: "红圈所",
+    title: "实习生 — 公司证券、金融资本市场业务", city: "成都",
+    grade: "本科及以上", cohort: "2027届", type: "实习", retention: "表现优异可留用",
+    req: "法学类专业；有资本市场或证券业务兴趣；能近期到岗。",
+    contact: "西南政法大学 2027 届秋季双选会展位投递",
+    url: "https://www.kwm.com/zh/cn/", deadline: "2026-09-22", updated: "2026-09-13",
+    source: "西南政法大学就业信息网", hot: true
+  },
+  {
+    unit: "金杜律师事务所（成都）", track: "律所", subtype: "红圈所",
+    title: "实习生 — 上市公司重组、债务重组", city: "成都",
+    grade: "硕士及以上", cohort: "2027届", type: "实习", retention: "可留用",
+    req: "审计、应用统计、法学、金融等相关专业硕士。",
+    contact: "西南政法大学双选会展位投递", url: "https://www.kwm.com/zh/cn/",
+    deadline: "2026-09-22", updated: "2026-09-13", source: "西南政法大学就业信息网"
+  },
+  {
+    unit: "金杜律师事务所（成都）", track: "律所", subtype: "红圈所",
+    title: "实习生 — 跨境监管、一带一路国际业务", city: "成都",
+    grade: "硕士及以上", cohort: "2027届", type: "实习", retention: "可留用",
+    req: "法学；英语可作为工作语言者优先。",
+    contact: "西南政法大学双选会展位投递", url: "https://www.kwm.com/zh/cn/",
+    deadline: "2026-09-22", updated: "2026-09-13", source: "西南政法大学就业信息网"
+  },
+  {
+    unit: "金杜律师事务所（重庆）", track: "律所", subtype: "红圈所",
+    title: "律师助理 — 资产证券化 / 结构融资", city: "重庆",
+    grade: "本科及以上", cohort: "2027届", type: "全职", retention: "正式岗位",
+    req: "法学类；有志长期从事非诉业务。",
+    contact: "西南政法大学双选会展位投递", url: "https://www.kwm.com/zh/cn/",
+    deadline: "2026-09-22", updated: "2026-09-13", source: "西南政法大学就业信息网"
+  },
+  {
+    unit: "金杜律师事务所（北京）", track: "律所", subtype: "红圈所",
+    title: "实习生 — 劳动法方向（面向 2027 届）", city: "北京",
+    grade: "在读", cohort: "2027届", type: "实习", retention: "可留用",
+    req: "对劳动法业务有明确兴趣。", contact: "官网「加入我们」在线投递",
+    url: "https://www.kwm.com/zh/cn/", deadline: "", updated: "2026-08-28",
+    source: "应届生求职网"
+  },
+  {
+    unit: "金杜律师事务所（北京）", track: "律所", subtype: "红圈所",
+    title: "实习生 — 国企合规方向", city: "北京",
+    grade: "在读", cohort: "2027届", type: "实习", retention: "可留用",
+    req: "对合规律师业务有兴趣；国企合规方向加分。", contact: "官网「加入我们」在线投递",
+    url: "https://www.kwm.com/zh/cn/", deadline: "", updated: "2026-08-27",
+    source: "应届生求职网"
+  },
+  {
+    unit: "中伦律师事务所（上海）", track: "律所", subtype: "红圈所",
+    title: "法律实习生 — 争议解决部 金融商事诉讼", city: "上海",
+    grade: "研究生", cohort: "2027届", type: "实习", retention: "表现优异有留用机会",
+    req: "国内外知名法学院 2027 届在读研究生；有知名律所实习经验优先；通过司法考试；英语可作为工作语言；可近期到岗且全职实习。",
+    contact: "weiyongqi@zhonglun.com（姓名+学校+专业）",
+    url: "https://www.zhonglun.com/", deadline: "", updated: "2026-09-13",
+    source: "法线职通 9 月推送", hot: true
+  },
+  {
+    unit: "中伦律师事务所（上海）", track: "律所", subtype: "红圈所",
+    title: "法律实习生 — 争议解决部 海事海商", city: "上海",
+    grade: "本科或研究生", cohort: "2027届", type: "实习", retention: "表现优异有留用机会",
+    req: "2027 届在读本科或研究生；有海事海商类律所实习经验优先；通过司法考试；英语可作为工作语言。",
+    contact: "weiyongqi@zhonglun.com", url: "https://www.zhonglun.com/",
+    deadline: "", updated: "2026-09-13", source: "法线职通 9 月推送"
+  },
+  {
+    unit: "中伦律师事务所（上海）", track: "律所", subtype: "红圈所",
+    title: "法律实习生 — 知识产权部", city: "上海",
+    grade: "研究生", cohort: "2028届", type: "实习", retention: "可留用",
+    req: "2028 届在读研究生；知识产权专业，或有法学+理工科（生物/通信）双背景者优先。",
+    contact: "weiyongqi@zhonglun.com", url: "https://www.zhonglun.com/",
+    deadline: "", updated: "2026-09-13", source: "法线职通 9 月推送"
+  },
+  {
+    unit: "君合律师事务所", track: "律所", subtype: "红圈所",
+    title: "律师助理实习生 / 律师实习生", city: "北京、上海",
+    grade: "本科 / 研究生", cohort: "2027届、2028届", type: "实习", retention: "表现优异有留用机会",
+    req: "2027、2028 年毕业的本科或研究生在校生；已通过法考者优先；英文听说读写良好；能全职实习 2–3 个月。业务方向：资本市场、公司金融、境外资本市场、公司并购、破产重组。",
+    contact: "junhehr@junhe.com（邮件主题注明申请业务方向）",
+    url: "https://www.junhe.com/", deadline: "", updated: "2026-09-13",
+    source: "法线职通 9 月推送", hot: true
+  },
+  {
+    unit: "君合律师事务所", track: "律所", subtype: "红圈所",
+    title: "律师 / 律师助理（多业务方向）", city: "北京、上海",
+    grade: "本科及以上", cohort: "应届 + 社招", type: "全职", retention: "正式岗位",
+    req: "国内外知名法学院本科及以上；已通过国家统一法律职业资格考试；英文可作为工作语言。多个方向（境外资本市场、PE/并购、公司金融、基础设施、劳动法、日本业务、国际贸易、破产重组、政府监管与合规）均注明「没有工作经验的优秀应届生也可考虑」。",
+    contact: "junhehr@junhe.com", url: "https://www.junhe.com/",
+    deadline: "", updated: "2026-09-13", source: "法线职通 9 月推送"
+  },
+  {
+    unit: "昆鹰律师事务所 Quinn Emanuel（上海）", track: "律所", subtype: "外资所",
+    title: "法律实习生", city: "上海",
+    grade: "法学学士 / 硕士 / 博士", cohort: "2027届、2028届", type: "实习", retention: "达成绩效要求可获录用通知",
+    req: "预计 2027 或 2028 年毕业；顶尖大学法学院排名前 20%；优秀中英文书面与口语；对争议解决有热情。工作内容：审查诉讼/仲裁/调查文件、法律研究、文件翻译、协助起草案件文件。",
+    contact: "ivyyang@quinnemanuel.com（实习生+姓名+院校+到岗时间）",
+    url: "", deadline: "", updated: "2026-09-13",
+    source: "法线职通 9 月推送", pay: "津贴税前 21,000 元/月", hot: true
+  },
+  {
+    unit: "周泰律师事务所", track: "律所", subtype: "精品所",
+    title: "实习生 — 民商事争议解决、建设工程、金融贸易商事诉讼", city: "北京",
+    grade: "硕士研究生", cohort: "不限", type: "实习", retention: "表现优异长期留用转正",
+    req: "法学专业硕士研究生；取得法律职业资格者优先；良好的中英文口头及书面能力；能持续实习 3 个月以上，每周不少于 3 个工作日。",
+    contact: "wuyubo@zhoutailaw.com（实习生—姓名—学校—每周到岗天数）",
+    url: "", deadline: "", updated: "2026-09-13", source: "法线职通 9 月推送"
+  },
+  {
+    unit: "金杜 / 环球 / 通商 / 锦天城 / 竞天公诚 / 德恒 / 国浩 / 金诚同达", track: "律所", subtype: "红圈 + 精品",
+    title: "实习 & 社招岗位（每日汇总推送）", city: "北京、上海、深圳",
+    grade: "本科及以上", cohort: "不限", type: "实习 + 社招", retention: "视岗位而定",
+    req: "这批所的实习与社招岗位几乎每天更新，但分散在各家公众号与 HR 邮箱，建议直接关注汇总渠道（见下方「平台导航 → 律所招聘」），每天刷一次。",
+    contact: "见「平台导航」中的律所招聘汇总渠道",
+    url: "https://www.yingjiesheng.com/", deadline: "", updated: "2026-09-13",
+    source: "法线职通 / 法律就业 等汇总号"
+  },
+
+  /* ---- 企业法务 ---- */
+  {
+    unit: "西门子（中国）上海分公司", track: "企业法务", subtype: "外资企业",
+    title: "法律实习生（法律部）", city: "上海（杨浦）",
+    grade: "本科大四 / 研究生", cohort: "在校生（非应届）", type: "实习", retention: "暂无转正机会，可进人才储备库",
+    req: "法学专业在校生，限本科大四或研究生（非应届生）；良好英语基础，能完成中英法律写作；一周连续 4–5 天，持续至少 3 个月。工作内容：产品研发、M&A、不动产、融资租赁等商业项目；法律分析并练习 MEMO 写作；行业法律动态简报。",
+    contact: "xiao-rong.zou@siemens.com（姓名+学校+毕业年月+到岗时间+每周出勤天数+拟实习时长）",
+    url: "", deadline: "", updated: "2026-09-13",
+    source: "法线职通 9 月推送", pay: "实习补贴优于同行业", hot: true
+  },
+  {
+    unit: "字节跳动", track: "企业法务", subtype: "互联网",
+    title: "法务实习生（知识产权 / 合规 / 诉讼支持等方向）", city: "北京、上海、深圳",
+    grade: "本科及以上", cohort: "大三、大四、研究生", type: "实习", retention: "部分岗位可转正",
+    req: "法学相关专业；英文能力好；每周到岗 3 天以上。岗位常年滚动开放，需自行筛选。",
+    contact: "官网在线投递", url: "https://jobs.bytedance.com/",
+    deadline: "", updated: "2026-09-13", source: "企业招聘官网"
+  },
+  {
+    unit: "腾讯", track: "企业法务", subtype: "互联网",
+    title: "法律与合规类实习生", city: "深圳、北京、上海",
+    grade: "本科及以上", cohort: "在校生", type: "实习", retention: "视岗位而定",
+    req: "法学专业；对互联网法务、数据合规、知识产权有兴趣。",
+    contact: "官网在线投递", url: "https://careers.tencent.com/",
+    deadline: "", updated: "2026-09-13", source: "企业招聘官网"
+  },
+  {
+    unit: "华为", track: "企业法务", subtype: "科技制造",
+    title: "法务类岗位（含涉外法务、合规、知识产权）", city: "深圳、南京、西安",
+    grade: "本科及以上", cohort: "应届 + 社招", type: "全职", retention: "正式岗位",
+    req: "法学专业；涉外方向对英语要求高；知识产权方向偏好理工科双背景。",
+    contact: "官网在线投递", url: "https://career.huawei.com/",
+    deadline: "", updated: "2026-09-13", source: "企业招聘官网"
+  },
+
+  /* ---- 国企央企 ---- */
+  {
+    unit: "国家能源集团（含国电电力）", track: "国企央企", subtype: "能源央企",
+    title: "法学类管理岗（法务 / 综合管理）", city: "全国子分公司",
+    grade: "本科及以上", cohort: "2027届 + 择业期内", type: "校招", retention: "正式编制",
+    req: "专业含法学。明确招收「两年择业期内未就业毕业生（毕业时间应为 2025 年 6 月 1 日以后）」——非应届生的重点目标。年龄：本科≤25、硕士≤28、博士≤33 周岁。",
+    contact: "国家能源集团招聘平台在线网申",
+    url: "https://zhaopin.chnenergy.com.cn/",
+    deadline: "统招 2026-10-07（统考 10-25）", updated: "2026-09-13",
+    source: "国家能源集团 2027 届招聘公告", hot: true
+  },
+  {
+    unit: "中国交通建设集团（中交）", track: "国企央企", subtype: "建筑央企",
+    title: "法务 / 商务合约岗", city: "北京、上海、南京等",
+    grade: "本科及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "专业含法学。放出 700+ 岗位，部分岗位含海外派驻机会。",
+    contact: "中交集团人才招聘平台在线投递",
+    url: "https://ccccltd.zhiye.com/", deadline: "约 2026-11 截止", updated: "2026-09-13",
+    source: "中交集团 2027 届全球校园招聘"
+  },
+  {
+    unit: "中国中化控股", track: "国企央企", subtype: "化工央企",
+    title: "法律 / 风控岗", city: "北京、上海、江苏",
+    grade: "本科及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "专业含法律。2027 届计划招数千人。",
+    contact: "官网在线投递", url: "http://job.sinochem.com/",
+    deadline: "约 2026-12 截止", updated: "2026-09-13", source: "中国中化 2027 届校招"
+  },
+  {
+    unit: "华润集团", track: "国企央企", subtype: "综合央企",
+    title: "法学类岗位（管培 / 法务）", city: "深圳、江苏等",
+    grade: "本科及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "专业含法学。华润置地、华润医药、华润燃气等业务板块分开招聘，需分别投递。",
+    contact: "官网在线投递", url: "https://runjob.crc.com.cn/",
+    deadline: "", updated: "2026-09-13", source: "华润集团 2027 届校招"
+  },
+  {
+    unit: "国家电网有限公司", track: "国企央企", subtype: "能源央企",
+    title: "法律 / 法务岗（校招 + 社会招聘）", city: "江苏、浙江及各省",
+    grade: "本科及以上", cohort: "2027届 / 不限", type: "校招 + 社招", retention: "正式编制",
+    req: "法学类；法考优先。非应届生重点走「社会招聘」通道，省公司常年放出法务岗。",
+    contact: "国家电网招聘平台", url: "https://zhaopin.sgcc.com.cn/",
+    deadline: "校招一批约 10 月，二批次年 3 月", updated: "2026-09-13",
+    source: "国家电网招聘平台", hot: true
+  },
+  {
+    unit: "中国移动 / 中国电信 / 中国联通", track: "国企央企", subtype: "通信央企",
+    title: "法律事务岗（省公司社招 + 校招）", city: "江苏、浙江及全国",
+    grade: "本科及以上", cohort: "2027届 / 不限", type: "校招 + 社招", retention: "正式编制",
+    req: "法学类；法考优先。省公司社招法务岗常年开放，是非应届生最稳的入口之一。",
+    contact: "各集团招聘官网", url: "https://job.10086.cn/",
+    deadline: "", updated: "2026-09-13", source: "中国移动招聘平台"
+  },
+  {
+    unit: "中建 / 中铁 / 中铁建 各工程局", track: "国企央企", subtype: "建筑央企",
+    title: "法务 / 合约商务岗（校招 + 社招）", city: "全国",
+    grade: "本科及以上", cohort: "2027届 / 不限", type: "校招 + 社招", retention: "正式编制",
+    req: "法学类。施工单位社招法务需求大、门槛相对低，是积累实务经验的高效路径。",
+    contact: "中国建筑招聘平台 / 各局官网", url: "https://cscec.zhiye.com/",
+    deadline: "", updated: "2026-09-13", source: "企业招聘平台"
+  },
+
+  /* ---- 银行券商 ---- */
+  {
+    unit: "中国工商银行", track: "银行券商", subtype: "国有大行",
+    title: "法律事务岗", city: "江苏、浙江及全国",
+    grade: "本科及以上", cohort: "2027届 / 不限", type: "校招 + 社招", retention: "正式编制",
+    req: "法学类；法考优先。分行法律事务岗社招稳定放出。",
+    contact: "官网在线投递", url: "https://job.icbc.com.cn/",
+    deadline: "校招网申通常 9 月底–10 月初截止", updated: "2026-09-13",
+    source: "工商银行招聘官网", hot: true
+  },
+  {
+    unit: "中国农业银行", track: "银行券商", subtype: "国有大行",
+    title: "法律事务岗", city: "全国",
+    grade: "本科及以上", cohort: "2027届 / 不限", type: "校招 + 社招", retention: "正式编制",
+    req: "法学类；法考优先。", contact: "官网在线投递",
+    url: "https://career.abchina.com.cn/", deadline: "", updated: "2026-09-13",
+    source: "农业银行招聘官网"
+  },
+  {
+    unit: "中国建设银行", track: "银行券商", subtype: "国有大行",
+    title: "法律岗", city: "全国",
+    grade: "本科及以上", cohort: "2027届 / 不限", type: "校招 + 社招", retention: "正式编制",
+    req: "法学类；法考优先。", contact: "官网在线投递",
+    url: "http://job.ccb.com/", deadline: "", updated: "2026-09-13",
+    source: "建设银行招聘官网"
+  },
+  {
+    unit: "头部券商 / 基金公司", track: "银行券商", subtype: "证券基金",
+    title: "法律合规岗（实习 + 校招）", city: "上海、深圳、北京",
+    grade: "硕士及以上", cohort: "2027届", type: "实习 + 校招", retention: "视岗位而定",
+    req: "法学硕士；通过法考；对资本市场、资管业务合规有兴趣。券商对法学生的实习需求集中在合规部与投行内核，门槛高但含金量高。",
+    contact: "各券商官网「校园招聘」栏目", url: "https://www.iguopin.com/",
+    deadline: "", updated: "2026-09-13", source: "行业公开信息"
+  },
+
+  /* ---- 体制内 ---- */
+  {
+    unit: "中央机关及其直属机构（国考）", track: "体制内", subtype: "国家公务员",
+    title: "法学类岗位（含税务、海关、金融监管、法院检察院等）", city: "全国",
+    grade: "本科及以上", cohort: "2027届 / 非应届可报（视岗位）", type: "招考", retention: "公务员编制",
+    req: "法学类。2027 年度国考预计 10 月 14 日发布公告、10 月 15–24 日报名、11 月 29 日公共科目笔试。注意大量岗位限应届，非应届需筛选「招考对象不限」的岗位。",
+    contact: "中央机关及其直属机构考试录用公务员专题",
+    url: "http://bm.scs.gov.cn/", deadline: "报名约 2026-10-24", updated: "2026-09-13",
+    source: "国家公务员局", hot: true
+  },
+  {
+    unit: "江苏 / 浙江省公务员考试（省考）", track: "体制内", subtype: "地方公务员",
+    title: "法检系统及综合管理类岗位", city: "江苏、浙江",
+    grade: "本科及以上", cohort: "2027届 / 不限", type: "招考", retention: "公务员编制",
+    req: "法学类。江浙省考笔试通常在 12 月上中旬，公告 10–11 月发布。省考对非应届更友好，法检系统岗位更多。",
+    contact: "江苏省 / 浙江省公务员考试网",
+    url: "https://www.iguopin.com/", deadline: "", updated: "2026-09-13",
+    source: "各省人社厅"
+  },
+  {
+    unit: "各级法院、检察院（聘用制）", track: "体制内", subtype: "法检辅助",
+    title: "法官助理 / 检察官助理 / 书记员", city: "全国",
+    grade: "本科及以上", cohort: "不限", type: "聘用", retention: "合同制，可作过渡",
+    req: "法学类；部分岗位要求法考。是备考公务员期间的稳妥过渡岗，也能积累审判实务经验。",
+    contact: "各地法院 / 检察院官网、当地人社局", url: "https://www.iguopin.com/",
+    deadline: "全年滚动", updated: "2026-09-13", source: "行业公开信息"
+  },
+
+  /* ---- 法律新媒体 / 科技 ---- */
+  {
+    unit: "智合（法律新媒体）", track: "法律新媒体", subtype: "行业媒体",
+    title: "内容编辑 / 研究员 / 运营（实习 + 全职）", city: "上海",
+    grade: "本科及以上", cohort: "不限", type: "实习 + 全职", retention: "视岗位而定",
+    req: "法学背景 + 文字能力；对法律行业有观察兴趣。适合想走「法律 + 内容」路线的同学。",
+    contact: "关注公众号「智合」查看招聘推送", url: "http://www.zhihedongfang.com/",
+    deadline: "", updated: "2026-09-13", source: "行业公开信息"
+  },
+  {
+    unit: "律新社", track: "法律新媒体", subtype: "行业媒体",
+    title: "记者 / 编辑 / 新媒体运营", city: "上海",
+    grade: "本科及以上", cohort: "不限", type: "实习 + 全职", retention: "视岗位而定",
+    req: "法学或新闻传播背景；有内容产出能力。",
+    contact: "官网查看招聘信息", url: "http://www.lawsvalue.com/",
+    deadline: "", updated: "2026-09-13", source: "行业公开信息"
+  },
+  {
+    unit: "法律科技公司（无讼 / 法天使 / 幂律智能 / iCourt 等）", track: "法律科技", subtype: "法律科技",
+    title: "法律知识工程师 / 产品 / 内容运营", city: "北京、上海、杭州",
+    grade: "本科及以上", cohort: "不限", type: "实习 + 全职", retention: "视岗位而定",
+    req: "法学背景 + 对技术、产品、数据有兴趣。是近几年法学生的新兴出口，竞争小于传统律所。",
+    contact: "各公司官网 / 招聘平台", url: "https://www.itslaw.com/",
+    deadline: "", updated: "2026-09-13", source: "行业公开信息"
+  },
+
+  /* ---- 竞赛与学术 ---- */
+  {
+    unit: "理律杯 / Jessup / Vis Moot / 贸仲杯", track: "竞赛学术", subtype: "模拟法庭",
+    title: "国际与国内模拟法庭竞赛（多数有律所赞助与实习直通）", city: "全国 / 线上",
+    grade: "本科及以上", cohort: "在校生", type: "竞赛", retention: "获奖常获红圈所实习机会",
+    req: "想进红圈所，模拟法庭是最硬的敲门砖之一。理律杯（国内）、Jessup（国际法）、Vis Moot 与贸仲杯（国际商事仲裁）含金量最高；备赛本身也是高强度的法律检索与文书训练。",
+    contact: "关注「D调魔法学园」等公众号的竞赛播报栏目",
+    url: "https://www.ciietac.org/", deadline: "", updated: "2026-09-13",
+    source: "行业公开信息", hot: true
+  },
+];
+
+/* ========== 二、平台导航 ========== */
+const PLATFORM_CATS = [
+  "综合聚合", "律所招聘", "律所官网", "企业法务", "国企央企",
+  "银行券商", "体制内", "法律新媒体", "法律科技", "竞赛学术", "检索工具", "求职公众号"
+];
+
+const PLATFORMS = [
+  /* 综合聚合 */
+  { cat: "综合聚合", name: "国聘网", url: "https://www.iguopin.com/", desc: "国资委 + 教育部 + 人社部联合搭建，覆盖全部央企与 2000 余家地方国企，校招/社招/实习专区齐全，免费投递", tag: "首选" },
+  { cat: "综合聚合", name: "国资央企招聘平台", url: "https://cujiuye.iguopin.com/", desc: "国聘网专项子站，汇集央企招聘政策与云宣讲回放" },
+  { cat: "综合聚合", name: "应届生求职网", url: "https://www.yingjiesheng.com/", desc: "老牌校招信息聚合，律所与法务岗位更新快，可按「律师事务所」行业筛选" },
+  { cat: "综合聚合", name: "实习僧", url: "https://www.shixiseng.com/", desc: "实习主战场，法务、合规、律所实习岗位密集，支持按城市与到岗天数筛" },
+  { cat: "综合聚合", name: "国家大学生就业服务平台", url: "https://www.ncss.cn/", desc: "教育部直属，应届生专属，学信网账号可登录，设央企招聘专区" },
+  { cat: "综合聚合", name: "中国公共招聘网", url: "http://job.mohrss.gov.cn/", desc: "人社部主办，侧重央企分公司与地属国企社招、补录" },
+  { cat: "综合聚合", name: "国务院国资委官网", url: "http://www.sasac.gov.cn/", desc: "「政务公开—人事招聘」专栏，98 家央企公告首发源，最权威的核实渠道" },
+  { cat: "综合聚合", name: "牛客网", url: "https://www.nowcoder.com/", desc: "笔试真题与面经社区，银行、四大、央企的笔试经验帖集中" },
+  { cat: "综合聚合", name: "BOSS直聘", url: "https://www.zhipin.com/", desc: "可直接与 HR 沟通，适合找企业法务与律所助理岗，注意甄别信息" },
+  { cat: "综合聚合", name: "智联招聘", url: "https://www.zhaopin.com/", desc: "设「央企国企校招专区」，可作补充渠道" },
+
+  /* 律所招聘 */
+  { cat: "律所招聘", name: "中华全国律师协会", url: "http://www.acla.org.cn/", desc: "行业官方入口，各地律协招聘专栏与实习备案信息" },
+  { cat: "律所招聘", name: "北京市律师协会", url: "http://www.beijinglawyers.org.cn/", desc: "北京律所招聘与实习信息集中发布" },
+  { cat: "律所招聘", name: "东方律师网（上海市律师协会）", url: "http://www.lawyers.org.cn/", desc: "上海律协官网，本地律所招聘信息权威来源" },
+  { cat: "律所招聘", name: "深圳市律师协会", url: "http://www.szlawyers.com/", desc: "深圳本地律所招聘" },
+  { cat: "律所招聘", name: "广州市律师协会", url: "http://www.gzlawyer.org/", desc: "广州本地律所招聘" },
+  { cat: "律所招聘", name: "法线 Normal Line · 法线职通", desc: "最活跃的律所实习&社招日更渠道之一，几乎每个工作日更新京沪广深律所岗位与投递邮箱", tag: "强烈推荐", wx: "LEX_NormalLine（小红书同名「法线 Normal Line」）" },
+  { cat: "律所招聘", name: "D调魔法学园", desc: "周二播报全国法学竞赛、评奖、征文；周四更新中外顶级律所与五百强招聘信息", wx: "MagicAcademy_inD" },
+  { cat: "律所招聘", name: "法律就业", desc: "更新量最大、格式最整齐，标题直接写律所+岗位+是否留用", tag: "强烈推荐", wx: "法律就业" },
+  { cat: "律所招聘", name: "法律小伙伴", desc: "与「法律就业」互补，岗位多、排版直观", wx: "法律小伙伴" },
+  { cat: "律所招聘", name: "pkulawjob（北大法学院就业办）", desc: "北大法学院官方就业号，发布独家、经筛选的招聘信息", wx: "pkulawjob" },
+  { cat: "律所招聘", name: "智合 LawSchool", desc: "法律行业招聘信息 + 职场干货 + 沙龙培训与专场招聘会", wx: "zhihexueyuan" },
+  { cat: "律所招聘", name: "超律志", desc: "年轻法律人成长平台，含实习内推与求职工作坊", wx: "Chaolvzhi8" },
+  { cat: "律所招聘", name: "LAW招聘 / LegalPursuit / 律菁英 / 风跃法律留学与求职 / 律芽 / 律盐", desc: "律所招聘汇总号矩阵，信息有重叠但各有独家岗位，建议选 2–3 个持续跟", wx: "逐个关注即可" },
+  { cat: "律所招聘", name: "法大就业 / 华政就业 / RUC 法学院就业平台", desc: "政法类院校就业办官方号，国企、机关、律所岗位都很全，外校也能看公告", wx: "按校名搜索" },
+
+  /* 律所官网 */
+  { cat: "律所官网", name: "金杜律师事务所 KWM", url: "https://www.kwm.com/zh/cn/", desc: "「加入我们」栏目查看校园招聘与实习岗位" },
+  { cat: "律所官网", name: "君合律师事务所", url: "https://www.junhe.com/", desc: "实习与律师岗位常年在招，投递 junhehr@junhe.com" },
+  { cat: "律所官网", name: "中伦律师事务所", url: "https://www.zhonglun.com/", desc: "各办公室独立发布实习生岗位" },
+  { cat: "律所官网", name: "方达律师事务所", url: "https://www.fangdalaw.com/", desc: "并购、资本市场方向头部所" },
+  { cat: "律所官网", name: "海问律师事务所", url: "https://www.haiwen-law.com/", desc: "资本市场、并购方向" },
+  { cat: "律所官网", name: "通商律师事务所", url: "https://www.tongshang.com/", desc: "资本市场、境外上市方向" },
+  { cat: "律所官网", name: "环球律师事务所", url: "https://www.glo.com.cn/", desc: "争议解决、反垄断、海商海事" },
+  { cat: "律所官网", name: "竞天公诚律师事务所", url: "https://www.jingtian.com/", desc: "资本市场、争议解决" },
+  { cat: "律所官网", name: "汉坤律师事务所", url: "https://www.hankunlaw.com/", desc: "投融资、基金、并购领域" },
+  { cat: "律所官网", name: "锦天城律师事务所", url: "https://www.allbrightlaw.com/", desc: "上海规模大所，实习岗位多" },
+  { cat: "律所官网", name: "国浩律师事务所", url: "https://www.grandall.com.cn/", desc: "全国布局的综合性大所" },
+  { cat: "律所官网", name: "金诚同达律师事务所", url: "https://www.jtnfa.com/", desc: "国际贸易、争议解决" },
+  { cat: "律所官网", name: "德恒律师事务所", url: "https://www.dehenglaw.com/", desc: "综合大所，实习生需求大" },
+  { cat: "律所官网", name: "大成律师事务所 Dentons", url: "https://www.dentons.com/", desc: "全球规模最大律所之一" },
+  { cat: "律所官网", name: "盈科律师事务所", url: "https://www.yingkelawyer.com/", desc: "全国分所最多，本地实习机会好找" },
+  { cat: "律所官网", name: "通力律师事务所 Llinks", url: "https://www.llinkslaw.com/", desc: "上海精品所，资本市场与资产管理" },
+  { cat: "律所官网", name: "泰和泰律师事务所", url: "https://www.tahota.com/", desc: "西部规模大所" },
+  { cat: "律所官网", name: "汇业律师事务所", url: "https://www.huiyelaw.com/", desc: "上海综合所" },
+
+  /* 企业法务 */
+  { cat: "企业法务", name: "字节跳动招聘", url: "https://jobs.bytedance.com/", desc: "搜索「法务」「知识产权」「合规」查看实习与校招岗" },
+  { cat: "企业法务", name: "腾讯招聘", url: "https://careers.tencent.com/", desc: "法律与合规类岗位" },
+  { cat: "企业法务", name: "阿里巴巴招聘", url: "https://talent.alibaba.com/", desc: "法务与合规方向" },
+  { cat: "企业法务", name: "美团招聘", url: "https://zhaopin.meituan.com/", desc: "法务合规类岗位" },
+  { cat: "企业法务", name: "华为招聘", url: "https://career.huawei.com/", desc: "涉外法务、知识产权、合规" },
+  { cat: "企业法务", name: "快手招聘", url: "https://zhaopin.kuaishou.cn/", desc: "知识产权与内容合规方向" },
+  { cat: "企业法务", name: "西门子中国招聘", url: "https://www.siemens.com/cn/zh/company/jobs.html", desc: "外资企业法律部实习岗，" },
+  { cat: "企业法务", name: "普华永道 / 德勤 / 安永 / 毕马威", url: "https://www.pwccn.com/", desc: "四大咨询线（法证与合规、风险咨询）也招法学背景" },
+
+  /* 国企央企 */
+  { cat: "国企央企", name: "国家电网", url: "https://zhaopin.sgcc.com.cn/", desc: "校招批次 + 社会招聘，省公司常年招法务" },
+  { cat: "国企央企", name: "中国南方电网", url: "https://zhaopin.csg.cn/", desc: "校招 + 社招" },
+  { cat: "国企央企", name: "国家能源集团", url: "https://zhaopin.chnenergy.com.cn/", desc: "明确接受两年择业期内未就业毕业生" },
+  { cat: "国企央企", name: "中国石油", url: "https://zhaopin.cnpc.com.cn/", desc: "经管文法综合类含法学" },
+  { cat: "国企央企", name: "中国石化", url: "https://job.sinopec.com/", desc: "法律事务岗" },
+  { cat: "国企央企", name: "中国大唐", url: "https://zhaopin.china-cdt.com/", desc: "能源央企校招" },
+  { cat: "国企央企", name: "中国广核集团", url: "https://zhaopin.cgnpc.com.cn/", desc: "法务与合规" },
+  { cat: "国企央企", name: "中国建筑", url: "https://cscec.zhiye.com/", desc: "中建各工程局校招统一入口" },
+  { cat: "国企央企", name: "中国交通建设集团", url: "https://ccccltd.zhiye.com/", desc: "2027 届全球校招，含法务方向" },
+  { cat: "国企央企", name: "中国中化", url: "http://job.sinochem.com/", desc: "校招含法律方向" },
+  { cat: "国企央企", name: "中国有色矿业集团", url: "https://cnmc.iguopin.com/", desc: "公开招聘" },
+  { cat: "国企央企", name: "中国化学工程集团", url: "https://cncec.iguopin.com/", desc: "海外业务多，涉外法务有需求" },
+  { cat: "国企央企", name: "华润集团", url: "https://runjob.crc.com.cn/", desc: "各业务板块分开招聘" },
+  { cat: "国企央企", name: "中国邮政", url: "https://zhaopin.chinapost.com.cn/", desc: "联合校招，覆盖综合管理岗" },
+  { cat: "国企央企", name: "中国兵器装备集团", url: "https://csgczhaopin.zhiye.com/", desc: "校招 + 社招" },
+  { cat: "国企央企", name: "中国航天科技集团", url: "https://zhaopin.casc.cn/", desc: "军工央企校招" },
+  { cat: "国企央企", name: "中国烟草（国家烟草专卖局）", url: "http://www.tobacco.gov.cn/gjyc/zpxx/list.shtml", desc: "各省局与工业公司招聘公告汇总，法学岗稳定" },
+  { cat: "国企央企", name: "中国铁路人才招聘网", url: "https://rczp.china-railway.com.cn/", desc: "全国铁路局统一入口" },
+
+  /* 银行券商 */
+  { cat: "银行券商", name: "中国工商银行", url: "https://job.icbc.com.cn/", desc: "总行及各省分行统一网申，法律事务岗" },
+  { cat: "银行券商", name: "中国农业银行", url: "https://career.abchina.com.cn/", desc: "法律事务岗" },
+  { cat: "银行券商", name: "中国建设银行", url: "http://job.ccb.com/", desc: "法律岗" },
+  { cat: "银行券商", name: "中国银行", url: "https://www.boc.cn/aboutboc/bi4/", desc: "总行及分行招聘公告" },
+  { cat: "银行券商", name: "交通银行", url: "https://job.bankcomm.com/", desc: "校园招聘与社招" },
+  { cat: "银行券商", name: "中国邮政储蓄银行", url: "https://www.psbc.com/cn/", desc: "总行及分行招聘" },
+  { cat: "银行券商", name: "国家开发银行", url: "https://www.cdb.com.cn/", desc: "政策性银行，法律事务岗待遇优" },
+  { cat: "银行券商", name: "中国进出口银行", url: "https://www.eximbank.gov.cn/", desc: "政策性银行" },
+  { cat: "银行券商", name: "中国农业发展银行", url: "https://www.adbc.com.cn/", desc: "政策性银行" },
+  { cat: "银行券商", name: "各证券公司官网「校园招聘」", url: "https://www.iguopin.com/", desc: "中信、中金、华泰、国泰君安等券商，法律合规岗集中在秋招提前批" },
+
+  /* 体制内 */
+  { cat: "体制内", name: "国家公务员局（国考专题）", url: "http://bm.scs.gov.cn/", desc: "职位表、报名、成绩查询都在这里，2027 年度国考预计 10 月 14 日发公告" },
+  { cat: "体制内", name: "江苏省人力资源和社会保障厅", url: "http://jshrss.jiangsu.gov.cn/", desc: "江苏省考公告与报名入口" },
+  { cat: "体制内", name: "浙江省公务员考试录用系统", url: "https://gwy.zjks.com/", desc: "浙江省考公告与报名入口" },
+  { cat: "体制内", name: "中国人事考试网", url: "https://www.cpta.com.cn/", desc: "法考等职业资格考试报名" },
+  { cat: "体制内", name: "人民法院 / 人民检察院官网", desc: "各级法院检察院聘用制法官助理、书记员招聘，多在官网与当地人社局发布", url: "https://www.court.gov.cn/" },
+
+  /* 法律新媒体 */
+  { cat: "法律新媒体", name: "智合法律新媒体", url: "http://www.zhihedongfang.com/", desc: "法律行业头部媒体，招聘与行业观察" },
+  { cat: "法律新媒体", name: "律新社", url: "http://www.lawsvalue.com/", desc: "法律行业新闻与招聘" },
+  { cat: "法律新媒体", name: "中国律师网", url: "http://www.acla.org.cn/", desc: "全国律协官网" },
+
+  /* 法律科技 */
+  { cat: "法律科技", name: "无讼", url: "https://www.itslaw.com/", desc: "法律检索与案例平台，也招法律知识工程师" },
+  { cat: "法律科技", name: "法天使", url: "https://www.fatianshi.cn/", desc: "合同库与法律内容，招内容与知识工程岗" },
+  { cat: "法律科技", name: "北大法宝", url: "https://www.pkulaw.cn/", desc: "法律数据库，法学生必须熟练的检索工具" },
+  { cat: "法律科技", name: "威科先行 WK", url: "https://law.wkinfo.com.cn/", desc: "高端法律数据库，红圈所标配" },
+  { cat: "法律科技", name: "iCourt 法秀", desc: "法律技术与思维，招运营与产品岗", wx: "fsoo-com" },
+
+  /* 竞赛学术 */
+  { cat: "竞赛学术", name: "中国国际经济贸易仲裁委员会（贸仲杯）", url: "https://www.ciietac.org/", desc: "贸仲杯国际商事仲裁模拟仲裁庭辩论赛主办方" },
+  { cat: "竞赛学术", name: "Jessup 国际法模拟法庭中国选拔赛", url: "https://www.ilsa.org/", desc: "国际法领域含金量最高的模拟法庭赛事" },
+  { cat: "竞赛学术", name: "D调魔法学园 竞赛播报", desc: "每周二汇总全国法学竞赛、评奖、征文资讯，是最全的竞赛日历", wx: "MagicAcademy_inD" },
+  { cat: "竞赛学术", name: "北大法律信息网", url: "https://www.chinalawinfo.com/", desc: "学术与实务资源" },
+
+  /* 检索工具 */
+  { cat: "检索工具", name: "中国裁判文书网", url: "https://wenshu.court.gov.cn/", desc: "实务必备，写简历时也要能说清你怎么用它" },
+  { cat: "检索工具", name: "聚法案例", url: "https://www.jufaanli.com/", desc: "案例检索与可视化" },
+  { cat: "检索工具", name: "中国知网", url: "https://www.cnki.net/", desc: "论文与文献" },
+
+  /* 求职公众号 */
+  { cat: "求职公众号", name: "法律就业 / 法律小伙伴", desc: "更新最快最全的律所招聘汇总号，标题直接标明岗位与是否留用", wx: "法律就业、法律小伙伴", tag: "强烈推荐" },
+  { cat: "求职公众号", name: "法线 Normal Line", desc: "律所实习与社招工作日日更", wx: "LEX_NormalLine", tag: "强烈推荐" },
+  { cat: "求职公众号", name: "D调魔法学园", desc: "律所招聘 + 竞赛资讯", wx: "MagicAcademy_inD" },
+  { cat: "求职公众号", name: "职问 / 超律志 / 律芽 / 律盐 / 法律火锅 / 青苗法鸣 / 法伯乐", desc: "法律求职干货与内推矩阵，有付费服务需自行甄别", wx: "逐个关注" },
+  { cat: "求职公众号", name: "WonderCV 超级简历", url: "https://www.wondercv.com/", desc: "免费制作中英文简历各一份，排版比 Word 自排好看很多" },
+];
+
+/* ========== 三、秋招日历（法学生专属节奏） ========== */
+const TIMELINE = [
+  { when: "2026 年 9 月", now: true, flag: "你在这里",
+    body: "<b>律所秋招实习集中期。</b>红圈所与精品所陆续放出 2027 / 2028 届实习生岗，多数在 9 月底前完成简历筛选；同时国企央企网申集中爆发，四大网申通常 9 月底截止。另有<b>法考客观题（9 月中下旬）</b>。你现在最该做的：把简历定稿、开始每天刷招聘汇总号、投递 2–3 家/天。" },
+  { when: "2026 年 10 月",
+    body: "<b>笔试高峰 + 面试开启。</b>银行与央企笔试集中；四大笔试（SHL 题型）；律所实习生面试与笔试密集。另有<b>法考主观题（10 月中下旬）</b>。同时国考职位表预计 10 月 14 日发布、10 月 15–24 日报名——务必提前 2–3 天提交，别卡最后一天。" },
+  { when: "2026 年 11 月",
+    body: "<b>面试高峰 + 首批 offer。</b>律所实习生留用考核、央企多轮面试、首批 offer 发放。<b>11 月 29 日国考公共科目笔试</b>，同月银行与央企终面密集。这一月开始做 offer 对比，留意三方协议违约金条款。" },
+  { when: "2026 年 12 月",
+    body: "<b>省考笔试 + offer 收尾。</b>江苏、浙江省考笔试通常在 12 月上中旬，只比国考晚一两周——一份备考可连打两场。律所实习生陆续确定留用名单。" },
+  { when: "2027 年 1–2 月",
+    body: "<b>国考成绩（1 月中旬）+ 春招启动。</b>国考面试集中在 2–3 月。未上岸的同学开始转春招补录，同时投递 2027 年暑期实习（暑期实习是留用的隐形快车道）。" },
+  { when: "2027 年 3–4 月",
+    body: "<b>春招补录 + 暑期实习投递窗口。</b>岗位数量比秋招少 30%–50%，但竞争者也少。暑期实习是研二 / 大四留用最关键的入口，务必在这两个月投完。" },
+];
+
+/* ========== 四、简历诊断关键词库 ========== */
+const KW_LIB = {
+  "律所": ["法律检索","法律意见书","尽职调查","合同审查","法律研究","案例分析","民商事","争议解决","非诉","诉讼","仲裁","资本市场","并购","IPO","备忘录","MEMO","法条","判例检索","文书写作","庭审","卷宗","模拟法庭","Jessup","理律杯","Vis Moot","贸仲杯","法考","法律职业资格","律师助理","实习律师"],
+  "企业法务": ["合同审查","合规","风险控制","知识产权","数据合规","劳动用工","反垄断","招投标","公司法","商业秘密","诉讼管理","法律意见","制度审查","法务","供应商合同","并购","尽职调查","法考","法律职业资格","英语","法律英语"],
+  "国企央企": ["合规","风控","制度建设","招投标","纪检监察","合同管理","法律事务","普法","央企","国企","党组织","党员","公文写作","法考","法律职业资格"],
+  "体制内": ["行测","申论","公务员","法律职业资格","法考","党员","公文写作","案例研习","刑事","民事","行政法","诉讼","判决书"]
+};
+
+</script>
+
+<script>
+/* 补充数据层：配色映射 / 联系方式 / 新增岗位 / 新增渠道 / 城市专区
+   与 data.js 配合使用，加载顺序必须在 data.js 之后、app.js 之前。 */
+
+/* ========== 一、赛道配色（键 = data-t 属性值） ========== */
+const TRACK_META = {
+  "律所": { k: "lawfirm", en: "Law firm" },
+  "企业法务": { k: "inhouse", en: "In-house" },
+  "国企央企": { k: "soe", en: "SOE" },
+  "银行券商": { k: "bank", en: "Bank / Broker" },
+  "体制内": { k: "gov", en: "Public sector" },
+  "法律新媒体": { k: "media", en: "Legal media" },
+  "法律科技": { k: "legaltech", en: "Legal tech" },
+  "竞赛学术": { k: "moot", en: "Moot / Academic" }
+};
+const trackKey = t => (TRACK_META[t] ? TRACK_META[t].k : "all");
+
+/* ========== 二、平台分类配色 ========== */
+const PLAT_CAT_META = {
+  "综合聚合": "all",
+  "律所招聘": "lawfirm",
+  "律所官网": "lawfirm",
+  "企业法务": "inhouse",
+  "国企央企": "soe",
+  "银行券商": "bank",
+  "体制内": "gov",
+  "法律新媒体": "media",
+  "法律科技": "legaltech",
+  "竞赛学术": "moot",
+  "检索工具": "all",
+  "求职公众号": "media",
+  "双非友好渠道": "path",
+  "社交与自媒体": "moot",
+  "简历与求职工具": "inhouse"
+};
+const platKey = c => PLAT_CAT_META[c] || "all";
+
+/* 重排分类顺序（新增：双非友好渠道等） */
+PLATFORM_CATS.length = 0;
+["综合聚合", "律所招聘", "双非友好渠道", "律所官网", "企业法务", "国企央企", "银行券商", "体制内",
+ "法律新媒体", "法律科技", "竞赛学术", "检索工具", "求职公众号", "社交与自媒体", "简历与求职工具"]
+  .forEach(c => PLATFORM_CATS.push(c));
+
+/* ========== 三、联系方式（改这里就能改全站） ========== */
+const CONTACT = {
+  email: "fang_mercury@foxmail.com",
+  wechat: "",
+  xiaohongshu: "",
+  role: "法学生 · 本站整理者",
+  intro: "本站岗位与渠道信息由我个人整理维护，全部免费公开，不代办、不内推、不收费。",
+  accept: [
+    "补充岗位线索：把你看到的实习 / 秋招 / 社招信息发我，我核实后加进岗位库",
+    "纠错：发现链接失效、时间过期、信息有误，直接告诉我，我当天修",
+    "功能建议：想加什么筛选、什么板块、什么城市的岗位，都可以提",
+    "简历互评：法学生之间互相看简历，比一个人埋头改有效得多"
+  ]
+};
+
+/* ========== 四、新增岗位（武汉等城市） ========== */
+const EXTRA_JOBS = [
+  {
+    unit: "万商天勤律师事务所（武汉）", track: "律所", subtype: "综合大所",
+    title: "实习生", city: "武汉",
+    grade: "本科及以上", cohort: "2026届、2027届", type: "实习", retention: "可转正",
+    req: "法律专业 2026 / 2027 届本科及以上；已通过法律职业资格考试者优先；熟练使用办公软件，具备良好的法律文书制作与独立沟通能力。工作内容：查找法规与司法文书、协助起草法律文件、案件整理归档。",
+    contact: "智联招聘「实习生(武汉)」岗位在线投递",
+    url: "https://jobs.zhaopin.com/CC517233130J40557001001.htm",
+    pay: "2000–4000 元/月",
+    location: "武汉江岸区 企业天地1号", deadline: "", updated: "2026-09-13",
+    source: "智联招聘", hot: true
+  },
+  {
+    unit: "北京己任律师事务所（武汉）", track: "律所", subtype: "精品所",
+    title: "知产实习生 — 互联网不正当竞争与 AI 诉讼方向", city: "武汉",
+    grade: "本科及以上", cohort: "2027届", type: "实习", retention: "三个月全职考察后可留用",
+    req: "2027 届法学专业；已通过法考，或有知识产权律所实习经历 / 知产专业背景者优先；有计算机相关背景更佳。业务以数据、AI、互联网领域新类型竞争诉讼为主，很早就进入技术分析与证据攻防核心环节。",
+    contact: "智联招聘「知产实习生-武汉」在线投递",
+    url: "https://m.zhaopin.com/jobs/CCL1319490150J40973420202.htm",
+    pay: "200–250 元/天",
+    location: "武汉洪山区 融众国际1003", deadline: "", updated: "2026-09-13",
+    source: "智联招聘", hot: true
+  },
+  {
+    unit: "北京天达共和律师事务所（武汉）", track: "律所", subtype: "综合大所",
+    title: "律师实习生", city: "武汉",
+    grade: "知名法学院研究生（特别优秀的本科可）", cohort: "不限", type: "实习", retention: "可留用",
+    req: "已通过司法考试（A 证）；对律师职业有浓厚兴趣，法律理论基础扎实、逻辑严密、书面与口头表达能力强；有律所实习经验者优先；每周出勤不少于 4 天，可连续 3 个月以上。",
+    contact: "应届生求职网该岗位在线投递",
+    url: "https://www.yingjiesheng.com/job-008-027-811.html",
+    pay: "补助 100–150 元/天",
+    location: "武汉洪山区 徐东大街金禾中心29楼", deadline: "", updated: "2026-09-13",
+    source: "应届生求职网"
+  },
+  {
+    unit: "湖北高策律师事务所", track: "律所", subtype: "地方综合所",
+    title: "实习律师 / 执业律师 / 自媒体运营", city: "武汉",
+    grade: "本科", cohort: "2026届、2027届", type: "实习 + 全职", retention: "正式岗位",
+    req: "法学各方向均可（含民商法、经济法、国际法、知识产权、诉讼法学等）。业务覆盖民商事诉讼、刑事辩护、企业法律顾问、合同纠纷、知识产权、劳动争议、行政法律服务。另招自媒体运营 1 人，不限专业。",
+    contact: "武汉大学 2027 届实习暨 2026 届毕业生补录双选会展位投递",
+    url: "https://xsjy.whu.edu.cn/f/bilateralchosefair/orderShow?orderId=827a64d83169427a90f5d3353b87418b",
+    location: "武汉", deadline: "", updated: "2026-09-13",
+    source: "武汉大学就业信息网"
+  },
+  {
+    unit: "金杜律师事务所（无锡）", track: "律所", subtype: "红圈所",
+    title: "实习生", city: "无锡",
+    grade: "在读", cohort: "2027届、2028届", type: "实习", retention: "可留用",
+    req: "法学专业在校生；能稳定出勤。无锡、苏州一带的同学可以重点看这个——长三角非省会城市的红圈所分所竞争压力明显小于上海。",
+    contact: "官网「加入我们」在线投递", url: "https://www.kwm.com/zh/cn/",
+    deadline: "", updated: "2026-09-13", source: "应届生求职网"
+  }
+];
+JOBS.push(...EXTRA_JOBS);
+
+/* ========== 三之二、发布时间表（键 = 「单位|岗位」，值为该信息的原始发布日期） ==========
+   这里只填有明确原始发布日期的条目；未列出的条目一律以 updated 字段（本站最后核实日期）展示。 */
+const PUBLISHED = {
+  "金杜律师事务所（北京）|实习生 — 劳动法方向（面向 2027 届）": "2026-08-28",
+  "金杜律师事务所（北京）|实习生 — 国企合规方向": "2026-08-27",
+  "金杜律师事务所（无锡）|实习生": "2026-08-17",
+  "金杜律师事务所（上海）|秘书实习生（行政支持岗）": "2026-09-13",
+  "君合律师事务所|律师助理实习生 / 律师实习生": "2026-07-23",
+  "广发银行（总行）|法律与风险管理类（总行）": "2026-09-09",
+  "西门子（中国）上海分公司|法律实习生（法律部）": "2026-09-13",
+  "湖北敬卓律师事务所|秋季法科实习生（招 3 名）": "2026-09-13",
+  "湖北敬卓律师事务所|授薪律师（律师助理，招 2 名）": "2026-09-13",
+  "湖北敬卓律师事务所|律师助理（武昌）": "2026-06-15",
+  "湖北敬卓（孝感）律师事务所|实习律师（招 1 名）": "2026-02-01"
+};
+
+/* ========== 三之三、第四批：湖北敬卓律师事务所（用户所在所）+ 武汉律所矩阵 ========== */
+const EXTRA_JOBS_4 = [
+  {
+    unit: "湖北敬卓律师事务所", track: "律所", subtype: "武汉本土专业所",
+    title: "秋季法科实习生（招 3 名）", city: "武汉",
+    grade: "知名大学法本 / 五院四系法本或研究生", cohort: "2027届优先", type: "实习", retention: "表现优异毕业时优先留用；2027 年新入职律师助理起薪 6K–7K/月",
+    req: "工作内容：协助律师处理公司商事争议、常年法律顾问（合同审查、咨询答复）、尽职调查及收购等业务；知识管理、案例研究；协助起草与修订各类法律文件；完成带教律师交办的标书制作等工作。任职要求：具备扎实的法学理论基础，对民商事诉讼有浓厚兴趣及初步了解；品行端正、身体健康、无不良嗜好，年龄 25 岁以下；执行力与团队协作能力强，能承受较大工作压力；每周保证五天到岗，连续实习三个月。待遇：按天计补贴 60–100 元/天，满 60 个工作日双方协商可提高至 100–120 元/天；实习满 60 个工作日可出具实习证明；提供实务训练，专业文章可在公众号署名发表；手把手带教。作息 9:15–11:30 / 14:00–17:00，双休。律所在武汉设总所与长江新区分所，孝感设分所，业务以建筑工程、房地产、金融、公司商事、刑事辩护、企业合规为核心。",
+    contact: "723210382@qq.com",
+    url: "http://www.jingzhuolawyer.com/",
+    pay: "60–100 元/天（满 60 个工作日可提至 100–120 元/天）",
+    location: "武汉", source: "湖北敬卓律师事务所官方招聘公告", hot: true
+  },
+  {
+    unit: "湖北敬卓律师事务所", track: "律所", subtype: "武汉本土专业所",
+    title: "授薪律师（律师助理，招 2 名）", city: "武汉",
+    grade: "知名大学 / 五院四系毕业，须有律师证", cohort: "不限", type: "社招", retention: "授薪岗位",
+    req: "工作内容：协助律师处理建设工程、商事争议、常年法律顾问及公司收购尽调、清算注销等业务；知识管理、案例研究；协助起草与修订各类法律文件；客户拜访、讲课、出具方案、投标事务等；每月省内外出差七天左右。任职要求：具备扎实的法学理论基础，对商事领域有浓厚兴趣并初步了解；须有建工或投融资工作经验，需具备优秀文笔能力；执行力与团队协作能力强。待遇：6–8K/月 + 年底奖金；作息 9:00–11:30 / 14:00–17:30，周末双休；另有敬卓下午茶、实习生专项培训等活动。",
+    contact: "723210382@qq.com（附法律文书三份：诉讼与非诉各若干；邮件主题：授薪律师+姓名+执业年限+学校）",
+    url: "http://www.jingzhuolawyer.com/",
+    pay: "6–8K/月 + 年底奖金", location: "武汉",
+    source: "湖北敬卓律师事务所官方招聘公告"
+  },
+  {
+    unit: "湖北敬卓律师事务所", track: "律所", subtype: "武汉本土专业所",
+    title: "律师助理（武昌）", city: "武汉",
+    grade: "知名大学法本 / 五院四系法本及以上，民商法方向优先", cohort: "不限（学生可投）", type: "社招 + 学生可投", retention: "7–8K·13 薪",
+    req: "工作内容：协助律师处理公司商事、金融等领域业务；在合伙人律师指导下进行法律调查和研究；协助起草与修订各类法律文件；协助合伙人到常年法律顾问客户处提供现场法律服务。要求：需具备法律职业资格证；较强的研究与写作能力、沟通表达能力与逻辑思维能力，能承受较大压力；须了解本律所基本情况及律师过往代理案件情况，并关注公众号「敬卓律师」；月平均出差七天（有补贴），需经常制作标书。团队以中小企业商事诉讼、股权设计、尽调、公司清算注销、并购重组为主，案源获取方式主要为参加投标。",
+    contact: "猎聘搜索「敬卓」投递", url: "https://m.liepin.com/job/1955380335.shtml",
+    pay: "7–8K·13 薪", location: "武汉武昌区",
+    source: "猎聘", hot: true
+  },
+  {
+    unit: "湖北敬卓（孝感）律师事务所", track: "律所", subtype: "武汉本土专业所",
+    title: "实习律师（招 1 名）", city: "孝感",
+    grade: "本科及以上，重点法学院校背景优先", cohort: "不限", type: "社招 + 实习", retention: "实习律师岗",
+    req: "要求：已通过国家统一法律职业资格考试；专业功底较为扎实，写作和口头表达能力强，熟练应用各类办公软件；性格开朗、善于沟通、细致严谨、责任心强，具备一定抗压能力；有志于长期从事律师职业。优先条件：中共党员、退转军人、研究生学历、持 C1/C2 驾驶证。待遇：实习补贴 2000–3000 元 + 午餐补助 + 下午茶 + 相关费用报销，优秀者可额外获得业绩奖金。",
+    contact: "hubeijingzhuo@163.com",
+    url: "http://www.jingzhuolawyer.com/archive/190.html",
+    pay: "实习补贴 2000–3000 元/月 + 午餐补助",
+    location: "孝感", source: "湖北敬卓（孝感）律师事务所招聘公告"
+  },
+  {
+    unit: "武汉律所矩阵（本地岗位池）", track: "律所", subtype: "武汉本地所",
+    title: "实习 / 律师助理 / 执业律师（常年滚动）", city: "武汉",
+    grade: "本科及以上", cohort: "不限", type: "常年实习 + 社招", retention: "视律所而定",
+    req: "武汉本地常年招聘法学生的律所（来自中南财经政法大学法学院法律行业专场招聘会参会单位名单）：湖北山河、湖北乾行、湖北江衡、湖北武珞、湖北中和信、湖北左岸、湖北谦牧、湖北维力、湖北光谷、湖北欣安、湖北瀚海潮、湖北瀛楚、湖北汉武、湖北元韬、湖北敬卓；外地所武汉分所：上海星瀚（武汉）、北京天达共和（武汉）、广东普罗米修（武汉）、上海市汇业（武汉）、上海建纬（武汉）、广东信达（武汉）、北京盈科（武汉）、北京市中闻（武汉）、北京市兰台（武汉）。武汉本地所对本科生更友好，法考常写「优先」而非门槛。",
+    contact: "武汉市律师协会官网 / 各大招聘平台搜索律所名", url: "https://www.iguopin.com/",
+    location: "武汉", source: "中南财经政法大学法学院招聘会参会名单", hot: true
+  }
+];
+JOBS.push(...EXTRA_JOBS_4);
+
+const EXTRA_JOBS_2 = [
+  /* —— 红圈所常年招聘通道（全年可投，非一次性） —— */
+  {
+    unit: "海问律师事务所", track: "律所", subtype: "红圈所",
+    title: "法律实习生 / 项目短期实习生 / 法务助理（常年招聘）", city: "北京、上海、深圳、成都",
+    grade: "本科 / 研究生", cohort: "2027届、2028届", type: "常年实习", retention: "实习 4 个月，综合评审通过后毕业后即可入职",
+    req: "知名法学院法学本科或研究生；通过国家司法考试者优先；英语熟练者优先。业务覆盖资本市场、并购、私募股权、基金设立、银行与金融、资产证券化、争议解决、破产重整、知识产权、反垄断、数据合规、税法、劳动法等二十余个领域。建议简历写清：绩点与班级排名、英语等级、司考情况、奖学金、实习经历。",
+    contact: "海问官网「常年招聘」在线投递（邮件主题注明岗位 + 意向业务领域）",
+    url: "http://www.haiwen-law.com/37", location: "北京、上海、深圳、成都",
+    source: "海问官网常年招聘页", hot: true
+  },
+  {
+    unit: "金杜律师事务所", track: "律所", subtype: "红圈所",
+    title: "实习生（常年招聘，各办公室滚动发布）", city: "北京、上海、深圳等",
+    grade: "本科及以上", cohort: "2027届、2028届", type: "常年实习", retention: "表现优异可留用",
+    req: "各办公室按团队需要独立发布实习生岗位，覆盖资本市场、公司并购、争议解决、合规、知识产权、银行融资等方向。建议每周刷一次官网「加入我们」，岗位放出即投。",
+    contact: "官网「加入我们」在线投递", url: "https://www.kwm.com/zh/cn/",
+    source: "金杜官网", hot: true
+  },
+  {
+    unit: "中伦律师事务所", track: "律所", subtype: "红圈所",
+    title: "法律实习生（常年招聘，各办公室独立发布）", city: "北京、上海、深圳等",
+    grade: "本科 / 研究生", cohort: "2027届、2028届", type: "常年实习", retention: "表现优异有留用机会",
+    req: "各办公室与业务团队独立发布，争议解决、资本市场、公司业务、海事海商、知识产权方向岗位最多。上海争议解决部近年持续招 2027 / 2028 届实习生。",
+    contact: "官网「加入我们」或团队邮箱投递", url: "https://www.zhonglun.com/",
+    source: "中伦官网"
+  },
+  {
+    unit: "方达律师事务所", track: "律所", subtype: "红圈所",
+    title: "实习生 / 律师助理", city: "北京、上海、深圳",
+    grade: "本科及以上", cohort: "2027届、2028届", type: "常年实习", retention: "表现优异可留用",
+    req: "方达以并购、资本市场、争议解决见长，对英语要求高（多数岗位要求英语可作为工作语言）。招聘规模小于金杜、君合，但起薪在行业内处于第一档。",
+    contact: "官网「Career」栏目投递", url: "https://www.fangdalaw.com/",
+    source: "方达官网"
+  },
+  {
+    unit: "通商律师事务所", track: "律所", subtype: "红圈所",
+    title: "实习生 / 律师助理", city: "北京、上海、深圳、杭州、武汉",
+    grade: "本科及以上", cohort: "2027届、2028届", type: "常年实习", retention: "表现优异可留用",
+    req: "资本市场与境外上市方向为传统强项；武汉有办公室，中部地区同学可以重点关注。",
+    contact: "官网「加入我们」投递", url: "https://www.tongshang.com/",
+    source: "通商官网"
+  },
+  {
+    unit: "环球律师事务所", track: "律所", subtype: "红圈所",
+    title: "实习生 / 律师助理", city: "北京、上海、深圳",
+    grade: "本科及以上", cohort: "2027届、2028届", type: "常年实习", retention: "表现优异可留用",
+    req: "争议解决、反垄断与竞争法、海商海事、国际贸易方向强势。官网招聘邮箱 hr.bj@glo.com.cn。",
+    contact: "官网投递 / hr.bj@glo.com.cn", url: "https://www.glo.com.cn/",
+    source: "环球官网"
+  },
+  {
+    unit: "竞天公诚律师事务所", track: "律所", subtype: "红圈所",
+    title: "实习生 / 律师助理", city: "北京、上海、深圳等",
+    grade: "本科及以上", cohort: "2027届、2028届", type: "常年实习", retention: "表现优异可留用",
+    req: "资本市场、争议解决为优势方向，实习生岗位常年滚动放出。",
+    contact: "官网「加入我们」投递", url: "https://www.jingtian.com/",
+    source: "竞天公诚官网"
+  },
+  {
+    unit: "汉坤律师事务所", track: "律所", subtype: "红圈所",
+    title: "实习生 / 律师助理", city: "北京、上海、深圳",
+    grade: "本科及以上", cohort: "2027届、2028届", type: "常年实习", retention: "表现优异可留用",
+    req: "投融资、基金设立、并购领域头部所，英语要求高，偏好有海外背景或英文写作能力强的候选人。",
+    contact: "官网投递", url: "https://www.hankunlaw.com/",
+    source: "汉坤官网"
+  },
+  {
+    unit: "天元律师事务所", track: "律所", subtype: "红圈所",
+    title: "实习生 / 律师助理", city: "北京、上海、深圳等",
+    grade: "本科及以上", cohort: "2027届、2028届", type: "常年实习", retention: "表现优异可留用",
+    req: "资本市场、并购、争议解决方向；实习生招聘常年开放，通过法考者优先。",
+    contact: "官网「招聘」栏目投递", url: "https://www.tylaw.com.cn/",
+    source: "天元官网"
+  },
+
+  /* —— 有明确薪酬的在招实习岗 —— */
+  {
+    unit: "北京安杰世泽律师事务所", track: "律所", subtype: "精品所",
+    title: "涉外公司业务实习生", city: "北京",
+    grade: "硕士（在读研究生）", cohort: "2027届、2028届", type: "实习", retention: "可留用",
+    req: "国内外知名院校法学专业在读研究生；已通过国家统一法律职业资格考试；英文书面及口语能力均突出，托福或雅思成绩优异者优先。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "200–210 元/天", location: "北京朝阳 呼家楼",
+    source: "智联招聘"
+  },
+  {
+    unit: "北京市岳成律师事务所", track: "律所", subtype: "综合性大所",
+    title: "实习生", city: "北京",
+    grade: "本科及以上", cohort: "不限", type: "实习", retention: "可留用",
+    req: "本硕就读于国内外知名院校法学专业；语言表达能力及文书写作能力突出；富有团队协作精神。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "150–200 元/天", location: "北京朝阳 麦子店",
+    source: "智联招聘"
+  },
+  {
+    unit: "上海世一律师事务所", track: "律所", subtype: "精品所",
+    title: "律师事务所实习生（招 3 名，有留用名额）", city: "上海",
+    grade: "硕士", cohort: "2027届及以后", type: "实习", retention: "有留用名额",
+    req: "2027 年及以后毕业的法学专业硕士研究生（原则上不接受 2026 年即将毕业者）；民商事类业务方向；需持有 A 类法律职业资格证。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "100–200 元/天", location: "上海浦东 花木",
+    source: "智联招聘"
+  },
+  {
+    unit: "上海中联律师事务所", track: "律所", subtype: "综合大所",
+    title: "律师实习生 — 资本市场、企业出海、跨境业务（欧洲及东南亚方向）", city: "上海",
+    grade: "硕士", cohort: "不限", type: "实习", retention: "有留用机会",
+    req: "协助开展法律尽职调查及法律问题研究、协助进行法律文件起草。对跨境与出海业务有兴趣者优先。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "100–200 元/天", location: "上海浦东 陆家嘴",
+    source: "智联招聘"
+  },
+  {
+    unit: "锦天城律师事务所（上海）", track: "律所", subtype: "综合大所",
+    title: "事务所实习生", city: "上海",
+    grade: "硕士（研一 / 研二在读）", cohort: "不限", type: "实习", retention: "可留用",
+    req: "法学院研究生在读（研一、研二）；能保证连续实习，每周至少 4 天；踏实细心，具备基本法学素养。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "2000–4000 元/月", location: "上海浦东 陆家嘴",
+    source: "智联招聘"
+  },
+  {
+    unit: "北京海问（成都）律师事务所", track: "律所", subtype: "红圈所",
+    title: "法律实习生（非诉讼方向）", city: "成都",
+    grade: "本科及以上", cohort: "2026届、2027届", type: "实习", retention: "可留用",
+    req: "2026 年、2027 年毕业的法学院学生；文笔流畅、善于沟通、逻辑思维能力强、做事细致有条理，具备一定组织协调能力与团队协作精神。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "150–200 元/天", location: "成都高新区",
+    source: "智联招聘"
+  },
+  {
+    unit: "上海市锦天城（成都）律师事务所", track: "律所", subtype: "综合大所",
+    title: "律所实习生 — 知识产权诉讼与仲裁、公司法律事务", city: "成都",
+    grade: "本科", cohort: "不限", type: "实习", retention: "可留用",
+    req: "协助律师进行法律研究和案例分析、参与起草法律文件；实习期 2–3 个月。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "80–120 元/天", location: "成都武侯",
+    source: "智联招聘"
+  },
+  {
+    unit: "上海锦天城（青岛）律师事务所", track: "律所", subtype: "综合大所",
+    title: "律师事务所实习生", city: "青岛",
+    grade: "本科及以上", cohort: "2027届优先", type: "实习", retention: "可留用",
+    req: "法学本科及以上学历，学生干部优先；通过司法考试、有驾照者优先；每周最少 4 天实习，实习期限 2 个月以上。工作内容为辅助案件研究、开庭准备。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "100–150 元/天", location: "青岛市南 湛山",
+    source: "智联招聘"
+  },
+  {
+    unit: "上海锦天城（福州）律师事务所", track: "律所", subtype: "综合大所",
+    title: "实习生", city: "福州",
+    grade: "本科", cohort: "2027届优先", type: "实习", retention: "可留用",
+    req: "就读于国内外知名院校法学专业；可保证实习 2 个月以上，每周不少于 4 个工作日。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "50–80 元/天", location: "福州台江 宁化",
+    source: "智联招聘"
+  },
+  {
+    unit: "福建天衡联合律师事务所", track: "律所", subtype: "区域大所",
+    title: "律师助理实习生", city: "厦门",
+    grade: "本科及以上", cohort: "大三、大四、研二以上", type: "实习", retention: "可留用",
+    req: "法学专业，大三、大四学生优先，研究生二年级以上优先；有良好法律功底与职业道德，工作态度端正、责任心强。提供餐补与导师带教。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "80–150 元/天", location: "厦门思明 开元",
+    source: "智联招聘"
+  },
+  {
+    unit: "广东商达律师事务所", track: "律所", subtype: "区域大所",
+    title: "法学管培生（实习律师）", city: "广州、深圳、东莞",
+    grade: "本科", cohort: "在校生、应届生", type: "实习 + 全职", retention: "晋升通道明确",
+    req: "法学专业本科；学生干部、团支书经历加分；培养方向为实习律师 / 律师助理 / 团队管理。在招 13 个职位，覆盖广州、深圳龙华、东莞、佛山、合肥等地。",
+    contact: "前程无忧 / 应届生求职网该单位页面投递",
+    url: "https://jobs.51job.com/campus/caUjJQM1c8DzQObg1tBmI.html",
+    pay: "5000–7000 元/月",
+    location: "广州 / 深圳龙华 / 东莞", source: "前程无忧"
+  },
+  {
+    unit: "广东深宝（南宁）律师事务所", track: "律所", subtype: "区域所",
+    title: "律师助理 / 实习律师 / 实习生", city: "南宁",
+    grade: "本科", cohort: "不限", type: "实习 + 全职", retention: "可转正",
+    req: "对通过法考无强制要求，有一定的法律实务经验即可；主要工作内容为专职辅助办案。适合法考未通过但想先积累实务经验的同学。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "1000–2000 元/月", location: "南宁青秀 新竹",
+    source: "智联招聘"
+  },
+  {
+    unit: "金杜律师事务所（上海）", track: "律所", subtype: "红圈所",
+    title: "秘书实习生（行政支持岗）", city: "上海",
+    grade: "大专及以上", cohort: "不限", type: "实习", retention: "可留用",
+    req: "高效处理日常事务，独立完成合伙人日常行程安排，按合伙人要求组织安排会议并及时更新日历。属于进入红圈所的行政起步岗，适合想先进入行业再转岗的同学。",
+    contact: "智联招聘该岗位在线投递", url: "https://www.zhaopin.com/",
+    pay: "100–150 元/天", location: "上海徐汇 湖南路",
+    source: "智联招聘"
+  },
+
+  /* —— 银行与金融机构 —— */
+  {
+    unit: "中国工商银行 总行本部", track: "银行券商", subtype: "国有大行",
+    title: "法律人才专项招聘（约 10 人）", city: "北京",
+    grade: "本科 / 硕士 / 博士", cohort: "2027届（2027-07-31 前毕业）", type: "校招", retention: "正式编制",
+    req: "应具备法律相关专业背景。总行本部共招约 100 人，其中管培生约 90 人、法律人才专项约 10 人——法律岗单列，是法学生进银行总行最直接的通道。外语要求：CET-6 425 分及以上，或托业 715、托福 85、雅思 6.5 及以上。入职先在境内分行轮岗一年，期满回总行。每位应聘者仅可填报一个意向岗位。",
+    contact: "工商银行招聘官网在线投递", url: "https://job.icbc.com.cn/",
+    deadline: "网申通常 9 月底–10 月初截止", location: "北京",
+    source: "中国工商银行总行本部 2027 年度校园招聘启事", hot: true
+  },
+  {
+    unit: "广发银行（总行）", track: "银行券商", subtype: "股份制银行",
+    title: "法律与风险管理类（总行）", city: "广州",
+    grade: "硕士及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "法学相关专业；具备扎实法律知识储备，持有法律职业资格证书优先；境内院校毕业时间 2027 年 1 月–8 月，境外院校 2026 年 1 月–2027 年 8 月。总行报名截止 2026-10-15。",
+    contact: "中国人寿招聘官网 → 校园招聘 → 广发银行 / 广发银行官网 → 人才招聘",
+    url: "https://www.chinalife.com.cn/chinalife/zhaopin/",
+    deadline: "总行 2026-10-15", location: "广州",
+    source: "广发银行 2027 年度校园招聘"
+  },
+  {
+    unit: "广发银行 信用卡中心", track: "银行券商", subtype: "股份制银行",
+    title: "法律事务类（信用卡中心）", city: "广州、佛山",
+    grade: "硕士及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "法学相关专业。工作职责：制定并完善合同管理、诉讼管理、知识产权管理、外聘律师管理等关键法律事务制度；审查合同范本与格式合同并出具法律审查意见；负责纠纷案件的诉讼、仲裁、调解；为新产品、新制度、新流程提供法律合规风险审查与咨询。",
+    contact: "中国人寿招聘官网 / 广发银行官网校招入口",
+    url: "https://www.yinhangzhaopin.com/gdfzyh/2026-09-09/225275.htm",
+    deadline: "2026-11-15", location: "广州、佛山",
+    source: "广发银行信用卡中心 2027 秋招公告"
+  },
+  {
+    unit: "广发银行 49 家直属分行", track: "银行券商", subtype: "股份制银行",
+    title: "法律与风险管理类（分行）", city: "全国 101 个城市",
+    grade: "本科及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "法学相关专业优先（多数职位专业不限）。分行层面法律岗竞争显著小于总行，且覆盖南京、杭州、郑州等 101 个城市，是「想回二线城市」的法学生的好选择。分支机构报名截止 2026-11-15。",
+    contact: "广发银行招聘官微 → 校招申请，按城市搜索",
+    url: "https://www.offcn.com/yinhang/2026/0910/74999.html",
+    deadline: "分支机构 2026-11-15", location: "全国 101 城",
+    source: "广发银行 2027 年度校园招聘", hot: true
+  },
+
+  /* —— 国企央企 —— */
+  {
+    unit: "中能建海外投资有限公司", track: "国企央企", subtype: "能源央企",
+    title: "法律事务岗", city: "北京、海外",
+    grade: "本科及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "专业不限的岗位序列中包含法律事务岗。公司业务以海外能源投资为主，涉外合同、跨境投资合规是主要工作内容，适合有涉外兴趣的法学生，也是获取国际项目经验的高效路径。",
+    contact: "国聘网搜「中能建海外投资」或官网投递", url: "https://www.iguopin.com/",
+    location: "北京 / 海外", source: "2027 届秋招公告"
+  },
+  {
+    unit: "超聚变数字技术有限公司", track: "企业法务", subtype: "科技制造",
+    title: "法务类岗位", city: "郑州、深圳、西安、北京、杭州、东莞、天津、上海、南京、广州",
+    grade: "本科及以上", cohort: "2026届、2027届", type: "校招", retention: "正式岗位",
+    req: "招聘序列中单列「法务类」，覆盖 10 个城市。科技制造企业的法务岗竞争通常小于互联网大厂与红圈所，城市选择多，适合想留二线城市的同学。",
+    contact: "国聘网或企业招聘平台投递", url: "https://www.iguopin.com/",
+    location: "郑州、深圳、西安等 10 城", source: "2027 届秋招公告"
+  },
+  {
+    unit: "中建八局第一建设有限公司", track: "国企央企", subtype: "建筑央企",
+    title: "职能管理类（含法务 / 合约方向）", city: "山东、北京、上海、江苏、浙江等",
+    grade: "本科及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "中建八局 2027 届「新砼人」秋季校园招聘已启动，招聘序列含职能管理类（法律、人力、财务等）。施工单位对法学生的需求集中在合约商务与项目法务，是本科应届生比较容易进入央企系统的方向。",
+    contact: "中国建筑招聘平台 → 中建八局", url: "https://cscec.zhiye.com/",
+    location: "山东、北京、上海、江苏、浙江等", source: "中建八局 2027 届秋季校园招聘"
+  },
+  {
+    unit: "中国航发商用航空发动机有限责任公司", track: "国企央企", subtype: "军工央企",
+    title: "商务支援类 / 采购与供应链管理类", city: "上海",
+    grade: "本科及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "招聘序列含商务支援类、采购与供应链管理类等职能方向，法学背景可投商务支援类。军工央企需政审，流程较长，建议尽早投递。",
+    contact: "中国航发招聘平台 / 国聘网", url: "https://www.iguopin.com/",
+    location: "上海", source: "中国航发商发 2027 届秋招"
+  },
+  {
+    unit: "湖北省工程咨询股份有限公司", track: "国企央企", subtype: "省属国企",
+    title: "工程咨询岗（含投融资与合规方向）", city: "武汉、宜昌、襄阳、成都",
+    grade: "硕士及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "方向包含基础设施规划与投融资、能源经济与双碳等，适合有法律 + 投融资复合背景的同学。武汉本地岗位，无须离开湖北。",
+    contact: "国聘网搜「湖北省工程咨询」", url: "https://www.iguopin.com/",
+    location: "武汉、宜昌、襄阳、成都", source: "2027 届秋招公告"
+  }
+];
+JOBS.push(...EXTRA_JOBS_2);
+
+/* ========== 四之三、第三批：补齐体制内 / 企业法务 / 新媒体 / 法律科技 等偏少的赛道 ========== */
+const EXTRA_JOBS_3 = [
+  /* —— 体制内与准体制内 —— */
+  {
+    unit: "各地公证处（各市公证协会 / 司法局下属）", track: "体制内", subtype: "公证机构",
+    title: "公证员助理 / 公证员", city: "北京、上海、南京、杭州、武汉、成都等",
+    grade: "本科及以上", cohort: "不限", type: "招聘", retention: "事业编制或合同制",
+    req: "法学专业本科及以上；通过国家统一法律职业资格考试者优先（部分公证处为硬性要求）。工作内容为合同、继承、赠与、证据保全等公证业务。竞争强度明显低于公务员考试，是法学背景进入准体制内体系的一条稳定通道，招聘信息一般在各地司法局官网与公证协会发布。",
+    contact: "各地司法局官网 / 公证协会公告", url: "https://www.iguopin.com/",
+    source: "行业公开信息"
+  },
+  {
+    unit: "军队文职人员（含军事法院、军事检察院、军队律师岗）", track: "体制内", subtype: "军队文职",
+    title: "法学类岗位", city: "全国",
+    grade: "本科及以上", cohort: "应届 + 非应届（视岗位）", type: "招考", retention: "军队文职编制",
+    req: "法学类专业；部分岗位要求法律职业资格。军队文职招考通常每年 12 月至次年 1 月发布公告并报名，法学类岗位分布在军事法院、军事检察院、军队法律顾问处、法律服务保障单位。待遇参照现役军官，且竞争比通常低于同级别公务员岗位。",
+    contact: "军队人才网（搜索「军队文职人员公开招考」）", url: "https://www.81rc.mil.cn/",
+    deadline: "公告通常 12 月–次年 1 月", source: "军队人才网", hot: true
+  },
+  {
+    unit: "仲裁委员会秘书处（贸仲 / 北仲 / 上仲 / 各地仲裁委）", track: "体制内", subtype: "仲裁机构",
+    title: "案件秘书 / 仲裁秘书", city: "北京、上海、深圳、南京、杭州、武汉",
+    grade: "本科及以上", cohort: "不限", type: "招聘", retention: "参照事业单位待遇",
+    req: "法学专业本科及以上；英语能力好的候选人优先（涉外商事仲裁岗要求英语可作为工作语言）。工作内容是案件程序管理、庭审组织、裁决文书校对。这份经历对之后转诉讼/仲裁律师、或申请 LLM 都很有加分。",
+    contact: "各仲裁委员会官网「招聘」栏目", url: "https://www.cietac.org/",
+    source: "行业公开信息"
+  },
+  {
+    unit: "公共法律服务中心 / 法律援助中心", track: "体制内", subtype: "公共法律服务",
+    title: "法律援助志愿者 / 法律咨询岗", city: "全国各市县",
+    grade: "本科及以上", cohort: "不限", type: "招聘", retention: "合同制或志愿服务",
+    req: "法学专业；通过法考者优先。工作为窗口法律咨询、法律援助案件办理辅助。门槛低、上手快，是简历上没有实习经历时最容易被接纳的第一站，也是认识本地法律圈的现实路径。",
+    contact: "各地司法局官网 / 公共法律服务中心", url: "https://www.iguopin.com/",
+    source: "行业公开信息"
+  },
+
+  /* —— 企业法务（互联网与科技） —— */
+  {
+    unit: "京东集团", track: "企业法务", subtype: "互联网",
+    title: "法务 / 合规类岗位（校招 + 实习）", city: "北京、宿迁",
+    grade: "本科及以上", cohort: "2027届 / 在校生", type: "校招 + 实习", retention: "视岗位而定",
+    req: "法学相关专业。互联网大厂法务岗分为诉讼、合同、合规、知识产权、数据合规等方向，校招名额有限但实习岗位常年滚动开放，实习转正是主要入职路径。",
+    contact: "京东招聘官网在线投递", url: "https://zhaopin.jd.com/",
+    source: "企业招聘官网"
+  },
+  {
+    unit: "百度", track: "企业法务", subtype: "互联网",
+    title: "法务实习生（诉讼支持 / 合规 / 知识产权）", city: "北京",
+    grade: "本科及以上", cohort: "在校生", type: "实习", retention: "部分岗位可转正",
+    req: "法学相关专业；对 AI、数据合规、知识产权方向有兴趣者优先。百度在 AI 合规与算法治理方面的法律事务较前沿。",
+    contact: "百度招聘官网在线投递", url: "https://talent.baidu.com/",
+    source: "企业招聘官网"
+  },
+  {
+    unit: "小米集团", track: "企业法务", subtype: "科技制造",
+    title: "法务 / 知识产权岗位", city: "北京、武汉",
+    grade: "本科及以上", cohort: "2027届 / 在校生", type: "校招 + 实习", retention: "视岗位而定",
+    req: "法学相关专业，知识产权方向偏好理工科双背景。小米在武汉设有总部园区，湖北籍同学可重点关注武汉岗位。",
+    contact: "小米招聘官网在线投递", url: "https://hr.xiaomi.com/",
+    source: "企业招聘官网"
+  },
+  {
+    unit: "网易", track: "企业法务", subtype: "互联网",
+    title: "法务 / 法律合规实习生", city: "杭州、广州",
+    grade: "本科及以上", cohort: "在校生", type: "实习", retention: "视岗位而定",
+    req: "法学相关专业。网易杭州的法务与知识产权团队规模较大，杭州本地高校同学可以重点投。",
+    contact: "网易招聘官网在线投递", url: "https://hr.163.com/",
+    source: "企业招聘官网"
+  },
+
+  /* —— 银行券商（补政策性银行与券商） —— */
+  {
+    unit: "政策性银行（国家开发银行 / 中国进出口银行 / 中国农业发展银行）", track: "银行券商", subtype: "政策性银行",
+    title: "法律事务岗", city: "北京及各省分行",
+    grade: "硕士及以上", cohort: "2027届", type: "校招", retention: "正式编制",
+    req: "法学类；通过法考者优先；英语要求高（进出口银行尤其看重）。政策性银行待遇普遍优于国有大行同级别岗位，且工作强度低于商业银行，每年只在秋招集中招录一次，错过要等一年。",
+    contact: "各行官网「校园招聘」栏目", url: "https://www.cdb.com.cn/",
+    source: "行业公开信息", hot: true
+  },
+  {
+    unit: "头部券商（中信 / 中金 / 华泰 / 国泰君安等）", track: "银行券商", subtype: "证券",
+    title: "法律合规岗 / 投行内核岗（秋招提前批 + 暑期实习转正）", city: "上海、深圳、北京",
+    grade: "硕士及以上", cohort: "2027届", type: "实习 + 校招", retention: "实习转正为主",
+    req: "法学硕士；通过法考；对资本市场、资产管理业务合规有兴趣。券商的法学生需求主要集中在合规部与投行内核，暑期实习转正是主渠道，提前批竞争小于正式批。",
+    contact: "各券商官网「校园招聘」栏目", url: "https://www.iguopin.com/",
+    source: "行业公开信息"
+  },
+
+  /* —— 法律新媒体与法律科技 —— */
+  {
+    unit: "法律行业媒体（法律先生 / 法客帝国 / 天同诉讼圈 / 金杜研究院 / 律新观察等）", track: "法律新媒体", subtype: "行业媒体",
+    title: "编辑 / 内容运营 / 研究员（实习 + 全职）", city: "北京、上海、深圳",
+    grade: "本科及以上", cohort: "不限", type: "实习 + 全职", retention: "视岗位而定",
+    req: "法学背景 + 文字能力。这类岗位的核心竞争力是「能把法律问题讲清楚」，适合写作能力强、想做法律 + 内容的同学。相比律所，工作强度低、节奏可控，也更容易做出个人作品集。",
+    contact: "各公众号后台或文末招聘推文投递", url: "http://www.lawsvalue.com/",
+    source: "行业公开信息"
+  },
+  {
+    unit: "法律科技公司（幂律智能 / 法天使 / 威科先行 / 北大法宝 / Alpha 等）", track: "法律科技", subtype: "法律科技",
+    title: "法律知识工程师 / 法律产品 / 数据标注与内容岗", city: "北京、上海、杭州、深圳",
+    grade: "本科及以上", cohort: "不限（实习岗面向在校生）", type: "实习 + 全职", retention: "视岗位而定",
+    req: "法学背景 + 对产品、数据、技术有兴趣。法律知识工程师（Legal Knowledge Engineer）是近几年新增的岗位类型，负责把法律规则结构化为机器可用的知识，法学出身反而比程序员更合适，是目前竞争最小、增长最快的一条路。",
+    contact: "各公司官网 / 招聘平台搜索「法律知识工程师」", url: "https://www.itslaw.com/",
+    source: "行业公开信息", hot: true
+  }
+];
+JOBS.push(...EXTRA_JOBS_3);
+
+/* ========== 五、新增渠道：社交平台与更多公众号 ========== */
+const EXTRA_PLATFORMS = [
+  /* 社交与自媒体 —— 小红书 */
+  { cat: "社交与自媒体", name: "麻薯一熊（小红书）", desc: "西政涉外法律人才实验班 → 美国西北大学 LLM，汉坤实习，即将入职顶级律所香港办公室。分享 job hunting 全流程与法律人破圈方法", handle: "麻薯一熊", handleLab: "小红书", tag: "强烈推荐" },
+  { cat: "社交与自媒体", name: "Lynn努力拨号中 / 徐律（小红书）", desc: "20 年职场经历的知名律所合伙人，原上海市检察院检察官。笔记含「法学毕业生是否要进体制内」「面试小技巧」「职场人生抉择」", handle: "Lynn努力拨号中", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "斜杠青年王爱玛（小红书）", desc: "斯坦福毕业、纽约华尔街大所税法律师。展示美国求学、法考、纽约律所工作日常", handle: "斜杠青年王爱玛", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "graceeee（小红书）", desc: "从红圈所跳出来做 AI 公司法务，想走「法律 + AI」路线的必看", handle: "graceeee", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "鼠鼠在逃（小红书）", desc: "法大毕业，在知名法律科技公司做市场。法律人转产品 / 市场的路径参考", handle: "鼠鼠在逃", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "兔子的好人（小红书）", desc: "DLaw Hub 创始人之一，数据合规方向。学习数据法的重要网络节点", handle: "兔子的好人", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "徵L（小红书）", desc: "知识产权方向，曾在加拿大执业，现做学术研究。知产 + AI 版权问题", handle: "徵L", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "MT蛋蛋儿（小红书）", desc: "西政民商法学硕士、执业律师，女律师职场与成长向内容", handle: "MT蛋蛋儿", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "小叶富贵子（小红书）", desc: "杭州律师，律师日常 vlog 与本地法律行业观察", handle: "小叶富贵子", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "詹秋怡（小红书）", desc: "《令人心动的 offer 2》嘉宾，现就职于上海 Top 律所", handle: "詹秋怡", handleLab: "小红书" },
+  { cat: "社交与自媒体", name: "小红书搜索技巧", desc: "直接搜「律所 实习 城市名」「法务 秋招」「XX 所 面经」，比公众号更快拿到第一手信息和真实面试反馈。缺点是人多、无一对一机会", handleLab: "用法" },
+  { cat: "社交与自媒体", name: "哔哩哔哩 / 知乎 / 豆瓣小组", desc: "B 站有法考与求职 up 主；知乎「法学生就业」话题；豆瓣「法律人」小组。适合了解行业口风与避雷" },
+
+  /* 更多求职公众号 */
+  { cat: "求职公众号", name: "律芽", desc: "北大法学院同学创办，整合职场信息 + 推荐实习职位", handle: "newlegal", handleLab: "微信" },
+  { cat: "求职公众号", name: "法律求职 / 法律火锅 / 青苗法鸣 / 法伯乐 / 艾利斯顿School", desc: "法学生求职矩阵号，各有独家岗位与经验帖，选 2–3 个长期跟即可", handleLab: "微信" },
+  { cat: "求职公众号", name: "风跃法律留学与求职", desc: "留学 + 求职信息混合，每日汇总成一则，部分为收费服务需甄别", handleLab: "微信" },
+  { cat: "求职公众号", name: "法职网 / LAW招聘 / LegalPursuit / 律菁英", desc: "招聘信息量大但较杂，需要自己筛。LegalPursuit 会附求职经验帖", handleLab: "微信" },
+  { cat: "求职公众号", name: "高校就业办公众号", desc: "法大就业、华政就业、RUC 法学院就业平台、南大好实习等——政法类院校就业办官方号，国企、机关、律所岗位都很全，外校也能看公告", handleLab: "按校名搜索", tag: "强烈推荐" },
+  { cat: "求职公众号", name: "国资小新", desc: "国资委官方公众号，每日更新央企招聘合集，常早于部分官网提醒", handleLab: "国资小新" },
+
+  /* 各地律协与地方渠道 */
+  { cat: "律所招聘", name: "成都市律师协会", desc: "成都及四川本地律所招聘与实习备案（搜「成都市律师协会」官网）", handleLab: "渠道" },
+  { cat: "律所招聘", name: "武汉市律师协会", desc: "武汉本地律所招聘信息（搜「武汉市律师协会」官网 / 公众号）", handleLab: "渠道" },
+  { cat: "律所招聘", name: "江苏省律师协会 / 浙江省律师协会", desc: "江苏、浙江本省律所招聘与实习备案，本地岗位比全国性渠道更全", handleLab: "渠道" },
+  { cat: "律所招聘", name: "各高校法学院就业信息网", desc: "西南政法大学（swupl.cqbys.com）、武汉大学（xsjy.whu.edu.cn）、中国政法大学（scc.cupl.edu.cn）等——律所双选会岗位质量高、竞争小于公开海投", url: "https://scc.cupl.edu.cn/", tag: "强烈推荐" },
+
+  /* 简历与求职工具 */
+  { cat: "简历与求职工具", name: "WonderCV 超级简历", url: "https://www.wondercv.com/", desc: "免费制作中英文简历各一份，排版比 Word 自排好看很多" },
+  { cat: "简历与求职工具", name: "BOSS直聘", url: "https://www.zhipin.com/", desc: "可以直接和 HR / 合伙人聊，适合找企业法务、律所助理这类中小规模岗位。务必甄别信息，凡收费即诈骗", tag: "重点渠道" },
+  { cat: "简历与求职工具", name: "智联招聘", url: "https://www.zhaopin.com/", desc: "很多中小律所和企业法务只在智联发岗，武汉、成都、西安等城市尤其明显" },
+  { cat: "简历与求职工具", name: "牛客网", url: "https://www.nowcoder.com/", desc: "笔试真题与面经，银行、四大、央企的笔试经验帖集中" },
+  { cat: "简历与求职工具", name: "DeepL / 有道翻译", url: "https://www.deepl.com/translator", desc: "法律文本翻译，做英文简历和涉外岗笔试时用得上" }
+];
+PLATFORMS.push(...EXTRA_PLATFORMS);
+
+/* ========== 三之二、双非友好渠道（v9 新增） ==========
+   这些是院校背景不占优时最该用的入口——很多双非同学只看招聘 App，反而漏掉了本校、本地律协、
+   法检公告这些「竞争范围本来就小」的渠道。 */
+const EXTRA_PLATFORMS_2 = [
+  { cat: "双非友好渠道", name: "本校就业信息网（最优先）", tag: "最优先",
+    desc: "双非学生最有效的渠道往往就是自己学校。校内双选会的参会单位对你就读院校有明确意向，竞争范围只限本校——先把本校就业网和就业办公众号关注点满。" },
+  { cat: "双非友好渠道", name: "省内同类院校就业信息网（可蹭）",
+    desc: "同省其他高校（含省属重点、财经类、师范类院校）的就业网通常公开可看，部分双选会也有外校名额。关注 2–3 所省内同类院校的就业网，机会会明显变多。" },
+  { cat: "双非友好渠道", name: "本地律协招聘专栏",
+    desc: "除北上广深外，省与地级市律协官网/公众号都有招聘专栏，本地所多、竞争小。可关注：湖北省律师协会、武汉市律师协会、江苏省律师协会、浙江省律师协会、四川省律师协会、湖南省律师协会。" },
+  { cat: "双非友好渠道", name: "各级法院 / 检察院官网（聘用制公告）",
+    desc: "法官助理、检察官助理、书记员属聘用制，门槛相对低、通常不卡院校，是备考公务员期间最稳妥的过渡岗。盯目标法院/检察院官网「公告」栏与当地人事考试网。" },
+  { cat: "双非友好渠道", name: "法院 / 检察院实习（政治部直联）",
+    desc: "对院校要求最低的实务经历。直接打电话到目标法院政治部或研究室问是否接收实习生，或通过学校就业办统一推荐。" },
+  { cat: "双非友好渠道", name: "当地人社局 / 人才市场",
+    desc: "地级市人社局招聘平台与人才交流中心，常发布本地国企、事业单位（含公证处、法援中心）的招聘信息，是「想回老家或留本地」的高效渠道。" },
+  { cat: "双非友好渠道", name: "目标律所官网「加入我们」",
+    desc: "本地中小所未必在招聘平台发公告，但官网往往留有 HR 邮箱。把简历 + 一份自己写的文书直接发过去，比海投效率高得多（邮件模板见「02 双非怎么打」）。" },
+  { cat: "双非友好渠道", name: "校友群 / 班级群 / 师兄师姐",
+    desc: "法学生的实习与工作，相当一部分靠熟人转介。主动开口问，往往比自己盲投有效得多。" }
+];
+PLATFORMS.push(...EXTRA_PLATFORMS_2);
+
+
+/* ========== 五之二、第三批渠道：高校法学院就业号 / 湖北本地 ========== */
+PLATFORMS.push(
+  { cat: "求职公众号", name: "中南法言", desc: "中南财经政法大学法学院相关公众号，发布学院就业动员会、法律行业专场招聘会、实习与招聘资讯。五院四系里就业信息体系做得最完整的院系号之一，外校也能看", handle: "中南法言", handleLab: "微信", tag: "用户推荐" },
+  { cat: "求职公众号", name: "高校法学院就业号矩阵", desc: "西政就业、华政就业、武大法学院、上政就业、西北政法就业、南大好实习、吉大法学 等——各校法学院就业办官方号。律所双选会岗位质量高于公开海投，且竞争小于全国性渠道", handleLab: "按校名搜索", tag: "强烈推荐" },
+  { cat: "求职公众号", name: "湖北本地法律招聘渠道", desc: "武汉市律师协会公众号、湖北省律师协会、湖北各高校法学院就业号——本地岗位信息量远大于全国性渠道，且更新更快", handleLab: "渠道" },
+  { cat: "律所招聘", name: "武汉市律师协会 / 湖北省律师协会", desc: "武汉及湖北本地律所招聘、实习备案与行业公告", handleLab: "渠道" },
+  { cat: "律所官网", name: "湖北敬卓律师事务所", url: "http://www.jingzhuolawyer.com/", desc: "武汉总所 + 长江新区分所 + 孝感分所。官网「敬卓招聘」栏目发布法科实习生、授薪律师、律师助理、实习律师岗位；公众号「敬卓律师」；业务以建筑工程、房地产、金融、公司商事、刑事辩护、企业合规、税务、劳动法为核心", tag: "武汉" },
+  { cat: "综合聚合", name: "中南财经政法大学法学院", url: "https://law.zuel.edu.cn/", desc: "学院公告与就业专栏。每年 4 月举办「文澜职汇·明法启航」全国法律行业专场招聘会，60+ 家律所、企业、公证机构参会；另有武汉高校法律人才双选会" }
+);
+
+/* ========== 六、城市专区 ========== */
+const CITIES = [
+  {
+    city: "武汉", tag: "中部 · 高校密集", firms: "万商天勤（武汉）、北京己任（武汉）、天达共和（武汉）、湖北高策、大成（武汉）",
+    note: "武大与中南财大是武汉法律人才的两大源头，两校秋招双选会通常在 9–11 月，外校也能投展位岗位。武汉本地所对 2026 / 2027 届本科生相对友好，法考通过与否常写成「优先」而非门槛。",
+    channels: [{ n: "武汉大学就业信息网", u: "https://xsjy.whu.edu.cn/" }, { n: "武汉市律师协会" }]
+  },
+  {
+    city: "北京", tag: "红圈总部", firms: "金杜、君合、中伦、方达、海问、通商、环球、竞天公诚、汉坤、天元、金诚同达、德恒",
+    note: "红圈所总部所在地，实习生岗位最多、竞争也最激烈。北京所普遍看重「法考 + 英语 + 模拟法庭」三件套。除官网外，回看「北京市律师协会」与本省高校就业网效率更高。",
+    channels: [{ n: "北京市律师协会", u: "http://www.beijinglawyers.org.cn/" }]
+  },
+  {
+    city: "上海", tag: "外资所聚集", firms: "金杜（上海）、中伦（上海）、方达、通力、锦天城、汇业、海华永泰、昆鹰、周泰",
+    note: "外资所与精品所最集中的城市，英文要求普遍高于北京。中伦上海争议解决、昆鹰（21000 元/月津贴）这类岗位都在这里。",
+    channels: [{ n: "东方律师网（上海律协）", u: "http://www.lawyers.org.cn/" }]
+  },
+  {
+    city: "深圳", tag: "大湾区", firms: "华商、广和、晟典、君言、国浩（深圳）、锦天城（深圳）",
+    note: "大湾区法律市场增长快，互联网与科技企业法务岗多。深圳本地所对本科应届相对开放，且实习转正比例高于京沪。",
+    channels: [{ n: "深圳市律师协会", u: "http://www.szlawyers.com/" }]
+  },
+  {
+    city: "广州", tag: "大湾区", firms: "广信君达、法制盛邦、广大、广悦、国信信扬、金鹏",
+    note: "广州本地综合所规模大、招聘量大，是本科生拿第一份实习相对容易的城市。",
+    channels: [{ n: "广州市律师协会", u: "http://www.gzlawyer.org/" }]
+  },
+  {
+    city: "成都", tag: "西部中心", firms: "泰和泰、金杜（成都）、中伦（成都）、发现、明炬、恒和信、卓安、万商天勤（成都）",
+    note: "西部法律市场中心，金杜成都每年参加西政等校双选会。生活成本低、竞争小于京沪，是性价比很高的选择。",
+    channels: [{ n: "西南政法大学就业信息网", u: "https://swupl.cqbys.com/" }]
+  },
+  {
+    city: "重庆", tag: "西部中心", firms: "金杜（重庆）、中豪、索通、坤源衡泰",
+    note: "重庆的资产证券化、结构融资业务岗位有特色（金杜重庆招律师助理-ABS/结构融资）。",
+    channels: [{ n: "西南政法大学就业信息网", u: "https://swupl.cqbys.com/" }]
+  },
+  {
+    city: "杭州", tag: "长三角", firms: "天册、六和、京衡、星韵、金道、泽大",
+    note: "浙江民营经济活跃，公司法务与资本市场业务需求大。杭州本地所的氛围普遍比京沪轻松，天册、六和是本土头部。",
+    channels: [{ n: "浙江省律师协会" }]
+  },
+  {
+    city: "南京", tag: "长三角", firms: "金杜（南京）、世纪同仁、法德永衡、江苏高的、南京知识",
+    note: "南京是江苏省会，法检系统与省属国企集中，同时是考公与进所两条路都好走的城市。",
+    channels: [{ n: "江苏省律师协会" }]
+  },
+  {
+    city: "苏州 / 无锡", tag: "苏南", firms: "金杜（无锡）、江苏新天伦、苏州益友天元",
+    note: "苏南制造业与外资企业密集，企业法务岗位多、竞争小于上海，是「不想卷京沪但想留长三角」的优质选项。",
+    channels: [{ n: "江苏省律师协会" }]
+  },
+  {
+    city: "西安", tag: "西北中心", firms: "永嘉信、陕西海普睿诚、锦天城（西安）、国浩（西安）",
+    note: "西北法律市场中心，西北政法大学所在地，本地所招聘对本科应届较友好。",
+    channels: [{ n: "西北政法大学就业网" }]
+  },
+  {
+    city: "天津", tag: "华北", firms: "张盈、击水、天津金诺、国浩（天津）",
+    note: "靠近北京但竞争明显缓和，适合作为「想留在华北、又不想卷北京」的备选。",
+    channels: [{ n: "天津市律师协会" }]
+  },
+  {
+    city: "长沙", tag: "中部", firms: "湖南金州、湖南天地人、启元、万商天勤（长沙）",
+    note: "中部分支机构多，万商天勤等全国性律所在长沙设点，本地岗位竞争小。",
+    channels: [{ n: "湖南省律师协会" }]
+  }
+];
+
+
+/* ========== 六、双非友好度（key = 单位|岗位） ==========
+   good = 双非友好（本科可投、不限院校）
+   mid  = 有门槛（需法考 / 硕士，或竞争激烈，努力够得着）
+   hard = 高门槛（明确卡院校层次，双非建议把精力放别处）
+   判定依据：岗位公告里的学历要求、院校表述、是否硬性要求法考。 */
+const FRIENDLY = {
+  "金杜律师事务所（成都）|实习生 — 公司证券、金融资本市场业务": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "金杜律师事务所（成都）|实习生 — 上市公司重组、债务重组": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "金杜律师事务所（成都）|实习生 — 跨境监管、一带一路国际业务": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "金杜律师事务所（重庆）|律师助理 — 资产证券化 / 结构融资": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "金杜律师事务所（北京）|实习生 — 劳动法方向（面向 2027 届）": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "金杜律师事务所（北京）|实习生 — 国企合规方向": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "中伦律师事务所（上海）|法律实习生 — 争议解决部 金融商事诉讼": ["hard", "明确要求「国内外知名」——双非建议把精力放在别的岗位上"],
+  "中伦律师事务所（上海）|法律实习生 — 争议解决部 海事海商": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "中伦律师事务所（上海）|法律实习生 — 知识产权部": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "君合律师事务所|律师助理实习生 / 律师实习生": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "君合律师事务所|律师 / 律师助理（多业务方向）": ["hard", "明确要求「国内外知名」——双非建议把精力放在别的岗位上"],
+  "昆鹰律师事务所 Quinn Emanuel（上海）|法律实习生": ["hard", "明确要求「顶尖」——双非建议把精力放在别的岗位上"],
+  "周泰律师事务所|实习生 — 民商事争议解决、建设工程、金融贸易商事诉讼": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "金杜 / 环球 / 通商 / 锦天城 / 竞天公诚 / 德恒 / 国浩 / 金诚同达|实习 & 社招岗位（每日汇总推送）": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "西门子（中国）上海分公司|法律实习生（法律部）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "字节跳动|法务实习生（知识产权 / 合规 / 诉讼支持等方向）": ["mid", "大厂法务：名额少，走实习转正是主渠道"],
+  "腾讯|法律与合规类实习生": ["mid", "大厂法务：名额少，走实习转正是主渠道"],
+  "华为|法务类岗位（含涉外法务、合规、知识产权）": ["mid", "大厂法务：名额少，走实习转正是主渠道"],
+  "国家能源集团（含国电电力）|法学类管理岗（法务 / 综合管理）": ["good", ""],
+  "中国交通建设集团（中交）|法务 / 商务合约岗": ["good", ""],
+  "中国中化控股|法律 / 风控岗": ["good", ""],
+  "华润集团|法学类岗位（管培 / 法务）": ["good", ""],
+  "国家电网有限公司|法律 / 法务岗（校招 + 社会招聘）": ["good", ""],
+  "中国移动 / 中国电信 / 中国联通|法律事务岗（省公司社招 + 校招）": ["good", ""],
+  "中建 / 中铁 / 中铁建 各工程局|法务 / 合约商务岗（校招 + 社招）": ["good", ""],
+  "中国工商银行|法律事务岗": ["good", ""],
+  "中国农业银行|法律事务岗": ["good", ""],
+  "中国建设银行|法律岗": ["good", ""],
+  "头部券商 / 基金公司|法律合规岗（实习 + 校招）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "中央机关及其直属机构（国考）|法学类岗位（含税务、海关、金融监管、法院检察院等）": ["good", ""],
+  "江苏 / 浙江省公务员考试（省考）|法检系统及综合管理类岗位": ["good", ""],
+  "各级法院、检察院（聘用制）|法官助理 / 检察官助理 / 书记员": ["good", ""],
+  "智合（法律新媒体）|内容编辑 / 研究员 / 运营（实习 + 全职）": ["good", ""],
+  "律新社|记者 / 编辑 / 新媒体运营": ["good", ""],
+  "法律科技公司（无讼 / 法天使 / 幂律智能 / iCourt 等）|法律知识工程师 / 产品 / 内容运营": ["good", ""],
+  "理律杯 / Jessup / Vis Moot / 贸仲杯|国际与国内模拟法庭竞赛（多数有律所赞助与实习直通）": ["good", ""],
+  "万商天勤律师事务所（武汉）|实习生": ["good", ""],
+  "北京己任律师事务所（武汉）|知产实习生 — 互联网不正当竞争与 AI 诉讼方向": ["good", ""],
+  "北京天达共和律师事务所（武汉）|律师实习生": ["mid", "写明「知名法学院研究生，特别优秀的本科可」——本科有口子，但须 A 证"],
+  "湖北高策律师事务所|实习律师 / 执业律师 / 自媒体运营": ["good", ""],
+  "金杜律师事务所（无锡）|实习生": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "湖北敬卓律师事务所|秋季法科实习生（招 3 名）": ["mid", "写明偏好五院四系，但武汉本土所更看你能不能上手——主动投递并附上写过的文书"],
+  "湖北敬卓律师事务所|授薪律师（律师助理，招 2 名）": ["mid", "面向已持证律师，须有建工或投融资经验"],
+  "湖北敬卓律师事务所|律师助理（武昌）": ["mid", "须法律职业资格证；建议先争取同一家的实习岗再转"],
+  "湖北敬卓（孝感）律师事务所|实习律师（招 1 名）": ["mid", "须已通过法考；孝感生活成本低，适合先扎实积累实务"],
+  "武汉律所矩阵（本地岗位池）|实习 / 律师助理 / 执业律师（常年滚动）": ["good", ""],
+  "海问律师事务所|法律实习生 / 项目短期实习生 / 法务助理（常年招聘）": ["hard", "明确要求「知名法学院」——双非建议把精力放在别的岗位上"],
+  "金杜律师事务所|实习生（常年招聘，各办公室滚动发布）": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "中伦律师事务所|法律实习生（常年招聘，各办公室独立发布）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "方达律师事务所|实习生 / 律师助理": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "通商律师事务所|实习生 / 律师助理": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "环球律师事务所|实习生 / 律师助理": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "竞天公诚律师事务所|实习生 / 律师助理": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "汉坤律师事务所|实习生 / 律师助理": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "天元律师事务所|实习生 / 律师助理": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "北京安杰世泽律师事务所|涉外公司业务实习生": ["hard", "明确要求「国内外知名」——双非建议把精力放在别的岗位上"],
+  "北京市岳成律师事务所|实习生": ["hard", "明确要求「国内外知名」——双非建议把精力放在别的岗位上"],
+  "上海世一律师事务所|律师事务所实习生（招 3 名，有留用名额）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "上海中联律师事务所|律师实习生 — 资本市场、企业出海、跨境业务（欧洲及东南亚方向）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "锦天城律师事务所（上海）|事务所实习生": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "北京海问（成都）律师事务所|法律实习生（非诉讼方向）": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "上海市锦天城（成都）律师事务所|律所实习生 — 知识产权诉讼与仲裁、公司法律事务": ["good", ""],
+  "上海锦天城（青岛）律师事务所|律师事务所实习生": ["good", ""],
+  "上海锦天城（福州）律师事务所|实习生": ["hard", "明确要求「国内外知名」——双非建议把精力放在别的岗位上"],
+  "福建天衡联合律师事务所|律师助理实习生": ["good", ""],
+  "广东商达律师事务所|法学管培生（实习律师）": ["good", ""],
+  "广东深宝（南宁）律师事务所|律师助理 / 实习律师 / 实习生": ["good", ""],
+  "金杜律师事务所（上海）|秘书实习生（行政支持岗）": ["mid", "红圈 / 外资所：双非需有法考 + 模拟法庭 + 大所实习才有一搏"],
+  "中国工商银行 总行本部|法律人才专项招聘（约 10 人）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "广发银行（总行）|法律与风险管理类（总行）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "广发银行 信用卡中心|法律事务类（信用卡中心）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "广发银行 49 家直属分行|法律与风险管理类（分行）": ["good", ""],
+  "中能建海外投资有限公司|法律事务岗": ["good", ""],
+  "超聚变数字技术有限公司|法务类岗位": ["good", ""],
+  "中建八局第一建设有限公司|职能管理类（含法务 / 合约方向）": ["good", ""],
+  "中国航发商用航空发动机有限责任公司|商务支援类 / 采购与供应链管理类": ["good", ""],
+  "湖北省工程咨询股份有限公司|工程咨询岗（含投融资与合规方向）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "各地公证处（各市公证协会 / 司法局下属）|公证员助理 / 公证员": ["mid", "法考多数写「优先」，但部分公证处设为硬性——投前先电话确认"],
+  "军队文职人员（含军事法院、军事检察院、军队律师岗）|法学类岗位": ["good", ""],
+  "仲裁委员会秘书处（贸仲 / 北仲 / 上仲 / 各地仲裁委）|案件秘书 / 仲裁秘书": ["good", ""],
+  "公共法律服务中心 / 法律援助中心|法律援助志愿者 / 法律咨询岗": ["good", ""],
+  "京东集团|法务 / 合规类岗位（校招 + 实习）": ["mid", "大厂法务：名额少，走实习转正是主渠道"],
+  "百度|法务实习生（诉讼支持 / 合规 / 知识产权）": ["mid", "大厂法务：名额少，走实习转正是主渠道"],
+  "小米集团|法务 / 知识产权岗位": ["mid", "大厂法务：名额少，走实习转正是主渠道"],
+  "网易|法务 / 法律合规实习生": ["mid", "大厂法务：名额少，走实习转正是主渠道"],
+  "政策性银行（国家开发银行 / 中国进出口银行 / 中国农业发展银行）|法律事务岗": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "头部券商（中信 / 中金 / 华泰 / 国泰君安等）|法律合规岗 / 投行内核岗（秋招提前批 + 暑期实习转正）": ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"],
+  "法律行业媒体（法律先生 / 法客帝国 / 天同诉讼圈 / 金杜研究院 / 律新观察等）|编辑 / 内容运营 / 研究员（实习 + 全职）": ["good", ""],
+  "法律科技公司（幂律智能 / 法天使 / 威科先行 / 北大法宝 / Alpha 等）|法律知识工程师 / 法律产品 / 数据标注与内容岗": ["good", ""],
+};
+
+const FRIENDLY_META = {
+  good: { label: "双非友好", color: "#1B7F4E", soft: "#E6F4EC", border: "#B7E0C8",
+          desc: "本科可投、不限院校，正常投递有戏",
+          advice: "这类岗位是主战场——把简历打磨好，直接投。" },
+  mid:  { label: "有门槛",  color: "#8A5A0B", soft: "#FDF6E7", border: "#EFD9A8",
+          desc: "需要法考 / 硕士，或竞争激烈，努力够得着",
+          advice: "够一够有机会——先看下面的「门槛说明」，缺什么补什么。" },
+  hard: { label: "高门槛",  color: "#7A7A7A", soft: "#F2F2F4", border: "#DDDDE2",
+          desc: "明确要求院校层次，双非大概率被卡",
+          advice: "保留信息供参考——建议不要在这里投入过多精力。" }
+};
+
+/* 求职时按友好度给的一句总建议 */
+const FRIENDLY_SUMMARY = {
+  good: "你的主战场在「双非友好」档。先把这一档投满，再向上够一够「有门槛」的。",
+  mid:  "把「双非友好」档投满后，「有门槛」这一档里优先挑——只要求法考、不卡院校的岗位。",
+  hard: "「高门槛」档可以看，但别把它当成主力——把时间花在你能改变的事情上（法考、实习产出、写作样本）。"
+};
+
+</script>
+
+<script>
+/* ============================================================
+   简历诊断引擎 v2
+   - 文本归一化：修复 PDF 提取插入空格导致的手机号/邮箱失配
+   - 加权打分：每个检查项有独立权重，避免「少写一个词就归零」
+   - 岗位匹配：把简历与目标求职意向（或粘贴的 JD）逐项比对并给出改法
+   ============================================================ */
+
+/* ---------- 1. 文本归一化 ---------- */
+function normalizeResumeText(input) {
+  let t = String(input == null ? "" : input);
+  t = t.replace(/[\u200B-\u200D\uFEFF\u00AD]/g, "");          // 零宽、软连字符
+  t = t.replace(/\u00A0|\u3000/g, " ");                        // 不换行空格、全角空格
+  t = t.replace(/[＠]/g, "@").replace(/[．]/g, ".");           // 全角符号
+  t = t.replace(/[－—–﹣−]/g, "-").replace(/[（]/g, "(").replace(/[）]/g, ")");
+  t = t.replace(/[｜]/g, "|").replace(/[：]/g, ":");
+  /* 数字之间被插入的空格：15586520 955 → 15586520955 */
+  t = t.replace(/(\d)[ \t]+(?=\d)/g, "$1");
+  /* 邮箱里被插入的空格：name @ foxmail . com → name@foxmail.com */
+  t = t.replace(/([A-Za-z0-9._%+-])[ \t]*@[ \t]*/g, "$1@");
+  t = t.replace(/([A-Za-z0-9._%+-]@[A-Za-z0-9-]+)[ \t]*\.[ \t]*/g, "$1.");
+  /* 点号两侧被插入空格：2022 . 09 → 2022.09 ；3 . 7 → 3.7 */
+  t = t.replace(/([A-Za-z0-9])[ \t]*\.[ \t]*(?=[A-Za-z0-9])/g, "$1.");
+  /* 减号两侧被插入空格：155 - 8652 → 155-8652 */
+  t = t.replace(/(\d)[ \t]*[-][ \t]*(?=\d)/g, "$1-");
+  return t;
+}
+
+/* 去空白版本：专门给手机号、邮箱这类不能有空格的内容做匹配 */
+const densify = t => String(t).replace(/[\s\u3000\u00a0]+/g, "");
+
+/* ---------- 2. 十条评分维度（带权重） ---------- */
+const RS_DIMS = [
+  {
+    name: "基础信息", w: 8, checks: [
+      { t: "手机号", w: 2, re: /(?:\+?86)?1[3-9]\d{9}/, mode: "dense" },
+      { t: "邮箱", w: 2, re: /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/, mode: "dense" },
+      { t: "姓名", w: 2, re: /姓\s*名|^[\u4e00-\u9fa5]{2,4}$/m },
+      { t: "求职意向", w: 1.5, re: /求职意向|应聘岗位|目标岗位|意向岗位|求职目标|应聘职位|求职方向/ },
+      { t: "所在地 / 联系地址", w: 1, re: /所在地|现居|居住地|籍贯|通讯地址|所在城市/ },
+      { t: "政治面貌", w: 1.5, re: /中共党员|中共预备党员|预备党员|共青团员|民主党派|群众|政治面貌/ }
+    ]
+  },
+  {
+    name: "教育背景", w: 10, checks: [
+      { t: "院校", w: 2, re: /大学|学院|法学院|school|college/i },
+      { t: "学历学位", w: 2, re: /本科|硕士|研究生|博士|学士|学位/ },
+      { t: "专业", w: 2, re: /法学|法律|知识产权|国际法/ },
+      { t: "成绩 / 排名", w: 2, re: /GPA|绩点|排名|前\s*\d+\s*%|加权|综合测评|\d+\s*\/\s*\d+|成绩/ },
+      { t: "主修课程", w: 1, re: /主修课程|核心课程|专业课程|课程[:：]|选修课程/ },
+      { t: "起止时间", w: 1, re: /20\d{2}[.\-\/年]?\s*\d{0,2}\s*[-—–至到]\s*(20\d{2}|至今)/ }
+    ]
+  },
+  {
+    name: "法律职业资格", w: 15, checks: [
+      { t: "法考 / 法律职业资格", w: 4, re: /法考|法律职业资格|国家统一法律职业资格|司法考试|司考/ },
+      { t: "通过状态", w: 3, re: /已通过|通过.{0,12}(法考|司考|法律职业资格)|取得.{0,8}证书|客观题|主观题/ },
+      { t: "证别 / 科目", w: 3, re: /A\s*证|C\s*证|法律职业资格证书|客观题|主观题/ },
+      { t: "分数", w: 2, re: /[1-3]\d{2}\s*分|客观题\s*\d+|主观题\s*\d+|总分\s*\d+/ },
+      { t: "全科通过 / A 证", w: 3, re: /A\s*证|已通过.{0,14}(法考|法律职业资格|司法考试)|全科|主观题.{0,6}通过|已取得法律职业资格/ }
+    ]
+  },
+  {
+    name: "实习经历", w: 20, checks: [
+      { t: "实习经历", w: 2, re: /实习|见习|intern/i },
+      { t: "法律相关单位", w: 3, re: /律所|律师事务所|法院|检察院|法务部|公司法务|仲裁委|仲裁委员会|法律事务部|司法局|公证处|法律援助/ },
+      { t: "时间跨度", w: 2, re: /20\d{2}[.\-\/]\d{1,2}\s*[-—–至到]\s*(20\d{2}[.\-\/]\d{1,2}|至今)|\d+\s*(个月|月|周|年)/ },
+      { t: "业务方向（一）", w: 2.5, re: /合同审查|合同审核|合同起草|法律意见书|法律意见|尽职调查|尽调|卷宗|庭审|文书撰写|法律研究|案例分析|法律检索|案件/ },
+      { t: "业务方向（二）", w: 2.5, re: /诉讼|仲裁|争议解决|非诉|谈判|标书|招投标|投标|合规|股权|投融资|并购|IPO|重组|清算|破产/ },
+      { t: "量化成果", w: 4, re: /\d+\s*[+＋]?\s*(份|个|件|次|家|篇|卷|余|万|亿)|采纳率|中标|\d+\s*\/\s*\d+|占比\s*\d+/ },
+      { t: "独立性与深度", w: 4, re: /独立|负责|主导|牵头|全程|代表项目|带队|自主|带教|专项/ }
+    ]
+  },
+  {
+    name: "实务技能", w: 13, checks: [
+      { t: "法律检索", w: 3, re: /法律检索|案例检索|法规检索|判例检索|法条检索|检索工具|类案检索|检索/ },
+      { t: "法律文书写作", w: 3, re: /法律意见书|法律备忘录|备忘录|MEMO|memo|法律文书|文书撰写|代理意见|起诉状|答辩状|辩护词|文书/ },
+      { t: "合同审查", w: 2, re: /合同审查|合同审核|合同起草|合同管理|合同/ },
+      { t: "尽职调查", w: 2, re: /尽职调查|尽调|DD\b/ },
+      { t: "诉讼 / 庭审实务", w: 2, re: /诉讼|庭审|卷宗|证据|开庭|判决|案件/ },
+      { t: "检索工具名称", w: 1, re: /北大法宝|威科先行|Westlaw|LexisNexis|Alpha|聚法|裁判文书网|法信|万律|法宝/i }
+    ]
+  },
+  {
+    name: "学术与竞赛", w: 8, checks: [
+      { t: "学术成果", w: 3, re: /论文|期刊|发表|课题|科研|立项|知网|一作|项目负责人|毕业论文|征文/ },
+      { t: "模拟法庭 / 竞赛", w: 3, re: /模拟法庭|模拟仲裁|Jessup|Vis\s*Moot|贸仲杯|理律杯|辩论|竞赛|一等奖|二等奖|三等奖|金奖|银奖/ },
+      { t: "奖学金 / 荣誉", w: 2, re: /奖学金|荣誉|优秀|三好|表彰|标兵|励志|先进个人/ }
+    ]
+  },
+  {
+    name: "外语能力", w: 10, checks: [
+      { t: "四六级 / 专四专八", w: 5, re: /CET[\s-]?[46]|四级|六级|专业四级|专业八级|TEM[\s-]?[48]|英语等级/ },
+      { t: "英语应用能力", w: 2, re: /英语可作为工作语言|英语|英文|口语|翻译|涉外|读写/ },
+      { t: "雅思 / 托福", w: 1.5, re: /雅思|IELTS|托福|TOEFL|GRE/i },
+      { t: "法律英语", w: 1, re: /法律英语|LEC|TOLES|法律翻译|英文合同|legal\s+english/i },
+      { t: "海外经历", w: 0.5, re: /LLM|交换生|留学|海外|境外|访学|国际组织/i }
+    ]
+  },
+  {
+    name: "学生工作与社团", w: 5, checks: [
+      { t: "学生工作 / 干部", w: 2, re: /学生会|研究生会|社团|班委|班长|团支书|部长|主席|主席团|负责人|组长|队长|干事|团委/ },
+      { t: "专业社团", w: 1.5, re: /辩论队|法律援助|法律诊所|法援|青年志愿者|法学会|模拟法庭/ },
+      { t: "志愿服务", w: 1.5, re: /志愿|支教|公益|社会实践|三下乡|社区服务|社工/ }
+    ]
+  },
+  {
+    name: "工具与证书", w: 5, checks: [
+      { t: "办公软件", w: 2, re: /Office|Excel|PPT|Word|WPS|PowerPoint|Xmind|幕布/i },
+      { t: "数据 / AI 工具", w: 2, re: /Python|SQL|数据分析|爬虫|Tableau|AI|人工智能|AIGC|大模型|可视化/i },
+      { t: "其他职业证书", w: 1, re: /CPA|会计|证券从业|基金从业|初级会计|ACCA|税务师|经济师|银行从业/ },
+      { t: "通用证书", w: 1, re: /计算机二级|驾驶证|C1|C2|普通话|教师资格|驾照/ }
+    ]
+  },
+  { name: "表述质量", w: 6, checks: [] }
+];
+
+function scoreExpression(text) {
+  const t = normalizeResumeText(text);
+  const len = t.replace(/\s/g, "").length;
+  const numCount = (t.match(/\d+/g) || []).length;
+  const verbLines = (t.match(/^\s*(负责|参与|协助|独立|完成|撰写|攥写|审核|整理|组织|策划|起草|设计|推动|牵头|主导|调研|翻译|跟进|对接|服务|领导|全面负责)/gm) || []).length;
+  const blocks = t.split(/\n\s*\n|\n(?=[^\s])/).filter(s => s.trim().length > 3).length;
+  const meCount = (t.match(/我/g) || []).length;
+  let s = 0; const notes = [];
+  if (len >= 500 && len <= 2200) s += 2; else if (len >= 300) { s += 1.2; notes.push(len < 500 ? "篇幅偏短，建议补充细节" : "篇幅偏长，建议精简到 1–2 页"); } else { notes.push("篇幅过短"); }
+  if (numCount >= 6) s += 3; else if (numCount >= 3) { s += 2; notes.push("量化数据可以再多一些"); } else { s += 0.8; notes.push("几乎没有量化数据"); }
+  if (verbLines >= 5) s += 2.5; else if (verbLines >= 2) { s += 1.5; notes.push("部分条目未用动词开头"); } else { s += 0.5; notes.push("条目缺少动词开头的动作描述"); }
+  if (blocks >= 4) s += 1; else { s += 0.4; notes.push("段落结构偏少，建议分模块"); }
+  if (meCount === 0) s += 1.5; else if (meCount <= 3) { s += 0.8; notes.push("简历应省略主语，少用「我」"); } else { notes.push("「我」字出现 " + meCount + " 次，简历应省略主语"); }
+  return { score: Math.round(Math.max(0, Math.min(10, s)) * 10) / 10, notes };
+}
+
+/* ---------- 3. 目标求职意向（关键词带权重 + 具体改法） ---------- */
+const RS_TARGETS = [
+  {
+    id: "circle", name: "红圈所 · 资本市场/非诉", units: "金杜、君合、中伦、方达、海问、通商、环球",
+    kw: [
+      { k: "法律尽职调查", w: 3, re: /尽职调查|尽调|DD\b/, sug: "在实习条目里写清你做过哪一类尽调（股权/资产/税务），以及你负责的具体核查项" },
+      { k: "法律检索", w: 3, re: /法律检索|案例检索|法规检索|类案检索|检索工具|北大法宝|威科先行|Westlaw|LexisNexis/, sug: "把「使用北大法宝/威科先行完成类案检索 X 次、撰写检索报告 X 份」写成独立条目" },
+      { k: "法律意见书 / 备忘录", w: 3, re: /法律意见书|备忘录|MEMO|memo|法律意见/, sug: "注明撰写数量与被采纳情况，例如「撰写法律意见书 X 篇，其中 X 篇经主办律师修改后提交」" },
+      { k: "合同审查", w: 2, re: /合同审查|合同审核|合同起草|合同管理/, sug: "写清审查合同的数量与类型（建设工程 / 采购 / 投融资）" },
+      { k: "资本市场 / 证券", w: 2, re: /资本市场|证券|股票|债券|发行|上市/, sug: "如果没有资本市场经历，可把「Pre-IPO 轮股权投资尽调」这类项目单独提炼成一条" },
+      { k: "IPO / 上市", w: 2, re: /IPO|上市|公开发行|新三板/, sug: "把 IPO 项目写成「项目 + 你的角色 + 负责模块」，例如「负责股东穿透核查与对赌条款梳理」" },
+      { k: "并购 / 投融资", w: 2, re: /并购|收购|投融资|股权投资|私募|基金/, sug: "补充你参与的并购或投融资项目（哪怕只是尽调环节）" },
+      { k: "英语可作为工作语言", w: 3, re: /英语可作为工作语言|英文合同|法律英语|雅思|托福|CET[\s-]?[6６]|六级|LLM/, sug: "红圈所把英语当硬门槛：写明四六级分数；有雅思/托福/LEC 一定写上，并加一句「可独立阅读英文合同并起草英文邮件」" },
+      { k: "法考 / 法律职业资格", w: 3, re: /法律职业资格|法考|司法考试|司考|A\s*证/, sug: "写明考试年份与结果；只通过客观题也要写「客观题已通过（2025），主观题备考中」" },
+      { k: "律所实习经历", w: 3, re: /律师事务所|律所/, sug: "红圈所最看重律所实习——如果没有，先争取一份本地所或精品所的非诉实习" },
+      { k: "模拟法庭 / 专业竞赛", w: 2, re: /模拟法庭|模拟仲裁|Jessup|Vis\s*Moot|贸仲杯|理律杯|辩论/, sug: "模拟法庭是进红圈所最有效的敲门砖，有就放在教育背景之后" },
+      { k: "境内外上市规则", w: 1, re: /香港|境外|联交所|美股|A股|科创板|北交所/, sug: "涉境外项目（红筹/VIE）是加分项，有相关经历务必写" }
+    ]
+  },
+  {
+    id: "litigation", name: "精品所 · 诉讼/争议解决", units: "中伦争议解决、周泰、天同、瑛明、观韬中茂",
+    kw: [
+      { k: "诉讼 / 仲裁", w: 3, re: /诉讼|仲裁|争议解决|起诉|应诉|代理/, sug: "把诉讼案件写成「案由 + 标的额 + 你做了什么 + 结果」" },
+      { k: "庭审与卷宗", w: 3, re: /庭审|开庭|旁听|卷宗|证据|质证|判决/, sug: "注明参与庭审次数与整理卷宗数量，例如「全程旁听庭审 X 次，整理质证意见」" },
+      { k: "法律文书（诉讼类）", w: 3, re: /起诉状|答辩状|代理意见|辩护词|法律文书|文书撰写/, sug: "注明撰写文书数量与是否被法院受理/采纳" },
+      { k: "民商事 / 合同纠纷", w: 2, re: /民商事|合同纠纷|建设工程|房地产|侵权|劳动争议/, sug: "写清你专攻的案由方向，诉讼所看重细分领域的积累" },
+      { k: "法院 / 检察院实习", w: 3, re: /法院|检察院|法官|检察官/, sug: "法检实习是诉讼岗的强力背书，务必写明庭室与工作内容" },
+      { k: "类案检索与裁判规则", w: 3, re: /类案检索|裁判规则|判例|案例检索|裁判文书/, sug: "写一份「检索报告」作品，诉讼所面试常直接考这个" },
+      { k: "证据整理", w: 2, re: /证据|公证|鉴定|质证/, sug: "补充证据梳理与保全的经验（如证据目录编制、电子证据固定）" },
+      { k: "法考 / 法律职业资格", w: 3, re: /法律职业资格|法考|司法考试|司考|A\s*证/, sug: "诉讼岗几乎都要求通过法考，写明年份与结果" },
+      { k: "律所诉讼实习", w: 3, re: /律师事务所|律所/, sug: "律所诉讼团队的实习是核心加分项" },
+      { k: "模拟法庭 / 辩论", w: 2, re: /模拟法庭|模拟仲裁|辩论|贸仲杯|理律杯|Jessup/, sug: "模拟法庭与辩论赛对诉讼岗的说服力最强" }
+    ]
+  },
+  {
+    id: "soe", name: "国企 / 央企法务", units: "国家电网、国家能源、中交、中化、华润、中建",
+    kw: [
+      { k: "合规管理", w: 3, re: /合规|合规管理|合规体系|内控/, sug: "国企最看重合规：哪怕只是课程作业，也要写成「参与构建 XX 合规审查框架」" },
+      { k: "合同管理", w: 3, re: /合同审查|合同管理|合同审核|合同起草/, sug: "写明审查合同数量与类型，国企法务日常就是合同 + 制度" },
+      { k: "招投标 / 投标", w: 3, re: /招投标|投标|标书|招标|响应文件/, sug: "招投标经验在建筑类央企是硬通货，注明制作与中标数量" },
+      { k: "制度建设 / 公文写作", w: 2, re: /制度|公文|流程|规范|管理办法/, sug: "补一句「参与起草/修订内部管理制度 X 项」" },
+      { k: "法律意见与风险提示", w: 2, re: /法律意见|风险提示|风控|法律风险|缓释/, sug: "国企看重「把风险说清楚」，写出你出具意见的结论与依据" },
+      { k: "建设工程 / 基础设施", w: 2, re: /建设工程|基础设施|施工|工程|房地产|新能源|电力/, sug: "建筑与能源央企偏好有工程背景的法学生，务必点名你接触过的行业" },
+      { k: "尽职调查（投融资）", w: 2, re: /尽职调查|尽调|投融资|股权|收购/, sug: "补充你在项目尽调、投资风险论证中的角色" },
+      { k: "法考 / 法律职业资格", w: 3, re: /法律职业资格|法考|司法考试|A\s*证/, sug: "国企法务岗多把法考作为硬门槛或强优先项" },
+      { k: "中共党员", w: 2, re: /中共党员|预备党员/, sug: "预备党员也算。国企对政治面貌的权重明显高于律所，没写一定要补" },
+      { k: "国企 / 央企实习", w: 2, re: /国企|央企|国有|集团有限公司|常法|常年法律顾问/, sug: "有国企常法或国企法务实习经历，务必单独列一条" }
+    ]
+  },
+  {
+    id: "bank", name: "银行 / 券商 · 法律合规", units: "六大行、股份行、政策性银行、头部券商",
+    kw: [
+      { k: "合同审查", w: 2, re: /合同审查|合同审核|合同管理/, sug: "银行法律岗日常以合同与格式条款审查为主，写出数量与类型" },
+      { k: "诉讼 / 清收", w: 3, re: /诉讼|仲裁|清收|强制执行|不良资产|清收处置/, sug: "银行很看重诉讼与不良资产处置经验，哪怕只是整理卷宗也值得写" },
+      { k: "合规与反洗钱", w: 3, re: /合规管理|合规体系|反洗钱|内控|风险管理|监管要求/, sug: "补一句你对合规/反洗钱制度的了解，或相关课程与证书" },
+      { k: "金融业务理解", w: 2, re: /信贷|票据|保理|融资租赁|信托|银行|金融机构|资产管理|资本市场/, sug: "写出你接触过的业务类型，金融机构讨厌「只懂法律不懂业务」" },
+      { k: "法律意见书", w: 2, re: /法律意见书|法律意见|法律审查/, sug: "写明出具法律审查意见的数量与被采纳情况" },
+      { k: "法考 / 法律职业资格", w: 3, re: /法律职业资格|法考|司法考试|A\s*证/, sug: "银行法律岗普遍要求或强优先法考" },
+      { k: "英语六级及以上", w: 3, re: /CET[\s-]?6|六级|雅思|托福|英语可作为工作语言/, sug: "总行岗位通常要求六级 425 以上，写明具体分数" },
+      { k: "数据分析工具", w: 1, re: /Excel|SQL|Python|数据分析|数据透视/i, sug: "银行法律岗常需处理批量合同与数据，会 Excel 数据透视是实际加分项" },
+      { k: "银行 / 金融机构实习", w: 2, re: /银行|证券|保险|基金|信托|金融机构/, sug: "有金融机构实习经历务必单列" }
+    ]
+  },
+  {
+    id: "inhouse", name: "企业法务（互联网 / 科技）", units: "腾讯、字节、华为、京东、小米、网易",
+    kw: [
+      { k: "合同审查", w: 3, re: /合同审查|合同审核|合同起草|合同管理/, sug: "企业法务最核心的日常，注明审查数量与合同类型" },
+      { k: "合规（数据 / 内容）", w: 3, re: /合规|数据合规|个人信息|隐私|内容安全|监管/, sug: "互联网法务第一需求是数据合规，补上「个人信息保护法 / 数据安全法」相关经历或课程" },
+      { k: "知识产权", w: 3, re: /知识产权|商标|著作权|专利|侵权/, sug: "互联网法务大量涉知识产权，注明你处理过的商标/著作权事务" },
+      { k: "劳动法 / 用工合规", w: 2, re: /劳动法|劳动争议|用工|社保|竞业/, sug: "劳动用工是企业法务高频场景，有相关论文或实务都写上" },
+      { k: "诉讼 / 争议处理", w: 2, re: /诉讼|仲裁|争议解决|纠纷|案件管理/, sug: "写出你参与的案件数量与结果" },
+      { k: "法律检索与法律研究", w: 2, re: /法律检索|法律研究|案例检索|案例分析|检索/, sug: "企业法务需要快速给出可落地结论，写出你输出的研究结论被采纳的情况" },
+      { k: "英语能力", w: 2, re: /英语|CET[\s-]?6|六级|雅思|托福|英文/, sug: "涉外业务与跨境合规岗位要求英语，写明等级与分数" },
+      { k: "工具与效率", w: 1, re: /AI|人工智能|AIGC|Office|Excel|PPT|可视化/i, sug: "企业法务看重效率工具，写清你用什么工具提升过工作效率" },
+      { k: "法考 / 法律职业资格", w: 3, re: /法律职业资格|法考|司法考试|A\s*证/, sug: "企业法务岗多要求通过法考" }
+    ]
+  },
+  {
+    id: "gov", name: "体制内 · 公考 / 法检", units: "国考、省考、法检聘用制、公证处、仲裁委",
+    kw: [
+      { k: "法律职业资格 / 法考", w: 3, re: /法律职业资格|法考|司法考试|司考|A\s*证/, sug: "法检岗位多数把法考作为硬性门槛，务必写明" },
+      { k: "法院 / 检察院实习", w: 3, re: /法院|检察院|法官|检察官|审判|检察/, sug: "法检实习是体制内岗位最直接的对口经历" },
+      { k: "卷宗 / 判决书 / 文书", w: 3, re: /卷宗|判决|裁定|文书|案卷|结案/, sug: "写出整理卷宗与校对文书的数量，这是书记员/助理岗的日常内容" },
+      { k: "案例研习与裁判规则", w: 2, re: /裁判规则|案例研习|类案|裁判文书|判决书/, sug: "你梳理裁判文书的研究成果，对法检面试极有说服力" },
+      { k: "公文写作", w: 2, re: /公文|材料|报告|总结|写作|撰稿/, sug: "体制内看重文字功底，把期刊编辑、征文获奖等写成独立条目" },
+      { k: "中共党员", w: 2, re: /中共党员|预备党员/, sug: "党员身份在体制内岗位是明显加分，没写一定要补" },
+      { k: "学生干部经历", w: 2, re: /学生干部|班长|团支书|部长|主席|团委|学生会/, sug: "体制内面试常问组织协调能力，学生干部经历是有效佐证" },
+      { k: "行测 / 申论", w: 1, re: /行测|申论|公务员|选调/, sug: "如果已在备考，可注明「备考 2027 年国考」体现方向明确" },
+      { k: "志愿服务 / 社会实践", w: 1, re: /志愿|支教|公益|社会实践|三下乡/, sug: "基层服务与志愿经历在面试评分中有实际权重" }
+    ]
+  },
+  {
+    id: "local", name: "地方所 / 中小企业法务 / 法检聘用制", units: "本地中小所、地级市律所、企业法务、法院检察院聘用制、公证处",
+    kw: [
+      { k: "能独立写文书", w: 3, re: /起诉状|答辩状|代理意见|法律意见书|文书撰写|法律文书/, sug: "地方所最关心「你能不能上手写」。把写过的文书列出来，注明数量与是否被采用" },
+      { k: "卷宗 / 证据整理", w: 3, re: /卷宗|证据|案卷|整理|归档|质证/, sug: "写清整理卷宗与证据的数量——这是助理岗的日常，也是最容易被验证的能力" },
+      { k: "合同审查", w: 3, re: /合同审查|合同审核|合同起草|合同管理/, sug: "注明审查合同数量与类型（建设工程 / 买卖 / 劳动），中小企业法务特别看重这项" },
+      { k: "民商事诉讼经验", w: 2, re: /诉讼|仲裁|民商事|合同纠纷|建设工程|劳动争议|侵权/, sug: "写清案由方向与你的参与程度（起草 / 整理 / 旁听）" },
+      { k: "法考 / 法律职业资格", w: 3, re: /法律职业资格|法考|司法考试|司考|A\s*证/, sug: "地方所与法检聘用制常把法考写作「优先」或门槛。过了务必写明；没过也要写「客观题已通过，主观题备考中」" },
+      { k: "稳定出勤 / 可实习时长", w: 2, re: /每周.{0,4}[1-5１-５]天|连续实习|可实习|长期|稳定|全职|到岗/, sug: "写出你能保证的出勤天数与可实习时长——地方所最怕招来干两周就走" },
+      { k: "本地 / 愿意留下", w: 1, re: /本地|湖北|武汉|家乡|生源|户口|长期发展/, sug: "愿意留在本地是很多人没有的优势，尤其是想回家乡发展的同学，明确写出来" },
+      { k: "沟通与接待能力", w: 2, re: /沟通|接待|当事人|咨询|协调|表达/, sug: "地方所与法律援助岗需要直面当事人，写出你接待咨询或对接当事人的经历" },
+      { k: "细心 / 责任心", w: 1, re: /细致|严谨|责任心|认真|踏实|抗压/, sug: "助理岗的核心素质。用具体事例佐证，别只写形容词" },
+      { k: "办公软件熟练", w: 1, re: /Word|Excel|PPT|办公软件|WPS/i, sug: "写明熟悉的办公软件——Word 排版与 Excel 表格是助理岗的基础要求" },
+      { k: "法院 / 检察院实习", w: 2, re: /法院|检察院|法官|检察官|书记员/, sug: "法检实习对法检聘用制与地方所都很对口，务必写明庭室与工作内容" },
+      { k: "学生干部 / 志愿服务", w: 1, re: /学生干部|班长|团支书|部长|志愿|支教|公益/, sug: "地方所与体制内都看重踏实与组织能力，这类经历值得保留" }
+    ]
+  }
+];
+
+/* ---------- 4. 由粘贴的 JD 提取关键词 ---------- */
+/* 4.1 主词库 = 六个方向关键词去重 + 补充词汇 */
+const RS_EXTRA_KW = [
+  { k: "学历 / 在读身份", w: 2, type: "elig", re: /在读研究生|研究生在读|本科在读|在校生|应届毕业生|全日制/,
+    sug: "这是 JD 的硬性身份要求。你若不满足（例如 JD 要求在读研究生而你是本科），建议把精力放到其他岗位；若满足但简历没写，请在教育背景里明确标注学历与在读状态。" },
+  { k: "院校层次要求", w: 2, type: "elig", re: /知名法学院|五院四系|国内外知名|重点法学院|双一流/,
+    sug: "这是 JD 对院校层次的限定。院校不强时不要硬拼这类岗位——改投「专业限定严、院校不限」的岗位，通过率更高。" },
+  { k: "到岗与实习周期", w: 1, type: "cond", re: /全职实习|全职到岗|每周.{0,4}[3-5３-５四五六]\s*天|连续实习|实习.{0,3}[3三]个月/,
+    sug: "这是 JD 的到岗与实习周期条件，不是简历内容。自查能否满足（例如每周 5 天、连续 3 个月），能满足就不用改简历。" },
+  { k: "留用 / 转正机会", w: 1, type: "cond", re: /留用|转正|录用机会/,
+    sug: "JD 提到有留用机会，说明这是「实习转正」路径——面试时要主动问清转正比例与考核标准。" },
+  { k: "近期到岗", w: 1, type: "cond", re: /到岗|尽快入职|近期入职/,
+    sug: "JD 要求近期到岗，自查时间是否冲突即可，无需改简历。" },
+  { k: "红圈所经历", w: 2, re: /红圈|金杜|君合|中伦|方达|海问|通商|环球|竞天公诚|汉坤|天元/ },
+  { k: "薪酬与补贴", w: 1, type: "cond", re: /补贴|津贴|薪资|薪酬|待遇/,
+    sug: "JD 写明了补贴/薪酬，投递前记录一下，面试时可用于横向比较 offer。" },
+  { k: "团队协作与抗压", w: 1, re: /团队协作|团队合作|抗压|沟通能力|执行力/ },
+  { k: "细致与责任心", w: 1, re: /细致|严谨|责任心|认真|踏实/ },
+  { k: "自驱与学习能力", w: 1, re: /自我驱动|学习能力|主动性|上进心/ }
+];
+const RS_MASTER_LIB = (() => {
+  const m = new Map();
+  RS_TARGETS.forEach(t => t.kw.forEach(x => { if (!m.has(x.k)) m.set(x.k, x); }));
+  RS_EXTRA_KW.forEach(x => { if (!m.has(x.k)) m.set(x.k, x); });
+  return Array.from(m.values());
+})();
+
+const JD_STOP = /^(要求|岗位|职责|任职|优先|熟悉|具备|以上|相关|专业|工作|经验|能力|良好|以及|或者|能够|负责|协助|参与|熟练|掌握|了解|具有|通过|法律|法学|其他|完成|优秀|较强|一定的|本科|硕士|研究生|学历|全日制|应届|毕业生|资格|证书|公司|职位|招聘|我们|如下|以下|方向|领域|团队|项目|内容|素质|意识|精神|态度|条件|方式|时间|地点)$/;
+
+function kwFromJD(jd) {
+  const t = normalizeResumeText(jd);
+  const out = [], seen = new Set();
+  /* ① 先用专业词库扫描 JD：JD 里出现过的专业要求才会进入比对集 */
+  RS_MASTER_LIB.forEach(x => {
+    if (seen.has(x.k)) return;
+    if (!x.re.test(t)) return;
+    seen.add(x.k);
+    out.push({
+      k: x.k, w: 2, re: x.re,
+      sug: (x.sug || "把你的相关经历用「" + x.k + "」这个说法重写一遍") + "（JD 中明确出现）"
+    });
+  });
+  /* ② 再补充词库没覆盖到的要求短语，权重低一档 */
+  String(jd).split(/[、，,；;。\n\r\/|]|\s{2,}/).forEach(raw => {
+    const s = String(raw).replace(/^[\s\d.．、)）（(●•\-—*■□①-⑩]+/, "").replace(/[^\u4e00-\u9fa5A-Za-z0-9]/g, "").trim();
+    if (s.length < 3 || s.length > 7) return;
+    if (JD_STOP.test(s) || /^\d+$/.test(s)) return;
+    if (seen.has(s)) return;
+    /* 已被主词库语义覆盖的短语不再重复列出（例如「通过司法考试」已被「法考/法律职业资格」覆盖） */
+    if (RS_MASTER_LIB.some(x => x.re.test(s))) return;
+    if (RS_MASTER_LIB.some(x => x.k.indexOf(s) >= 0 || s.indexOf(x.k) >= 0)) return;
+    seen.add(s);
+    out.push({
+      k: s, w: 1, loose: true,
+      re: new RegExp(s.split("").map(c => c.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("\\s*"), "i"),
+      sug: "JD 中出现「" + s + "」，简历里没有对应表述——把你做过的相关事情用这个词重说一遍"
+    });
+  });
+  return out.filter(x => x.w > 1 || x.type).concat(out.filter(x => x.w <= 1 && !x.type));
+}
+
+/* ---------- 5. 岗位匹配 ---------- */
+function matchTarget(text, targetId, jdText) {
+  const t = normalizeResumeText(text);
+  const dense = densify(t);
+  let name, kws;
+  if (jdText && jdText.trim().length > 20) {
+    name = "你粘贴的岗位 JD";
+    kws = kwFromJD(jdText);
+  } else {
+    const tg = RS_TARGETS.find(x => x.id === targetId) || RS_TARGETS[0];
+    name = tg.name; kws = tg.kw;
+  }
+  const hit = [], miss = [];
+  let wHit = 0, wAll = 0;
+  kws.forEach(x => {
+    wAll += x.w;
+    if (x.re.test(t) || x.re.test(dense)) { wHit += x.w; hit.push(x); } else miss.push(x);
+  });
+  const rate = wAll ? Math.round(wHit / wAll * 100) : 0;
+  return { name, rate, hit, miss, kws, jd: !!(jdText && jdText.trim().length > 20) };
+}
+
+/* ---------- 5. 总诊断 ---------- */
+function diagnoseResume(rawText, targetId, jdText) {
+  const text = normalizeResumeText(rawText);
+  const dense = densify(text);
+  const dims = [], issues = [];
+
+  RS_DIMS.forEach(d => {
+    let got = 0, all = 0; const miss = [];
+    if (d.name === "表述质量") {
+      const r = scoreExpression(text);
+      dims.push({ name: d.name, score: r.score, weight: d.w, note: r.notes.join("；") || "表达规范，暂无明显问题" });
+      return;
+    }
+    d.checks.forEach(c => {
+      all += c.w;
+      const target = c.mode === "dense" ? dense : text;
+      if (c.re.test(target)) got += c.w; else miss.push(c.t);
+    });
+    const score = all ? Math.round((got / all) * 100) / 10 : 0;
+    dims.push({ name: d.name, score, weight: d.w, note: miss.length ? "缺少：" + miss.join("、") : "完整" });
+  });
+
+  let total = 0;
+  dims.forEach(d => total += d.score / 10 * d.weight);
+  total = Math.round(total);
+
+  /* 硬性红线 */
+  if (!/(?:\+?86)?1[3-9]\d{9}/.test(dense)) issues.push({ level: "high", t: "没有识别到手机号", d: "简历顶部必须有手机号。如果确实写了但没被识别，请检查是否被排版成图片或用了特殊符号。" });
+  if (!/[\w.+-]+@[\w-]+(?:\.[\w-]+)+/.test(dense)) issues.push({ level: "high", t: "没有识别到邮箱", d: "用「姓名+毕业年份」的邮箱前缀，避免 QQ 号邮箱（律所会觉得不专业）。" });
+  if (!/法律职业资格|法考|司法考试|司考/.test(text)) issues.push({ level: "high", t: "全篇没有出现「法考 / 法律职业资格」", d: "对法学生来说这是最致命的缺失。即使尚未通过，也要写「已报考 2026 年国家统一法律职业资格考试（客观题 X 月）」。" });
+  else if (!/A\s*证|已通过.{0,14}(法考|法律职业资格)|全科|主观题.{0,6}通过/.test(text) && /客观题/.test(text)) issues.push({ level: "mid", t: "只写了客观题通过，未见主观题结果", d: "补一句「主观题考试时间 / 结果」或「主观题备考中」，否则 HR 会默认你尚未取得法律职业资格。A 证一定要标注。" });
+  if (!/实习|见习/.test(text)) issues.push({ level: "high", t: "没有实习经历", d: "补救顺序：法律援助中心 → 本地中小所 → 法院/检察院书记员 → 公司法务助理。" });
+  if (text.replace(/\s/g, "").length < 300) issues.push({ level: "high", t: "内容过少（不足 300 字）", d: "一页简历的有效信息量通常在 600–1200 字。" });
+  if (!/求职意向|应聘岗位|目标岗位|意向岗位/.test(text)) issues.push({ level: "mid", t: "没有写「求职意向」", d: "在姓名下方加一行「求职意向：律所实习生（争议解决 / 公司业务方向）｜意向城市：武汉、上海」。这一行直接决定 HR 把你归到哪个岗位池。" });
+  if (!/中共党员|预备党员|共青团员|政治面貌/.test(text)) issues.push({ level: "low", t: "没有写政治面貌", d: "国企、央企、体制内岗位对政治面貌有明确权重，团员也建议写上。" });
+  if (!/\d/.test(text)) issues.push({ level: "mid", t: "没有任何数字", d: "把做过的事数字化：审核合同 X 份、检索案例 X 个、整理卷宗 X 卷、撰写法律意见书 X 篇。" });
+  if (!/英语|英文|CET|雅思|托福|六级|四级/i.test(text)) issues.push({ level: "mid", t: "没有外语能力信息", d: "写清四六级具体分数。涉外岗位（红圈所、外资所、跨境业务）把英语当硬门槛；投地方所、中小企业法务与体制内不强制，但有分数就写上，不写白不写。" });
+
+  /* 维度级建议 */
+  const ADV = {
+    "基础信息": "把「姓名 / 手机 / 邮箱 / 政治面貌 / 求职意向 / 所在地」放在最顶部，别让 HR 找。",
+    "教育背景": "补齐院校、学历、专业、起止时间，并加上 GPA 或专业排名（前 30% 就写）。",
+    "法律职业资格": "这是法学简历的第一权重项。写明考试年份、是否通过、客观题/主观题分数；A 证一定要标注。",
+    "实习经历": "每段实习按「单位 + 岗位 + 时间 + 做了什么 + 量化结果」写，并点明所在业务领域。",
+    "实务技能": "单开「法律实务技能」模块：法律检索、合同审查、尽职调查、法律意见书撰写、诉讼文书起草，并注明你用的检索工具。",
+    "学术与竞赛": "模拟法庭（理律杯 / Jessup / Vis Moot / 贸仲杯）含金量很高——投红圈所时接近敲门砖，投地方所与体制内也能证明文书与表达能力，有就放在教育背景之后。",
+    "外语能力": "写清四六级具体分数；涉外方向建议补「英语可作为工作语言」这类能力描述 + 具体经历佐证。",
+    "学生工作与社团": "辩论队、法律援助中心、法律诊所的含金量高于普通学生会经历，优先写这些。",
+    "工具与证书": "写上北大法宝 / 威科先行 / Westlaw / LexisNexis 等检索工具的使用经验，这是加分项。"
+  };
+  dims.forEach(d => {
+    if (d.score < 7 && d.name !== "表述质量" && ADV[d.name]) {
+      issues.push({ level: d.score < 4 ? "mid" : "low", t: d.name + " 得分偏低（" + d.score + "/10）", d: ADV[d.name] });
+    }
+  });
+
+  const order = { high: 0, mid: 1, low: 2 };
+  issues.sort((a, b) => order[a.level] - order[b.level]);
+
+  const match = matchTarget(text, targetId, jdText);
+  return { total, dims, issues, match, normalizedLength: text.length };
+}
+
+</script>
+
+<script>
+/* ============ 通用工具 ============ */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+let toastTimer;
+function toast(msg) {
+  const t = $("#toast"); if (!t) return;
+  t.textContent = msg; t.classList.add("on");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("on"), 2000);
+}
+function copy(text, label) {
+  navigator.clipboard.writeText(text)
+    .then(() => toast((label || "已复制") + "：" + text.slice(0, 36)))
+    .catch(() => toast("复制失败，请手动选中复制"));
+}
+window.copyText = copy;
+
+/* 从城市字段里抽出干净的地区名（剔除「全国」「及各省」「101」这类噪声） */
+const CITY_STOP = /全国|不限|各省|各地|海外|多地|城市|详见|具体|及|境内外|^[\d]+$|^等$/;
+function parseCities(s) {
+  return String(s || "").split(/[、,，\s\/]+/)
+    .map(x => x.replace(/[（）()]/g, "").trim())
+    .filter(x => x.length >= 2 && x.length <= 5 && !CITY_STOP.test(x));
+}
+
+/* ============ 收藏 ============ */
+const LS_KEY = "fatu_bookmarks_v1";
+let BOOKMARKS = new Set();
+try { BOOKMARKS = new Set(JSON.parse(localStorage.getItem(LS_KEY) || "[]")); } catch (e) { }
+function saveBookmarks() { try { localStorage.setItem(LS_KEY, JSON.stringify([...BOOKMARKS])); } catch (e) { } }
+const jobKey = j => j.unit + "|" + j.title;
+
+/* ============ 双非友好度 ============
+   good = 双非友好 / mid = 有门槛 / hard = 高门槛
+   优先读 data-extra.js 的 FRIENDLY 映射（我逐条读公告判定的），缺失时按内容兜底。 */
+const FRIENDLY_ORDER = { good: 0, mid: 1, hard: 2 };
+function friendlyOf(j) {
+  const k = jobKey(j);
+  if (typeof FRIENDLY !== "undefined" && FRIENDLY[k]) return FRIENDLY[k];
+  const hay = String(j.req || "") + " " + String(j.grade || "");
+  if (/顶尖|前 20%|五院四系|国内外知名|知名法学院|知名院校|知名大学|重点法学院校/.test(hay))
+    return ["hard", "明确要求院校层次——双非建议把精力放在别的岗位上"];
+  if (/硕士|研究生|博士/.test(String(j.grade || "")))
+    return ["mid", "门槛：硕士起——本科生优先看「双非友好」档的岗位"];
+  if (/已通过|须|需|必须|应|持/.test(String(j.req || "")) && /法考|司法考试|法律职业资格/.test(String(j.req || "")) && !/优先/.test(String(j.req || "")))
+    return ["mid", "硬门槛：须通过法考，过了再投"];
+  return ["good", ""];
+}
+const friendlyLv = j => friendlyOf(j)[0];
+const friendlyWhyOf = j => friendlyOf(j)[1] || "";
+const friendlyMeta = lv => (typeof FRIENDLY_META !== "undefined" && FRIENDLY_META[lv])
+  || { label: lv, color: "#888", soft: "#F2F2F2", border: "#DDD", desc: "", advice: "" };
+
+/* 发布时间：优先取 PUBLISHED 里的原始发布日期，否则退回本站核实日期 */
+const pubDate = j => (typeof PUBLISHED !== "undefined" && PUBLISHED[jobKey(j)]) || j.updated || "";
+const isOriginalPub = j => typeof PUBLISHED !== "undefined" && !!PUBLISHED[jobKey(j)];
+function freshOf(d) {
+  if (!d) return null;
+  const t = new Date(String(d).replace(/-/g, "/") + " 00:00:00");
+  if (isNaN(t.getTime())) return null;
+  const days = Math.floor((Date.now() - t.getTime()) / 86400000);
+  if (days <= 0) return ["今日更新", "today"];
+  if (days <= 3) return [days + " 天前", "new"];
+  if (days <= 7) return ["本周", "week"];
+  if (days <= 30) return ["本月", "month"];
+  return [String(d).slice(0, 7) + " 发布", "old"];
+}
+
+/* ============ 岗位库 ============ */
+const STATE = { q: "", track: "全部", city: "全部", cohort: "全部", type: "全部", fresh: "全部", friendly: "全部", sort: "friendly", onlyBm: false, limit: 24 };
+
+function allCities() {
+  const s = new Set();
+  JOBS.forEach(j => parseCities(j.city).forEach(c => s.add(c)));
+  CITIES.forEach(c => s.add(c.city));
+  return ["全部", ...Array.from(s).sort()];
+}
+function jobTracks() { return ["全部", ...Array.from(new Set(JOBS.map(j => j.track)))]; }
+function jobTypes() { return ["全部", ...Array.from(new Set(JOBS.map(j => String(j.type)))).sort()]; }
+
+function matchCohort(j, v) {
+  if (v === "全部") return true;
+  const c = String(j.cohort);
+  if (v === "大三 / 大四在校") return /大三|大四|在校|本科|2027届|2028届|不限/.test(c + String(j.grade));
+  if (v === "2027 届") return /2027/.test(c);
+  if (v === "2028 届") return /2028/.test(c);
+  if (v === "应届 / 刚毕业") return /应届|不限/.test(c);
+  if (v === "非应届可报") return /非应届|不限|社招/.test(c + String(j.type) + String(j.req));
+  return true;
+}
+
+function daysAgo(d) {
+  if (!d) return Infinity;
+  const t = new Date(String(d).replace(/-/g, "/") + " 00:00:00");
+  if (isNaN(t.getTime())) return Infinity;
+  return Math.floor((Date.now() - t.getTime()) / 86400000);
+}
+function matchFresh(j, v) {
+  if (v === "全部") return true;
+  const d = daysAgo(pubDate(j));
+  if (v === "今日更新") return d <= 0;
+  if (v === "3 天内") return d <= 3;
+  if (v === "本周内") return d <= 7;
+  if (v === "本月内") return d <= 30;
+  return true;
+}
+
+function filteredJobs() {
+  let arr = JOBS.filter(j => {
+    if (STATE.onlyBm && !BOOKMARKS.has(jobKey(j))) return false;
+    if (STATE.track !== "全部" && j.track !== STATE.track) return false;
+    if (STATE.type !== "全部" && String(j.type) !== STATE.type) return false;
+    if (STATE.city !== "全部" && !String(j.city).includes(STATE.city)) return false;
+    if (!matchCohort(j, STATE.cohort)) return false;
+    if (!matchFresh(j, STATE.fresh)) return false;
+    if (STATE.friendly !== "全部" && friendlyLv(j) !== STATE.friendly) return false;
+    if (STATE.q) {
+      const hay = [j.unit, j.title, j.city, j.track, j.subtype, j.req, j.cohort, j.type, j.source, j.pay, j.location, friendlyWhyOf(j)].join(" ").toLowerCase();
+      if (!hay.includes(STATE.q.toLowerCase())) return false;
+    }
+    return true;
+  });
+  /* 默认排序：友好度优先（双非友好 → 有门槛 → 高门槛），同档保持原顺序 */
+  if (STATE.sort === "friendly") arr.sort((a, b) => FRIENDLY_ORDER[friendlyLv(a)] - FRIENDLY_ORDER[friendlyLv(b)]);
+  if (STATE.sort === "updated") arr.sort((a, b) => String(pubDate(b)).localeCompare(String(pubDate(a))));
+  if (STATE.sort === "deadline") arr.sort((a, b) => {
+    const A = a.deadline ? 1 : 0, B = b.deadline ? 1 : 0;
+    return A !== B ? B - A : String(a.deadline).localeCompare(String(b.deadline));
+  });
+  if (STATE.sort === "hot") arr.sort((a, b) => (b.hot ? 1 : 0) - (a.hot ? 1 : 0));
+  return arr;
+}
+
+function jobCard(j) {
+  const bm = BOOKMARKS.has(jobKey(j));
+  const pd = pubDate(j);
+  const fr = freshOf(pd);
+  const lv = friendlyLv(j);
+  const fm = friendlyMeta(lv);
+  const why = friendlyWhyOf(j);
+  const tags = [
+    fr ? `<span class="tag fresh-${fr[1]}">${esc(fr[0])}</span>` : "",
+    `<span class="tag track">${esc(j.track)}${j.subtype ? " · " + esc(j.subtype) : ""}</span>`,
+    `<span class="tag type">${esc(j.type)}</span>`,
+    `<span class="tag">${esc(j.city)}</span>`,
+    j.location ? `<span class="tag">${esc(j.location)}</span>` : "",
+    `<span class="tag">${esc(j.grade)}</span>`,
+    `<span class="tag grade">${esc(j.cohort)}</span>`
+  ].filter(Boolean).join("");
+  return `<article class="card fr-${lv}" data-t="${trackKey(j.track)}">
+    <div class="card-top">
+      <div>
+        <div class="card-unit">${esc(j.unit)}</div>
+        <div class="card-title">${esc(j.title)}</div>
+      </div>
+      <button class="bookmark ${bm ? "on" : ""}" data-bm="${esc(jobKey(j))}" title="收藏">${bm ? "★" : "☆"}</button>
+    </div>
+    <div class="fr-bar" style="--frc:${fm.color};--frbg:${fm.soft};--frbd:${fm.border}">
+      <span class="fr-badge">${esc(fm.label)}</span>
+      <span class="fr-why">${esc(why || fm.desc)}</span>
+    </div>
+    <div class="meta">${tags}</div>
+    ${j.pay
+      ? `<div class="req pay">${esc(j.pay)}</div>`
+      : `<div class="req pay-none">薪酬：公告未标注 —— 投递时建议直接问 HR</div>`}
+    <div class="req">${esc(j.req)}</div>
+    <div class="card-foot">
+      <span class="src">${esc(j.contact || "")}${j.source ? " · " + esc(j.source) : ""}</span>
+      <span class="datechip" title="${isOriginalPub(j) ? "该信息的原始发布日期" : "本站最后核实日期"}">${isOriginalPub(j) ? "发布" : "核实"} ${esc(pd)}</span>
+    </div>
+    <div class="card-actions">
+      ${j.url ? `<a class="btn small" href="${esc(j.url)}" target="_blank" rel="noopener">打开投递入口 ↗</a>` : ""}
+      <button class="btn small" data-copy="${esc(j.contact || j.url || "")}">复制投递信息</button>
+      ${j.deadline ? `<span class="tag" style="color:var(--red);border-color:#F3CFCF;background:var(--red-soft)">截止 ${esc(j.deadline)}</span>` : ""}
+    </div>
+  </article>`;
+}
+
+function renderJobs() {
+  const arr = filteredJobs();
+  const shown = arr.slice(0, STATE.limit);
+  if (shown.length) {
+    $("#jobGrid").innerHTML = shown.map(jobCard).join("");
+  } else {
+    const cityHit = STATE.city !== "全部" ? CITIES.find(c => STATE.city.includes(c.city) || c.city.includes(STATE.city)) : null;
+    $("#jobGrid").innerHTML = `<div class="empty" style="grid-column:1/-1">
+      没有匹配的岗位。<br>
+      ${cityHit ? `本站暂未收录「${esc(cityHit.city)}」的具体岗位，但下面城市专区里有该地的渠道与代表律所。` : "试试放宽筛选条件，或清空搜索词。"}
+      <div style="margin-top:14px"><button class="btn small" id="btnGotoCity">去看城市专区 ↓</button></div>
+    </div>`;
+    const g = $("#btnGotoCity");
+    if (g) g.onclick = () => document.getElementById("cities").scrollIntoView({ behavior: "smooth" });
+  }
+  const goodCount = arr.filter(j => friendlyLv(j) === "good").length;
+  const hardCount = arr.filter(j => friendlyLv(j) === "hard").length;
+  $("#jobCount").innerHTML = `当前显示 ${shown.length} 条 / 共 ${arr.length} 条 —— 其中 <b class="cnt-good">「双非友好」${goodCount} 条</b>`
+    + (hardCount ? ` · <span class="cnt-hard">「高门槛」${hardCount} 条已排到最后</span>` : "");
+  $("#jobMore").innerHTML = arr.length > STATE.limit
+    ? `<button class="btn" id="btnMore">再显示 ${Math.min(24, arr.length - STATE.limit)} 条（剩余 ${arr.length - STATE.limit}）</button>
+       <button class="btn" id="btnAll" style="margin-left:8px">一次显示全部 ${arr.length} 条</button>` : "";
+  const b = $("#btnMore");
+  if (b) b.onclick = () => { STATE.limit += 24; renderJobs(); };
+  const ba = $("#btnAll");
+  if (ba) ba.onclick = () => { STATE.limit = arr.length; renderJobs(); };
+}
+
+function buildJobFilters() {
+  $("#fTrack").innerHTML = jobTracks().map(t => `<option>${esc(t)}</option>`).join("");
+  $("#fCity").innerHTML = allCities().map(t => `<option>${esc(t)}</option>`).join("");
+  $("#fType").innerHTML = jobTypes().map(t => `<option>${esc(t)}</option>`).join("");
+  $("#fQ").addEventListener("input", e => { STATE.q = e.target.value.trim(); STATE.limit = 24; renderJobs(); });
+  $("#fTrack").addEventListener("change", e => { STATE.track = e.target.value; STATE.limit = 24; renderJobs(); });
+  $("#fCity").addEventListener("change", e => { STATE.city = e.target.value; STATE.limit = 24; renderJobs(); });
+  $("#fType").addEventListener("change", e => { STATE.type = e.target.value; STATE.limit = 24; renderJobs(); });
+  $("#fFresh").addEventListener("change", e => { STATE.fresh = e.target.value; STATE.limit = 24; renderJobs(); });
+  $("#fFriendly").addEventListener("change", e => { STATE.friendly = e.target.value; STATE.limit = 24; renderJobs(); });
+  $("#fSort").addEventListener("change", e => { STATE.sort = e.target.value; renderJobs(); });
+  $$("[data-onlygood]").forEach(btn => btn.addEventListener("click", () => {
+    STATE.friendly = STATE.friendly === "good" ? "全部" : "good";
+    STATE.limit = 24;
+    const sel = $("#fFriendly"); if (sel) sel.value = STATE.friendly;
+    $$("[data-onlygood]").forEach(b => b.classList.toggle("on", STATE.friendly === "good"));
+    renderJobs();
+  }));
+  $$("#fCohort button").forEach(b => b.addEventListener("click", () => {
+    $$("#fCohort button").forEach(x => x.classList.remove("on"));
+    b.classList.add("on"); STATE.cohort = b.dataset.v; STATE.limit = 24; renderJobs();
+  }));
+  $("#fReset").addEventListener("click", () => {
+    STATE.q = ""; STATE.track = "全部"; STATE.city = "全部"; STATE.type = "全部"; STATE.cohort = "全部"; STATE.fresh = "全部"; STATE.friendly = "全部";
+    STATE.sort = "friendly"; STATE.onlyBm = false; STATE.limit = 24;
+    $("#fQ").value = ""; $("#fTrack").value = "全部"; $("#fCity").value = "全部"; $("#fType").value = "全部"; $("#fFresh").value = "全部"; $("#fFriendly").value = "全部"; $("#fSort").value = "friendly";
+    $$("#fCohort button").forEach((x, i) => x.classList.toggle("on", i === 0));
+    $$("[data-onlygood]").forEach(b => b.classList.remove("on"));
+    $("#fBm").checked = false; renderJobs();
+  });
+  $("#fBm").addEventListener("change", e => { STATE.onlyBm = e.target.checked; STATE.limit = 24; renderJobs(); });
+  $("#fExport").addEventListener("click", exportCSV);
+}
+
+function exportCSV() {
+  const arr = filteredJobs();
+  const head = ["双非友好度", "门槛说明", "单位", "岗位", "赛道", "细分", "城市", "具体地点", "学历", "届别", "类型", "留用", "薪酬", "要求", "投递方式", "链接", "截止", "更新", "来源"];
+  const lines = [head.join(",")].concat(arr.map(j => [friendlyMeta(friendlyLv(j)).label, friendlyWhyOf(j), j.unit, j.title, j.track, j.subtype, j.city, j.location, j.grade, j.cohort, j.type, j.retention, j.pay || "公告未标注", j.req, j.contact, j.url, j.deadline, j.updated, j.source]
+    .map(v => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`).join(",")));
+  const blob = new Blob(["\ufeff" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `法学生岗位_${new Date().toISOString().slice(0, 10)}.csv`;
+  a.click();
+  toast("已导出 " + arr.length + " 条");
+}
+
+document.addEventListener("click", e => {
+  const bm = e.target.closest("[data-bm]");
+  if (bm) {
+    const k = bm.dataset.bm;
+    BOOKMARKS.has(k) ? BOOKMARKS.delete(k) : BOOKMARKS.add(k);
+    saveBookmarks(); renderJobs();
+    toast(BOOKMARKS.has(k) ? "已收藏" : "已取消收藏");
+    return;
+  }
+  const cp = e.target.closest("[data-copy]");
+  if (cp) { const v = cp.dataset.copy; v ? copy(v) : toast("该岗位无邮箱，请走官网投递"); return; }
+});
+
+/* ============ 平台导航 ============ */
+function renderPlatforms() {
+  const counts = {};
+  PLATFORMS.forEach(p => counts[p.cat] = (counts[p.cat] || 0) + 1);
+  const order = PLATFORM_CATS.filter(c => counts[c]);
+  $("#platTabs").innerHTML = ["全部", ...order].map((c, i) =>
+    `<button class="${i === 0 ? "on" : ""}" data-cat="${esc(c)}" data-t="${platKey(c)}">${esc(c)}${counts[c] ? `<span style="opacity:.6"> ${counts[c]}</span>` : ""}</button>`).join("");
+  drawPlatformGroups("全部");
+  $$("#platTabs button").forEach(b => b.onclick = () => {
+    $$("#platTabs button").forEach(x => x.classList.remove("on"));
+    b.classList.add("on"); drawPlatformGroups(b.dataset.cat);
+  });
+}
+function drawPlatformGroups(cat) {
+  const cats = cat === "全部" ? PLATFORM_CATS : [cat];
+  $("#platWrap").innerHTML = cats.map(c => {
+    const list = PLATFORMS.filter(p => p.cat === c);
+    if (!list.length) return "";
+    const cards = list.map(p => {
+      const badge = p.tag ? `<span class="badge">${esc(p.tag)}</span>` : "";
+      const foot = p.handle
+        ? `<em>${esc(p.handleLab || "账号")}：${esc(p.handle)}</em>`
+        : p.url ? `<em>${esc(p.url.replace(/^https?:\/\//, "").replace(/\/$/, ""))}</em>` : "";
+      const inner = `<b>${esc(p.name)}</b><span>${esc(p.desc || "")}</span>${foot}${badge}`;
+      if (p.handle) {
+        const cmd = (p.handleLab === "小红书" ? "小红书搜：" : p.handleLab === "微信" ? "微信搜：" : "") + p.handle;
+        return `<div class="plat wx" data-t="${platKey(c)}" data-copy="${esc(cmd)}" title="点击复制">${inner}</div>`;
+      }
+      if (p.url) return `<a class="plat" data-t="${platKey(c)}" href="${esc(p.url)}" target="_blank" rel="noopener">${inner}</a>`;
+      return `<div class="plat wx" data-t="${platKey(c)}" title="暂无可跳转链接">${inner}</div>`;
+    }).join("");
+    return `<div class="plat-group" data-t="${platKey(c)}"><h3><i class="bar"></i>${esc(c)}<span class="cnt">${list.length} 个</span></h3><div class="plat-grid">${cards}</div></div>`;
+  }).join("");
+}
+
+/* ============ 城市专区 ============ */
+function renderCities() {
+  $("#cityGrid").innerHTML = CITIES.map(c => {
+    const links = (c.channels || []).map(ch => ch.u
+      ? `<a class="btn small" href="${esc(ch.u)}" target="_blank" rel="noopener">${esc(ch.n)} ↗</a>`
+      : `<button class="btn small" data-copy="${esc(ch.n)}">${esc(ch.n)}</button>`).join("");
+    return `<div class="city" data-t="all">
+      <div class="city-h"><b>${esc(c.city)}</b><span>${esc(c.tag || "")}</span></div>
+      <p><b class="f">代表律所/机构：</b>${esc(c.firms || "—")}</p>
+      <p style="margin-top:7px">${esc(c.note || "")}</p>
+      <div class="city-links">${links}</div>
+    </div>`;
+  }).join("");
+}
+
+/* ============ 秋招日历 ============ */
+function renderTimeline() {
+  $("#tl").innerHTML = TIMELINE.map(t =>
+    `<div class="tl-item ${t.now ? "now" : ""}">
+      <div class="tl-when">${esc(t.when)}${t.flag ? `<span class="tl-flag">${esc(t.flag)}</span>` : ""}</div>
+      <div class="tl-body">${t.body}</div>
+    </div>`).join("");
+}
+
+/* ============ 联系与建议 ============ */
+function renderContact() {
+  const hasMail = !!CONTACT.email;
+  const mailCard = hasMail
+    ? `<div class="contact-card" data-t="soe">
+         <div class="lab">邮箱 · 建议与纠错</div>
+         <div class="val"><a href="mailto:${esc(CONTACT.email)}">${esc(CONTACT.email)}</a></div>
+         <div class="note">岗位纠错、链接失效、想加的板块，都发这里。</div>
+         <button class="btn small" data-copy="${esc(CONTACT.email)}">复制邮箱</button>
+       </div>`
+    : `<div class="contact-card" data-t="bank">
+         <div class="lab">邮箱 · 建议与纠错</div>
+         <div class="val pending">待填写</div>
+         <div class="note">把邮箱填进 <code>assets/data-extra.js</code> 的 <code>CONTACT.email</code> 即可显示在这里。</div>
+       </div>`;
+  const extra = [
+    CONTACT.wechat ? `<div class="contact-card" data-t="lawfirm"><div class="lab">微信</div><div class="val">${esc(CONTACT.wechat)}</div><button class="btn small" data-copy="${esc(CONTACT.wechat)}">复制微信号</button></div>` : "",
+    CONTACT.xiaohongshu ? `<div class="contact-card" data-t="media"><div class="lab">小红书</div><div class="val">${esc(CONTACT.xiaohongshu)}</div><button class="btn small" data-copy="${esc(CONTACT.xiaohongshu)}">复制账号</button></div>` : ""
+  ].join("");
+  $("#contactWrap").innerHTML = mailCard + extra +
+    `<div class="contact-card" data-t="all">
+      <div class="lab">本站性质</div>
+      <div class="val" style="font-size:14px;font-weight:600">${esc(CONTACT.role)}</div>
+      <div class="note">${esc(CONTACT.intro)}</div>
+    </div>`;
+  $("#feedbackList").innerHTML = CONTACT.accept.map(t => `<li>${esc(t)}</li>`).join("");
+}
+
+/* ============ 简历诊断 ============
+   引擎在 assets/resume.js（normalizeResumeText / diagnoseResume / matchTarget / RS_TARGETS） */
+function gradeOf(n) { return n >= 80 ? ["good", "可以直接投了"] : n >= 65 ? ["mid", "再打磨一轮"] : n >= 45 ? ["mid", "需要明显修改"] : ["bad", "建议重写"]; }
+
+function renderResume(res) {
+  const [cls, label] = gradeOf(res.total);
+  const dimHTML = res.dims.map(d => {
+    const c = d.score >= 7 ? "ok" : d.score >= 4 ? "warn" : "bad";
+    return `<div class="dim"><div class="dim-top"><span>${esc(d.name)} <span style="color:var(--ink-3);font-size:11.5px">（权重 ${d.weight}%）</span></span><span>${d.score}/10</span></div>
+      <div class="bar-bg"><div class="bar-fill ${c}" style="width:${d.score * 10}%"></div></div>
+      <div style="font-size:12px;color:var(--ink-3);margin-top:4px">${esc(d.note)}</div></div>`;
+  }).join("");
+
+  /* ---- 岗位匹配 ---- */
+  const m = res.match;
+  const mCls = m.rate >= 75 ? "ok" : m.rate >= 50 ? "warn" : "bad";
+  const mLabel = m.rate >= 75 ? "匹配度高，可以直接投" : m.rate >= 50 ? "有一定匹配，补完缺口再投" : "匹配度偏低，先按建议补内容";
+  const kwHTML = m.hit.map(x => `<span class="hit">✓ ${esc(x.k)}</span>`).join("") +
+    m.miss.map(x => `<span>✗ ${esc(x.k)}</span>`).join("");
+  const contentMiss = m.miss.filter(x => !x.type);
+  const condMiss = m.miss.filter(x => x.type);
+  const sugHTML = contentMiss.length
+    ? contentMiss.map((x, i) => `<div class="issue ${i < 3 ? "high" : i < 6 ? "mid" : "low"}">
+        <b>补上「${esc(x.k)}」${i < 3 ? "　← 优先改这条" : ""}</b>
+        <p>${esc(x.sug)}</p></div>`).join("")
+    : `<div class="issue low"><b>内容维度没有明显缺口</b><p>目标岗位要求的关键词基本都命中了，接下来把重心放到笔试题与面试上。</p></div>`;
+  const condHTML = condMiss.length
+    ? `<div style="margin-top:18px">
+        <h3 style="font-size:14px;margin-bottom:6px">先自查这几项（JD 的条件，不是简历内容）</h3>
+        ${condMiss.map(x => `<div class="issue ${x.type === "elig" ? "high" : "low"}"><b>${esc(x.k)}</b><p>${esc(x.sug)}</p></div>`).join("")}
+       </div>` : "";
+
+  /* ---- 问题清单 ---- */
+  const issueHTML = res.issues.length
+    ? res.issues.map(i => `<div class="issue ${i.level}"><b>${esc(i.t)}</b><p>${esc(i.d)}</p></div>`).join("")
+    : `<div class="issue low"><b>没有发现明显的硬性问题</b><p>继续按岗位匹配建议做针对性微调即可。</p></div>`;
+
+  /* ---- 修改清单 ---- */
+  const plan = [
+    `【简历诊断报告】综合得分 ${res.total}/100 · 目标方向：${m.name}`,
+    ``,
+    `一、维度得分`,
+    ...res.dims.map(d => `  ${d.name}：${d.score}/10（${d.note}）`),
+    ``,
+    `二、目标岗位匹配度 ${m.rate}%（命中 ${m.hit.length} / ${m.kws.length} 项）`,
+    `  已命中：${m.hit.map(x => x.k).join("、") || "无"}`,
+    `  待补齐：${m.miss.map(x => x.k).join("、") || "无"}`,
+    ``,
+    `三、内容缺口（针对目标岗位，按优先级）`,
+    ...(contentMiss.length ? contentMiss.slice(0, 8).map((x, i) => `  ${i + 1}. 补「${x.k}」：${x.sug}`) : ["  无，内容维度覆盖已足够"]),
+    ``,
+    `四、JD 条件自查（不是简历内容，确认能否满足即可）`,
+    ...(condMiss.length ? condMiss.map((x, i) => `  ${i + 1}. ${x.k}：${x.sug}`) : ["  无"]),
+    ``,
+    `五、简历通用问题`,
+    ...(res.issues.length ? res.issues.slice(0, 8).map((x, i) => `  ${i + 1}. 【${x.t}】${x.d}`) : ["  无"])
+  ].join("\n");
+
+  $("#rsOut").innerHTML = `
+  <div class="panel">
+    <div class="score-box">
+      <div class="score-num ${cls}">${res.total}</div>
+      <div class="score-meta"><b>${esc(label)}</b>简历综合得分（满分 100）· 正文 ${res.normalizedLength} 字</div>
+    </div>
+    <h3 style="font-size:14px;margin-bottom:12px">十个维度得分</h3>
+    ${dimHTML}
+  </div>
+
+  <div class="panel">
+    <h3 style="font-size:15px;margin-bottom:4px">目标岗位匹配：${esc(m.name)}</h3>
+    <p class="hint">${m.jd ? "按你粘贴的 JD 逐词比对。" : "按该方向的常见要求逐项比对。"}命中权重越高，说明你的简历越像这个岗位想要的人。</p>
+    <div class="score-box" style="padding-bottom:14px;margin-bottom:14px">
+      <div class="score-num ${mCls}" style="font-size:38px">${m.rate}<span style="font-size:20px">%</span></div>
+      <div class="score-meta"><b>${esc(mLabel)}</b>命中 ${m.hit.length} / ${m.kws.length} 项要求</div>
+    </div>
+    <div class="kw">${kwHTML}</div>
+    <div style="margin-top:20px">
+      <h3 style="font-size:14px;margin-bottom:6px">怎么改 —— 按优先级排列</h3>
+      ${sugHTML}
+    </div>
+    ${condHTML}
+    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn primary small" id="btnCopyPlan">复制完整修改清单</button>
+      <button class="btn small" id="btnPrint">打印 / 存为 PDF</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3 style="font-size:14px;margin-bottom:4px">简历通用问题（按严重度排序）</h3>
+    <p class="hint">红色 = 会直接导致淘汰；橙色 = 明显扣分；蓝色 = 优化建议。</p>
+    ${issueHTML}
+  </div>`;
+
+  $("#btnCopyPlan").onclick = () => copy(plan, "修改清单已复制");
+  $("#btnPrint").onclick = () => window.print();
+}
+
+/* ============ 输入处理 ============ */
+let RS_TARGET = "circle";
+
+/* pdf.js 按需加载：只有真的上传 PDF 时才去取那 350KB，首屏不为它买单 */
+const PDF_BASE = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
+let pdfLoading = null;
+function loadPdfJs() {
+  if (window.pdfjsLib) return Promise.resolve(window.pdfjsLib);
+  if (pdfLoading) return pdfLoading;
+  pdfLoading = new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = PDF_BASE + "pdf.min.js";
+    s.onload = () => {
+      if (!window.pdfjsLib) { reject(new Error("pdfjsLib missing")); return; }
+      try { window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDF_BASE + "pdf.worker.min.js"; } catch (e) { }
+      resolve(window.pdfjsLib);
+    };
+    s.onerror = () => reject(new Error("load failed"));
+    document.head.appendChild(s);
+  });
+  return pdfLoading;
+}
+
+async function parsePdf(file, el) {
+  el.value = "正在解析 PDF……";
+  try {
+    const pdfjsLib = await loadPdfJs();
+    const buf = new Uint8Array(await file.arrayBuffer());
+    const doc = await pdfjsLib.getDocument({ data: buf, useSystemFonts: true }).promise;
+    let out = "";
+    for (let i = 1; i <= Math.min(doc.numPages, 4); i++) {
+      const page = await doc.getPage(i);
+      const tc = await page.getTextContent();
+      out += tc.items.map(t => t.str).join(" ").replace(/\s{2,}/g, " ") + "\n";
+    }
+    el.value = out.trim();
+    toast("已解析 " + file.name + "（" + doc.numPages + " 页）");
+  } catch (err) {
+    el.value = "";
+    toast("PDF 解析失败（可能是扫描件或网络受限），请把简历文字直接粘贴进来");
+  }
+}
+
+function readFile(file) {
+  const name = file.name.toLowerCase();
+  const el = $("#rsText");
+  if (name.endsWith(".txt") || name.endsWith(".md") || name.endsWith(".csv")) {
+    const fr = new FileReader();
+    fr.onload = () => { el.value = fr.result; toast("已读取 " + file.name); };
+    fr.onerror = () => toast("读取失败，请直接粘贴文本");
+    fr.readAsText(file, "utf-8");
+    return;
+  }
+  if (name.endsWith(".pdf")) { parsePdf(file, el); return; }
+  if (name.endsWith(".docx")) { parseDocx(file, el); return; }
+  if (name.endsWith(".doc")) { toast("旧版 .doc 无法直接解析，请在 Word 里另存为 .docx 或直接复制文字粘贴"); return; }
+  toast("暂不支持该格式，请上传 .txt / .md / .pdf / .docx，或直接粘贴文本");
+}
+
+/* mammoth.js 按需加载：解析 Word（.docx）文本 */
+const MAMMOTH_URL = "https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js";
+let mammothLoading = null;
+function loadMammoth() {
+  if (window.mammoth) return Promise.resolve(window.mammoth);
+  if (mammothLoading) return mammothLoading;
+  mammothLoading = new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = MAMMOTH_URL;
+    s.onload = () => window.mammoth ? resolve(window.mammoth) : reject(new Error("mammoth missing"));
+    s.onerror = () => reject(new Error("load failed"));
+    document.head.appendChild(s);
+  });
+  return mammothLoading;
+}
+async function parseDocx(file, el) {
+  el.value = "正在解析 Word 文档……";
+  try {
+    const mammoth = await loadMammoth();
+    const r = await mammoth.extractRawText({ arrayBuffer: await file.arrayBuffer() });
+    el.value = String(r.value || "").replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+    toast("已解析 " + file.name);
+  } catch (e) {
+    el.value = "";
+    toast("Word 解析失败（可能网络受限），请把简历文字直接粘贴进来");
+  }
+}
+
+/* ============ 左侧导航 / 滚动高亮 ============ */
+function initNav() {
+  const ids = ["jobs", "playbook", "platforms", "cities", "calendar", "resume", "board", "contact"];
+  const secs = ids.map(id => document.getElementById(id)).filter(Boolean);
+  const links = () => $$(".nav a, .sidenav a");
+  function spy() {
+    let cur = secs[0] ? secs[0].id : "";
+    secs.forEach(s => { if (s.getBoundingClientRect().top <= 140) cur = s.id; });
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 4) cur = ids[ids.length - 1];
+    links().forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + cur));
+  }
+  window.addEventListener("scroll", spy, { passive: true });
+  window.addEventListener("resize", spy);
+  spy();
+}
+
+/* ============ 初始化 ============ */
+function init() {
+  const citySet = new Set();
+  JOBS.forEach(j => parseCities(j.city).forEach(c => citySet.add(c)));
+  CITIES.forEach(c => citySet.add(c.city));
+  $("#stJobs").textContent = JOBS.length;
+  $("#stPlat").textContent = PLATFORMS.length;
+  $("#stCity").textContent = citySet.size;
+  $("#stVer").textContent = META.version;
+  $("#updated").textContent = META.updated;
+
+  buildJobFilters(); renderJobs(); renderPlatforms(); renderCities(); renderTimeline(); renderContact(); initNav();
+
+  /* 「双非怎么打」板块：一键复制邮件模板 */
+  const pbc = $("#pbCopy");
+  if (pbc) pbc.onclick = () => {
+    const pre = document.querySelector(".pb-template pre");
+    if (pre) copy(pre.innerText);
+  };
+
+  function refreshExample() {
+    const rs = RS_TARGETS.find(x => x.id === RS_TARGET);
+    const el = $("#rsExample");
+    if (rs && el) el.innerHTML = "<b>" + esc(rs.name) + "</b>　代表单位：" + esc(rs.units) + "<br>常见要求：<b>" + rs.kw.map(x => esc(x.k)).join("</b> · <b>") + "</b>";
+  }
+  $$("#rsTarget button").forEach(b => b.onclick = () => {
+    $$("#rsTarget button").forEach(x => x.classList.remove("on"));
+    b.classList.add("on"); RS_TARGET = b.dataset.v; refreshExample();
+  });
+  refreshExample();
+  $("#btnDiag").onclick = () => {
+    const t = $("#rsText").value.trim();
+    if (t.length < 80) { toast("简历内容太短，请至少粘贴 80 字（含教育背景与实习经历）"); return; }
+    const jd = ($("#rsJD") && $("#rsJD").value || "").trim();
+    renderResume(diagnoseResume(t, RS_TARGET, jd));
+    const el = $("#rsOut");
+    if (el && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  $("#rsFile").addEventListener("change", e => { if (e.target.files[0]) readFile(e.target.files[0]); e.target.value = ""; });
+  $("#btnDemo").onclick = () => { $("#rsText").value = DEMO_RESUME; toast("已填入示例简历，点「开始诊断」看效果"); };
+}
+
+const DEMO_RESUME = `张三
+手机：138-0000-0000　邮箱：zhangsan_2027@outlook.com　政治面貌：共青团员
+求职意向：律所实习生（争议解决 / 公司业务方向）　意向城市：上海、南京
+
+教育背景
+2023.09–2027.06　某某大学 法学院 法学专业 本科
+GPA 3.7/4.0（专业排名前 15%）　主修课程：民法、刑法、民事诉讼法、公司法、合同法
+英语：CET-6 总分 550　法律英语：已修《法律英语》课程
+
+法律职业资格
+2026 年国家统一法律职业资格考试（客观题已报考，备考中）
+
+实习经历
+2026.07–2026.09　某某律师事务所 民商事争议解决团队 实习生
+- 协助办理民商事诉讼案件 8 件，独立完成案件材料整理与卷宗装订 12 卷
+- 参与起草起诉状、代理意见等法律文书 6 篇，其中 3 篇经主办律师修改后提交法院
+- 使用北大法宝、威科先行完成类案检索 20 余次，撰写类案检索报告 3 份
+- 全程旁听庭审 4 次，整理庭审要点与质证意见
+
+2025.07–2025.08　某某市中级人民法院 民事审判庭 实习生
+- 协助法官整理案卷 30 余卷，完成结案文书校对与归档
+- 参与案件合议记录 10 余次
+
+校园经历与竞赛
+2025.09–2026.01　全国大学生模拟法庭竞赛 校内选拔队队员，负责法律文书撰写与庭辩
+2025.04　某某杯模拟法庭竞赛 团体二等奖
+2024.09–2025.06　法学院法律援助中心 志愿者，接待咨询 30 余次
+2024 年 获校级一等奖学金
+
+技能
+法律检索：北大法宝、威科先行、中国裁判文书网
+办公软件：Word、Excel、PPT 熟练；通过计算机二级`;
+
+window.addEventListener("DOMContentLoaded", init);
+
+</script>
+</body>
+</html>
